@@ -1,282 +1,131 @@
-body {
-    padding-top: 120px
-}
+/* globals bootstrap:false, Prism:false */
 
-iframe {
-    overflow: hidden;
-    border: none
-}
+(function () {
+  'use strict';
 
-.navbar .bi {
-    margin-right: .25rem;
-    font-size: 1rem
-}
+  //  Helper functions
+  function escapeHtml(html) {
+    return html.replace(/×/g, '&times;')
+               .replace(/«/g, '&laquo;')
+               .replace(/»/g, '&raquo;')
+               .replace(/←/g, '&larr;')
+               .replace(/→/g, '&rarr;');
+  }
 
-#home .navbar,#help .navbar {
-    background: linear-gradient(145deg, #375ee3 0%, #6543e0 80%)
-}
+  function cleanSource(html) {
+    // Escape HTML, split the lines to an Array, remove empty elements
+    // and finally remove the last element
+    let lines = escapeHtml(html).split('\n').filter(Boolean).slice(0, -1);
+    const indentSize = lines[0].length - lines[0].trim().length;
+    const re = new RegExp(' {' + indentSize + '}');
 
-#home .navbar-brand .nav-link,#help .navbar-brand .nav-link {
-    display: inline-block;
-    margin-right: -30px
-}
+    lines = lines.map(line => {
+      return re.test(line) ? line.slice(Math.max(0, indentSize)) : line;
+    });
 
-#home {
-    padding-top: 0
-}
+    return lines.join('\n');
+  }
 
-#home .btn {
-    padding: .5rem .9rem
-}
+  // Add/remove `.navbar-transparent` on scroll; should probably be throttled later
+  function addNavbarTransparentClass() {
+    const navBarElement = document.querySelector('#home > .navbar');
 
-.bs-docs-section {
-    margin-top: 4em
-}
-
-.bs-docs-section .page-header h1 {
-    padding: 2rem 0;
-    font-size: 3rem
-}
-
-.dropdown-menu.show[aria-labelledby=themes] {
-    display: flex;
-    flex-wrap: wrap;
-    width: 420px
-}
-
-.dropdown-menu.show[aria-labelledby=themes] .dropdown-item {
-    width: 33.333333%
-}
-
-.dropdown-menu.show[aria-labelledby=themes] .dropdown-item:first-child {
-    width: 100%
-}
-
-.bs-component {
-    position: relative
-}
-
-.bs-component+.bs-component {
-    margin-top: 1rem
-}
-
-.bs-component .card {
-    margin-bottom: 1rem
-}
-
-.bs-component .modal {
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
-    z-index: 1;
-    display: block
-}
-
-.bs-component .modal-dialog {
-    width: 90%
-}
-
-.bs-component .popover {
-    position: relative;
-    display: inline-block;
-    width: 220px;
-    margin: 20px
-}
-
-.source-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 100;
-    display: none;
-    font-weight: 700
-}
-
-.source-button i {
-    pointer-events: none
-}
-
-.source-button:hover {
-    cursor: pointer
-}
-
-.bs-component:hover .source-button {
-    display: block
-}
-
-#source-modal pre {
-    max-height: calc(100vh - 11rem)
-}
-
-.progress {
-    margin-bottom: 10px
-}
-
-#footer {
-    margin: 5em 0
-}
-
-#footer li {
-    float: left;
-    margin-right: 1.5em;
-    margin-bottom: 1.5em
-}
-
-#footer p {
-    margin-bottom: 0;
-    clear: left
-}
-
-.splash {
-    position: relative;
-    padding: 12em 0 6em;
-    color: #fff;
-    text-align: center;
-    background-color: #375ee3;
-    background-image: url("../img/splash.svg"),linear-gradient(145deg, #375ee3 0%, #6543e0 80%);
-    background-repeat: no-repeat;
-    background-size: cover
-}
-
-.splash .logo {
-    width: 160px
-}
-
-.splash h1 {
-    font-size: 3em;
-    color: #fff
-}
-
-.splash #social {
-    margin: 2em 0 3em
-}
-
-.splash .alert {
-    margin: 2em 0;
-    border: none
-}
-
-.splash .sponsor a {
-    color: #fff
-}
-
-.section-tout {
-    padding: 6em 0 1em;
-    text-align: center;
-    background-color: #eaf1f1;
-    border-bottom: 1px solid rgba(0,0,0,.05)
-}
-
-.section-tout .icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 80px;
-    height: 80px;
-    margin: 0 auto 1rem;
-    font-size: 2rem;
-    line-height: 1;
-    color: rgba(255,255,255,.9);
-    background: linear-gradient(145deg, #375ee3 0%, #6543e0 80%);
-    border-radius: 50%
-}
-
-.section-tout p {
-    margin-bottom: 5em
-}
-
-.section-preview {
-    padding: 4em 0
-}
-
-.section-preview .preview {
-    margin-bottom: 4em;
-    background-color: #eaf1f1
-}
-
-.section-preview .preview .image {
-    position: relative
-}
-
-.section-preview .preview .image img {
-    width: 100%;
-    height: auto
-}
-
-.section-preview .preview .options {
-    padding: 2em;
-    text-align: center;
-    border-top: 1px solid rgba(0,0,0,.125)
-}
-
-.section-preview .preview .options p {
-    margin-bottom: 2em
-}
-
-.section-preview .dropdown-menu {
-    text-align: left
-}
-
-.section-preview .lead {
-    margin-bottom: 2em
-}
-
-.sponsor a {
-    text-decoration: none
-}
-
-.sponsor #carbonads {
-    max-width: 240px;
-    margin: 0 auto
-}
-
-.sponsor .carbon-text {
-    display: block;
-    margin-top: 1em;
-    font-size: 12px
-}
-
-.sponsor .carbon-poweredby {
-    float: right;
-    margin-top: 1em;
-    font-size: 10px
-}
-
-[data-bs-theme=dark] .section-tout {
-    background-color: #111
-}
-
-[data-bs-theme=dark] .section-preview .preview {
-    background-color: #2b3036
-}
-
-@media(max-width: 767px) {
-    .splash {
-        padding-top:8em
+    if (!navBarElement) {
+      return;
     }
 
-    .splash .logo {
-        width: 100px
+    window.addEventListener('scroll', () => {
+      const scroll = document.documentElement.scrollTop;
+
+      if (scroll > 50) {
+        navBarElement.classList.remove('navbar-transparent');
+      } else {
+        navBarElement.classList.add('navbar-transparent');
+      }
+    });
+  }
+
+  // Add source modals
+  function addSourceModals() {
+    const sourceModalElement = document.getElementById('source-modal');
+
+    if (!sourceModalElement) {
+      return;
     }
 
-    .splash h1 {
-        font-size: 2em
-    }
+    sourceModalElement.querySelector('.btn-copy').addEventListener('click', (e) => {
+      if (navigator.clipboard) {
+        const code = sourceModalElement.querySelector('.modal-body pre').innerText;
+        navigator.clipboard.writeText(code);
+      }
 
-    #banner {
-        margin-bottom: 2em;
-        text-align: center
-    }
-}
+      const sourceModal = bootstrap.Modal.getOrCreateInstance(sourceModalElement);
+      sourceModal.hide();
+    });
 
-@media(min-width: 992px) {
-    .navbar-transparent {
-        background:none !important
-    }
-}
+    document.body.addEventListener('click', event => {
+      if (!event.target.matches('.source-button')) {
+        return;
+      }
 
-.bs-component>.btn,.bs-component>.btn-toolbar>.btn-group,.bs-component>.btn-group,#home .section-preview .card .btn-group {
-    margin-bottom: .25rem
-}
+      const sourceModal = bootstrap.Modal.getOrCreateInstance(sourceModalElement);
+      let html = event.target.parentNode.innerHTML;
+
+      html = Prism.highlight(cleanSource(html), Prism.languages.html, 'html');
+
+      sourceModalElement.querySelector('code').innerHTML = html;
+      sourceModal.show();
+    }, false);
+  }
+
+  // Toggle light and dark themes
+  function toggleThemeMenu() {
+    let themeMenu = document.querySelector('#theme-menu');
+
+    if (!themeMenu) return;
+
+    document.querySelectorAll('[data-bs-theme-value]').forEach(value => {
+      value.addEventListener('click', () => {
+        const theme = value.getAttribute('data-bs-theme-value');
+        document.documentElement.setAttribute('data-bs-theme', theme);
+      });
+    });
+  }
+
+  addNavbarTransparentClass();
+
+  addSourceModals();
+
+  toggleThemeMenu();
+
+  // Prevent empty `a` elements or `submit` buttons from navigating away
+  const targets = document.querySelectorAll('[href="#"], [type="submit"]');
+
+  for (const element of targets) {
+    element.addEventListener('click', event => {
+      event.preventDefault();
+    });
+  }
+
+  // Add the "View Source" buttons in each component
+  const bsComponents = document.querySelectorAll('.bs-component');
+
+  for (const element of bsComponents) {
+    const button = '<button class="source-button btn btn-primary btn-xs" type="button" tabindex="0"><i class="bi bi-code"></i></button>';
+    element.insertAdjacentHTML('beforeend', button);
+  }
+
+  // Initialize popovers
+  const popoverElements = document.querySelectorAll('[data-bs-toggle="popover"]');
+
+  for (const popover of popoverElements) {
+    new bootstrap.Popover(popover); // eslint-disable-line no-new
+  }
+
+  // Initialize tooltips
+  const tooltipElements = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+
+  for (const tooltip of tooltipElements) {
+    new bootstrap.Tooltip(tooltip); // eslint-disable-line no-new
+  }
+})();
