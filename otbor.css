@@ -1195,3 +1195,6 @@ dl {
   --bs-dropdown-link-disabled-color: #adb5bd;
   --bs-dropdown-header-color: #adb5bd;
 }
+.vva {
+  background-color: rgb(0, 255, 242);
+}
