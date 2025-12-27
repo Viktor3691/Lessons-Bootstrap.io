@@ -24,3 +24,12 @@
 @import "../node_modules/bootstrap/scss/utilities/api";
 
 // 6. Добавьте сюда дополнительный пользовательский код
+
+/$color-mode-type: data;
+
+@include color-mode(dark) {
+  .element {
+    color: var(--bs-primary-text-emphasis);
+    background-color: var(--bs-primary-bg-subtle);
+  }
+}
