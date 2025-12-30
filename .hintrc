@@ -33,9 +33,11 @@
       "default",
       {
         "ignore": [
-          "text-size-adjust"
+          "text-size-adjust",
+          "-webkit-overflow-scrolling"
         ]
       }
-    ]
+    ],
+    "css-prefix-order": "off"
   }
 }

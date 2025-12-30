@@ -14,191 +14,455 @@
     <!-- <link rel="stylesheet" href="css/bootstrap-grid.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.css">
     <link rel="stylesheet" href="css/bootstrap-utilities.css"> -->
+    <link rel="stylesheet" href="./style.min.css">
+    <link rel="stylesheet" href="./bulma.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
+    <noscript><img src="https://mc.yandex.ru/watch/94497409" class="hide" alt=""></noscript>
 
-    <header class="header sticky-top ">
-        <div class="container_text align-items-center v1">
-            <div class="row row-cols-auto align-items-center">
-                <div class="col-5 ">
-                    <a class="navbar-brand" href="#">
-                        <h4>Stepik курс - Frontend разработчик <br>на HTML, CSS и
-                            JavaScript</h4>
-                    </a>
-                </div>
-                <div class="col-3 ">
-                    <h2><a class="navbar-brand " href="#">
-                            <img src="img/bootstrap.svg" alt="bootstrap.svg" width="60" height="48"
-                                class="d-inline-block align-text-top">
-                            Bootstrap
-                        </a></h2>
-                </div>
+    <div class="container">
 
-                <div class="col-3  ">
-                    <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Основная навигация">
+        <header class="header">
+            <div class="container_text align-items-center v1">
+                <div class="row row-cols-auto align-items-center">
+                    <div class="col ">
+                        <a class="navbar-brand" href="#">
+                            <h4>Stepik курс - Frontend разработчик <br>на HTML, CSS и
+                                JavaScript</h4>
+                        </a>
+                    </div>
+                    <div class="col ">
+                        <h2><a class="navbar-brand " href="#">
+                                <img src="img/bootstrap.svg" alt="bootstrap.svg" width="60" height="48"
+                                    class="d-inline-block align-text-top">
+                                Bootstrap
+                            </a></h2>
+                    </div>
 
-                        <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button"
-                            data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar"
-                            aria-expanded="false" aria-label="Переключать навигацию">
-                            <svg class="bi" width="24" height="24" aria-hidden="true">
-                                <use xlink:href="#three-dots"></use>
-                            </svg>
-                        </button>
+                    <div class="col  ">
+                        <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Основная навигация">
 
-                        <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar"
-                            aria-labelledby="bdNavbarOffcanvasLabel">
+                            <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar"
+                                aria-expanded="false" aria-label="Переключать навигацию">
+                                <svg class="bi" width="24" height="24" aria-hidden="true">
+                                    <use xlink:href="#three-dots"></use>
+                                </svg>
+                            </button>
 
-
-                            <div class="offcanvas-body p-4 pt-0 p-lg-0">
-                                <hr class="d-lg-none text-white-50">
-                                <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
-                                    <li class="nav-item col-6 col-lg-auto">
-                                        <a class="nav-link py-2 px-0 px-lg-2"
-                                            href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
-                                            target="_blank" rel="noopener">Документ</a>
-                                    </li>
-                                    <li class="nav-item col-6 col-lg-auto">
-                                        <a class="nav-link py-2 px-0 px-lg-2"
-                                            href="https://getbootstrap.com/docs/5.3/examples/" target="_blank"
-                                            rel="noopener">Примеры</a>
-                                    </li>
-                                    <li class="nav-item col-6 col-lg-auto">
-                                        <a class="nav-link py-2 px-0 px-lg-2" href="https://icons.getbootstrap.com/"
-                                            target="_blank" rel="noopener">Иконки</a>
-                                    </li>
+                            <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar"
+                                aria-labelledby="bdNavbarOffcanvasLabel">
 
 
-                                </ul>
-
-                                <hr class="d-lg-none text-white-50">
-
-
-                                <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
-                                    <li class="nav-item col-6 col-lg-auto">
-                                        <a class="nav-link py-2 px-0 px-lg-2"
-                                            href="https://github.com/Viktor3691/Bootstrap.io" target="_blank"
-                                            rel="noopener" aria-label="GitHub">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                fill="currentColor" class="navbar-nav-svg" viewBox="0 0 16 16">
-                                                <path
-                                                    d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8">
-                                                </path>
-                                            </svg>
-                                            <small class="d-lg-none ms-2">GitHub</small>
-                                        </a>
-                                    </li>
+                                <div class="offcanvas-body p-4 pt-0 p-lg-0">
+                                    <hr class="d-lg-none text-white-50">
+                                    <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
+                                        <li class="nav-item col-6 col-lg-auto">
+                                            <a class="nav-link py-2 px-0 px-lg-2"
+                                                href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+                                                target="_blank" rel="noopener">Документ</a>
+                                        </li>
+                                        <li class="nav-item col-6 col-lg-auto">
+                                            <a class="nav-link py-2 px-0 px-lg-2"
+                                                href="https://getbootstrap.com/docs/5.3/examples/" target="_blank"
+                                                rel="noopener">Примеры</a>
+                                        </li>
+                                        <li class="nav-item col-6 col-lg-auto">
+                                            <a class="nav-link py-2 px-0 px-lg-2" href="https://icons.getbootstrap.com/"
+                                                target="_blank" rel="noopener">Иконки</a>
+                                        </li>
 
 
+                                    </ul>
 
-                                    <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
-                                        <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
-                                        <hr class="d-lg-none my-2 text-white-50">
-                                    </li>
+                                    <hr class="d-lg-none text-white-50">
 
-                                    <li class="nav-item dropdown">
-                                        <button
-                                            class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
-                                            id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown"
-                                            data-bs-display="static" aria-label="Переключить тему (подсветка)">
-                                            <svg class="bi my-1 theme-icon-active">
-                                                <use href="#sun-fill"></use>
-                                            </svg>
-                                            <span class="d-lg-none ms-2" id="bd-theme-text">Переключить тему</span>
-                                        </button>
-                                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
-                                            <li>
-                                                <button type="button"
-                                                    class="dropdown-item d-flex align-items-center active"
-                                                    data-bs-theme-value="light" aria-pressed="true">
-                                                    <svg class="bi me-2 opacity-50">
-                                                        <use href="#sun-fill"></use>
-                                                    </svg>
-                                                    Light
-                                                    <svg class="bi ms-auto d-none">
-                                                        <use href="#check2"></use>
-                                                    </svg>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button type="button" class="dropdown-item d-flex align-items-center"
-                                                    data-bs-theme-value="dark" aria-pressed="false">
-                                                    <svg class="bi me-2 opacity-50">
-                                                        <use href="#moon-stars-fill"></use>
-                                                    </svg>
-                                                    Dark
-                                                    <svg class="bi ms-auto d-none">
-                                                        <use href="#check2"></use>
-                                                    </svg>
-                                                </button>
-                                            </li>
-                                            <li>
-                                                <button type="button" class="dropdown-item d-flex align-items-center"
-                                                    data-bs-theme-value="auto" aria-pressed="false">
-                                                    <svg class="bi me-2 opacity-50">
-                                                        <use href="#circle-half"></use>
-                                                    </svg>
-                                                    Auto
-                                                    <svg class="bi ms-auto d-none">
-                                                        <use href="#check2"></use>
-                                                    </svg>
-                                                </button>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
+
+                                    <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+                                        <li class="nav-item col-6 col-lg-auto">
+                                            <a class="nav-link py-2 px-0 px-lg-2"
+                                                href="https://github.com/Viktor3691/Bootstrap.io" target="_blank"
+                                                rel="noopener" aria-label="GitHub">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="navbar-nav-svg" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8">
+                                                    </path>
+                                                </svg>
+                                                <small class="d-lg-none ms-2">GitHub</small>
+                                            </a>
+                                        </li>
+
+
+
+                                        <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
+                                            <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
+                                            <hr class="d-lg-none my-2 text-white-50">
+                                        </li>
+
+                                        <li class="nav-item dropdown">
+                                            <button
+                                                class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
+                                                id="bd-theme" type="button" aria-expanded="false"
+                                                data-bs-toggle="dropdown" data-bs-display="static"
+                                                aria-label="Переключить тему (подсветка)">
+                                                <svg class="bi my-1 theme-icon-active">
+                                                    <use href="#sun-fill"></use>
+                                                </svg>
+                                                <span class="d-lg-none ms-2" id="bd-theme-text">Переключить тему</span>
+                                            </button>
+                                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
+                                                <li>
+                                                    <button type="button"
+                                                        class="dropdown-item d-flex align-items-center active"
+                                                        data-bs-theme-value="light" aria-pressed="true">
+                                                        <svg class="bi me-2 opacity-50">
+                                                            <use href="#sun-fill"></use>
+                                                        </svg>
+                                                        Light
+                                                        <svg class="bi ms-auto d-none">
+                                                            <use href="#check2"></use>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button"
+                                                        class="dropdown-item d-flex align-items-center"
+                                                        data-bs-theme-value="dark" aria-pressed="false">
+                                                        <svg class="bi me-2 opacity-50">
+                                                            <use href="#moon-stars-fill"></use>
+                                                        </svg>
+                                                        Dark
+                                                        <svg class="bi ms-auto d-none">
+                                                            <use href="#check2"></use>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                                <li>
+                                                    <button type="button"
+                                                        class="dropdown-item d-flex align-items-center"
+                                                        data-bs-theme-value="auto" aria-pressed="false">
+                                                        <svg class="bi me-2 opacity-50">
+                                                            <use href="#circle-half"></use>
+                                                        </svg>
+                                                        Auto
+                                                        <svg class="bi ms-auto d-none">
+                                                            <use href="#check2"></use>
+                                                        </svg>
+                                                    </button>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-                    </nav>
+                        </nav>
 
-                </div>
-
-            </div>
-        </div>
-    </header>
-
-    <main>
-        <div class="container_text">
-            <div class="row">
-                <div class="col-3">
-
-                    1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eos blanditiis recusandae
-                    vel, iure tempora nesciunt, maiores delectus reiciendis dolor dignissimos, suscipit repudiandae
-
-                </div>
-                <div class="col-9">
-
-
-                    2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur eos blanditiis recusandae
-                    vel, iure tempora
-                    nesciunt, maiores delectus reiciendis dolor dignissimos, suscipit repudiandae voluptate adipisci
-                    molestias. Voluptatum
-                    aliquam, totam, repellat eveniet nisi, repudiandae saepe adipisci impedit porro consequatur
-                    error
-                    ad? I
+                    </div>
 
                 </div>
             </div>
-        </div>
-    </main>
+        </header>
 
 
-    <footer>
-        <div class="container_text v1">
-            <div class="row">
-                <div class="col">
-                    <p>© 2025 Copyright: VViller</p>
-                </div>
 
-                <div class="col">
-                    <p>27.12.2025</p>
+        <main>
+            <div class="w-title">
+                <div class="container">
+                    <h1>Начало работы с Bootstrap</h1>
                 </div>
             </div>
-        </div>
-    </footer>
+
+
+
+
+
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-9-desktop is-12-tablet is-12-mobile w-content">
+                        <div data-drupal-messages-fallback class="hidden"></div>
+
+                        <section id="w-main">
+
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eaque, odit quia consequatur
+                            rem ipsum voluptatibus doloribus eius aut quisquam voluptas optio consequuntur dolor rerum
+                            molestias architecto provident recusandae soluta veritatis, neque labore laudantium aliquam,
+                            dolorum dolore? Veritatis odit consequatur adipisci eum tempora iusto, ab voluptatibus
+                            placeat aliquam rerum deserunt possimus, culpa pariatur laborum vero minus vitae. Expedita
+                            voluptas facilis tempora ab minima temporibus maxime quo voluptates quibusdam ea nobis
+                            ratione quis sequi illo laboriosam, optio hic minus doloremque dolorum dicta. Neque itaque
+                            aspernatur ut repudiandae molestiae consequatur laudantium corporis, ad distinctio aliquid
+                            sit qui. Ipsum dolores veniam unde omnis odit? Impedit vel natus quam, at tempore, saepe
+                            distinctio magni nesciunt doloremque cumque reiciendis itaque assumenda deleniti. Voluptate
+                            nisi illum maiores officiis sed nobis rem saepe quisquam est. Temporibus, cumque molestias
+                            numquam nobis quos tenetur nulla? Laborum consequuntur ratione natus impedit eaque nesciunt
+                            ducimus repudiandae tempora exercitationem iste, fugit quia veritatis nostrum quidem quam
+                            corporis necessitatibus doloremque fuga inventore qui accusamus. Voluptates, sit! Vero
+                            voluptates quam soluta harum veritatis quasi? Quibusdam commodi accusamus est laudantium
+                            enim, eius eum molestiae quam rerum nesciunt sed placeat ullam voluptates quas! Quis dolorum
+                            commodi, omnis reprehenderit possimus sequi in repellendus. Aspernatur veritatis alias,
+                            magnam repudiandae ut rerum, qui eius aut expedita laborum magni? Vitae repellendus
+                            voluptatum mollitia porro eius quasi sequi! Ad, tempora illo nihil possimus consequuntur ex.
+                            Earum iste ipsa aliquid exercitationem porro ad perspiciatis eveniet accusamus cum dolorum,
+                            minima sint, enim, deserunt deleniti. Aliquam fuga laboriosam, tenetur distinctio officiis
+                            doloremque quidem, voluptatibus deleniti adipisci id repellendus optio laborum eius hic
+                            minus odio quia iste ullam harum amet unde! Laudantium, omnis delectus ducimus similique
+                            voluptas culpa quo at repellat error quasi. Voluptatibus ab quasi alias sapiente ratione
+                            quam, atque perspiciatis earum aliquid nisi facilis magnam quos facere repudiandae numquam!
+                            Corporis iste totam dicta culpa, repudiandae, nesciunt perspiciatis mollitia sapiente
+                            officia nemo dolor est ut? Veniam maiores soluta rem reiciendis, sequi, voluptatibus,
+                            recusandae et ab vitae sunt iure amet doloremque quas? Tenetur assumenda, recusandae aperiam
+                            reprehenderit consectetur quam velit commodi natus omnis, rerum eos, temporibus quidem
+                            inventore reiciendis. Doloremque est fugit dolorum debitis doloribus. Unde reprehenderit
+                            quia autem delectus nisi, obcaecati sint laborum doloremque asperiores harum aut sequi iure
+                            nam odit quod dolorum. Maiores cupiditate, laudantium, recusandae quia aliquam ut ad cumque
+                            repudiandae nihil quaerat, suscipit facilis id aspernatur sit obcaecati possimus dolores
+                            harum saepe architecto sed autem corrupti impedit labore laborum. In voluptatem labore
+                            explicabo cupiditate quod officia sequi. Accusantium, ut quod quam qui inventore laudantium
+                            nihil similique ea nobis dicta doloribus consequatur eveniet ab enim ducimus atque? Nostrum
+                            dolorum quia quae illo dolores esse deserunt vel minima molestiae? Beatae minus quaerat
+                            omnis, perferendis, voluptatum sint repellendus eveniet minima, temporibus illo provident
+                            dicta vitae quibusdam harum reprehenderit quam iusto. Autem labore reprehenderit aliquam
+                            nesciunt minima sed quidem at nisi neque modi dolores id, iure officiis eos iusto, eum
+                            aliquid, optio obcaecati beatae tenetur expedita quos. Distinctio, doloremque! Quo
+                            quibusdam, odio commodi voluptas mollitia esse nobis sunt dolores voluptatibus dignissimos,
+                            rerum doloremque unde illo.
+
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat delectus facere quis error
+                            alias rem accusamus, eum perspiciatis iure nam repudiandae nesciunt aut harum sapiente
+                            tenetur natus quam explicabo ipsa amet velit unde, quos, qui ea eius. Non consequuntur nulla
+                            dolorum soluta sequi. Velit, tempore commodi fugiat et inventore explicabo, quam
+                            accusantium, voluptas similique quas in voluptates magni libero nostrum praesentium corrupti
+                            totam perferendis reiciendis molestias! Velit dolorem sint beatae, deleniti deserunt
+                            pariatur omnis unde voluptatum similique optio. Velit et nostrum ab nesciunt omnis a ex
+                            tempora qui recusandae quaerat modi, tenetur molestiae itaque, ad optio! Excepturi porro
+                            dolor numquam totam laboriosam laudantium temporibus! Eos, optio necessitatibus harum saepe,
+                            atque ullam hic maiores deserunt quia cum incidunt? Commodi, similique mollitia qui debitis
+                            possimus iure molestiae eius eum, quas a quasi ipsa corrupti sint unde impedit harum, fugit
+                            accusantium omnis iusto aliquam illo reprehenderit. Praesentium quae harum aliquid
+                            reiciendis inventore? Unde blanditiis architecto aliquid aut ipsam ad veniam soluta iste
+                            fugit totam, deserunt dolores voluptates sunt minus libero corrupti iusto? Magnam ea vel
+                            dolorem, minus eos adipisci. Sint doloribus earum eos quo similique perferendis, obcaecati
+                            magnam officia accusantium numquam incidunt eveniet laudantium maxime veniam sunt eius,
+                            quasi quae in fugiat? Nostrum dolore quibusdam laborum, officiis impedit at illo molestiae,
+                            aliquid laudantium iusto fuga nobis accusantium tenetur? Qui libero accusamus eaque rerum
+                            assumenda animi recusandae ipsa similique, quaerat illo hic id ipsam necessitatibus, iure
+                            esse, maiores laudantium minima facere a distinctio possimus nobis aperiam? Est
+                            necessitatibus possimus corporis maxime, obcaecati repudiandae, inventore repellat iste quos
+                            voluptas vel at rerum odio tenetur nam et nemo, velit neque quas? Ut dolorem dignissimos
+                            voluptatum aut voluptate rem ipsam odit tempora beatae dolorum, veritatis a. Animi, ut.
+                            Voluptatum officia itaque voluptatibus ad quam minima veniam, at aliquam ullam! Similique,
+                            inventore. Incidunt nam fuga error suscipit eveniet, maiores maxime totam dicta mollitia
+                            excepturi consectetur quisquam ex. Suscipit, obcaecati fuga. Unde cupiditate fuga sit
+                            numquam ab! Aliquid nisi fugit cumque dolorum amet voluptatum quisquam necessitatibus
+                            reprehenderit! Dolore, unde ipsam? Velit ut accusamus fugit molestias voluptas vitae
+                            exercitationem quis? Quasi architecto debitis vero molestiae amet aliquam placeat
+                            perspiciatis soluta praesentium autem, eaque quibusdam reprehenderit rerum harum vitae dicta
+                            veniam. Repellat soluta hic quia voluptatum labore vitae eligendi ipsum eos adipisci nostrum
+                            rerum excepturi, culpa, sapiente quas cum autem laboriosam ducimus sit nesciunt fuga
+                            perferendis expedita ipsam pariatur. Nostrum ex minus reprehenderit saepe adipisci.
+                            Distinctio aliquam voluptate animi est corporis ullam maiores quibusdam dignissimos eum
+                            optio molestias ea id dolorem similique vitae quos deleniti reiciendis, a quisquam sequi
+                            minima ad nisi totam dolor? Placeat, tempora, atque in corporis rerum natus obcaecati
+                            tenetur officia ullam iusto adipisci hic distinctio debitis voluptate eos? Odit cum
+                            perspiciatis in neque fuga tenetur sit reprehenderit molestiae velit culpa tempore natus
+                            mollitia quos maxime aut, nulla ipsam totam earum adipisci laudantium inventore repellat
+                            iure! Quas dignissimos sunt, rerum praesentium quam accusamus nisi, iusto omnis tenetur
+                            deserunt consequuntur quo. Soluta, amet, incidunt ipsa voluptatem, ad debitis earum
+                            consequatur placeat natus dolore ipsam reprehenderit sed doloribus maxime hic.
+
+                        </section>
+                    </div>
+
+
+
+                    <aside class="column is-3-desktop is-12-tablet is-12-mobile w-sidebar" id="w-sidebar">
+
+                        <section class="w-region w-region-sidebar-toc">
+                            <div class="w-block" id="block-book-toc">
+                                <h2 class="w-block-title">Содержание</h2>
+                                <div class="w-block-content">
+
+                                    <ul class="w-block-menu">
+                                        <li class="is-active">
+                                            <a href="/layout/bootstrap5/getting_started_with_bootstrap"
+                                                class="is-active">Начало
+                                                работы с Bootstrap</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_containers" hreflang="ru">Контейнеры
+                                                Bootstrap 5</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_grid_system" hreflang="ru">Система
+                                                сеток
+                                                Bootstrap 5</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_typography" hreflang="ru">Типографика
+                                                в
+                                                Bootstrap 5</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_tables" hreflang="ru">Таблицы в
+                                                Bootstrap
+                                                5</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_forms" hreflang="ru">Формы в Bootstrap
+                                                5</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_buttons" hreflang="ru">Кнопки в
+                                                Bootstrap
+                                                5</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_images" hreflang="ru">Изображения в
+                                                Bootstrap 5</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_dropdowns" hreflang="ru">Выпадающие
+                                                меню</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_button_groups" hreflang="ru">Группа
+                                                кнопок</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_input_groups" hreflang="ru">Группа
+                                                полей
+                                                ввода</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_collapse" hreflang="ru">Сворачиваемое
+                                                содержимое</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_navs" hreflang="ru">Навигация в
+                                                Bootstrap</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_navbars" hreflang="ru">Панель
+                                                навигации</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_breadcrumbs" hreflang="ru">Хлебные
+                                                крошки
+                                                в Bootstrap 5</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_pagination" hreflang="ru">Пагинация в
+                                                Bootstrap 5</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_badge" hreflang="ru">Значки в
+                                                Bootstrap
+                                                5</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_alerts" hreflang="ru">Уведомления в
+                                                Bootstrap 5</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_modal" hreflang="ru">Модальные
+                                                окна</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_progress_bars" hreflang="ru">Прогресс
+                                                в
+                                                Bootstrap 5</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_list_groups" hreflang="ru">Группы
+                                                списков</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_cards" hreflang="ru">Карточки в
+                                                Bootstrap
+                                                5</a>
+
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_carousel" hreflang="ru">Карусель в
+                                                Bootstrap 5</a>
+
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+                        </section>
+
+                    </aside>
+                </div>
+            </div>
+        </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <footer>
+            <div class="container container_text v1">
+                <div class="row">
+                    <div class="col">
+                        <p>© 2025 Copyright: VViller</p>
+                    </div>
+
+                    <div class="col">
+                        <p>27.12.2025</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+
+
+
+
 
 
 
