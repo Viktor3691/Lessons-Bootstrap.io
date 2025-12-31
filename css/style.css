@@ -143,6 +143,43 @@ kbd {
   color: hsl(0deg, 0%, 4%);
 }
 
+.w-sidebar .w-block {
+  margin-bottom: 20px;
+  padding: 15px 15px 10px;
+  border: 1px solid var(--color-gray-medium);
+  border-radius: 5px;
+  min-width: 250px;
+  background-color: #fff;
+}
+
+#block-css-fun,
+#block-css-ref,
+#block-html-attr,
+#block-html-element,
+.w-sidebar #block-book-toc {
+  max-height: 350px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.column {
+  display: block;
+  flex-basis: 0;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 0.75rem;
+}
+
+@media screen and (max-width: 768px) {
+  .column.is-0-mobile {
+    flex: none;
+    width: 0%;
+  }
+  .columns.is-variable.is-0-mobile {
+    --columnGap: 0rem;
+  }
+}
+
 /* .column.is-12-tablet {
   flex: none;
   width: 100%;
