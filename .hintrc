@@ -34,7 +34,9 @@
       {
         "ignore": [
           "text-size-adjust",
-          "-webkit-overflow-scrolling"
+          "-webkit-overflow-scrolling",
+          "user-select",
+          "display: block math"
         ]
       }
     ],
