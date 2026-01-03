@@ -135,6 +135,9 @@
 
                 <div class="columns">
 
+
+
+
                     <div class="container_text">
                         <div class="w-title">
                             <div class="container">
@@ -269,304 +272,420 @@
                                         <div class="w3-code notranslate htmlHigh">
                                             &lt;div class=&quot;container-fluid&quot;&gt;<br>&nbsp;
                                             &lt;h1&gt;container-fluid&lt;/h1&gt;<br>&nbsp;
-                                            &lt;p&gt;This is some text.&lt;/p&gt; <br>&lt;/div&gt;</div>
+                                            &lt;p&gt;This is some text.&lt;/p&gt; <br>&lt;/div&gt;
+                                        </div>
+                                        <a></a>&raquo;</a>
                                     </div>
                                     <hr>
-                                    <div class="container-fluid v1">
-                                        <h1>container-fluid</h1>
-                                        <p>Это какой-то текст.</p>
+
+                                    <h3>Отступы контейнера</h3>
+
+                                    <p>По умолчанию контейнеры имеют отступы слева и справа, но не имеют отступов сверху
+                                        и
+                                        снизу. Поэтому мы часто используем
+                                        <span>утилиты для создания отступов,</span> такие как дополнительные отступы и
+                                        поля,
+                                        чтобы они
+                                        выглядели ещё лучше.
+
+                                    </p>
+                                    <h5>Большой верхний отступ pt»</h5>
+                                    </p>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col border border-info pt-0">pt-0</div>
+                                            <div class="col border border-info pt-1">pt-1</div>
+                                            <div class="col border border-info pt-2">pt-2</div>
+                                            <div class="col border border-info pt-3">pt-3</div>
+                                            <div class="col border border-info pt-4">pt-4</div>
+                                            <div class="col border border-info pt-5">pt-5</div>
+                                        </div>
                                     </div>
+                                    <h5>Отступ между колонками (gutters) g</h5>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col border border-info g-0">g-0</div>
+                                            <div class="col border border-info g-1">g-1</div>
+                                            <div class="col border border-info g-2">g-2</div>
+                                            <div class="col border border-info g-3">g-3</div>
+                                            <div class="col border border-info g-4">g-4</div>
+                                            <div class="col border border-info g-5">g-5</div>
+                                        </div>
+                                    </div>
+                                    <h5>Внешний отступ (margin) m</h5>
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col border border-info m-0">m-0</div>
+                                            <div class="col border border-info m-1">m-1</div>
+                                            <div class="col border border-info m-2">m-2</div>
+                                            <div class="col border border-info m-3">m-3</div>
+                                            <div class="col border border-info m-4">m-4</div>
+                                            <div class="col border border-info m-5">m-5</div>
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h3>Граница и цвет контейнера</h3>
+
+                                    <p>Другие элементы, такие как границы и цвета, также часто используются вместе с
+                                        контейнерами:</p>
+
+                                    <div class="w3-example">
+                                        <h3>Example</h3>
+                                        <div class="w3-example">
+                                            <div class="container p-5 my-5 border bg-light">p-5 my-5 border bg-light
+                                            </div>
+
+                                            <div class="container p-5 my-5 bg-dark text-white">p-5 my-5 bg-dark
+                                                text-white
+                                            </div>
+
+                                            <div class="container p-5 my-5 bg-primary text-white">p-5 my-5 bg-primary
+                                                text-white
+                                            </div>
+                                            <div class="w3-code notranslate htmlHigh">
+                                                &lt;div class=&quot;container p-5 my-5
+                                                border&quot;&gt;&lt;/div&gt;<br><br>&lt;div class=&quot;container
+                                                p-5 my-5 bg-dark
+                                                text-white&quot;&gt;&lt;/div&gt;<br><br>&lt;div class=&quot;container
+                                                p-5
+                                                my-5 bg-primary
+                                                text-white&quot;&gt;&lt;/div&gt;</div>
+                                            <a></a>&raquo;</a>
+                                        </div>
+                                        <div class="ws-note w3-panel">
+                                            <p>Вы узнаете гораздо больше о цветах и свойствах границ в следующей главе.
+                                            </p>
+                                        </div>
+
+                                        <hr>
+                                    </div>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        &lt;div class=&quot;container p-5 my-5
+                                        border&quot;&gt;&lt;/div&gt;
+                                        <br>
+                                        <br>
+                                        &lt;div class=&quot;
+                                        container p-5 my-5 bg-dark text-white&quot;
+                                        &gt;&lt;/div&gt;
+                                        <br>
+                                        <br>
+                                        &lt;div class=&quot;container p-5 my-5
+                                        bg-primary text-white&quot;
+                                        &gt;&lt;/div&gt;
+
+                                    </div>
+
                                 </div>
 
-                                <h3>Отступы контейнера</h3>
+                                <hr>
+                                <h3>Адаптивные контейнеры</h3>
 
-                                <p>По умолчанию контейнеры имеют отступы слева и справа, но не имеют отступов сверху и
-                                    снизу. Поэтому мы часто используем
-                                    <span>утилиты для создания отступов,</span> такие как дополнительные отступы и поля,
-                                    чтобы они
-                                    выглядели ещё лучше.
-
+                                <p>Вы также можете использовать <span> .container-sm|md|lg|xl-классы,</span> чтобы
+                                    определить, когда контейнер должен быть адаптивным. <br>
+                                    <br>
+                                    <span>-max-width</span> контейнера будет меняться в зависимости от размера
+                                    экрана/области просмотра:
                                 </p>
-                                <h5>Большой верхний отступ pt»</h5>
-                                </p>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col border border-info pt-0">pt-0</div>
-                                        <div class="col border border-info pt-1">pt-1</div>
-                                        <div class="col border border-info pt-2">pt-2</div>
-                                        <div class="col border border-info pt-3">pt-3</div>
-                                        <div class="col border border-info pt-4">pt-4</div>
-                                        <div class="col border border-info pt-5">pt-5</div>
-                                    </div>
-                                </div>
-                                <h5>Отступ между колонками (gutters) g</h5>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col border border-info g-0">g-0</div>
-                                        <div class="col border border-info g-1">g-1</div>
-                                        <div class="col border border-info g-2">g-2</div>
-                                        <div class="col border border-info g-3">g-3</div>
-                                        <div class="col border border-info g-4">g-4</div>
-                                        <div class="col border border-info g-5">g-5</div>
-                                    </div>
-                                </div>
-                                <h5>Внешний отступ (margin) m</h5>
-                                <div class="container">
-                                    <div class="row">
-                                        <div class="col border border-info m-0">m-0</div>
-                                        <div class="col border border-info m-1">m-1</div>
-                                        <div class="col border border-info m-2">m-2</div>
-                                        <div class="col border border-info m-3">m-3</div>
-                                        <div class="col border border-info m-4">m-4</div>
-                                        <div class="col border border-info m-5">m-5</div>
-                                    </div>
-                                </div>
-                                <br>
-                                <h3>Граница и цвет контейнера</h3>
 
-                                <p>Другие элементы, такие как границы и цвета, также часто используются вместе с
-                                    контейнерами:</p>
+                                <div class="w3-responsive" style="margin:-16px 0">
+                                    <table class="w3-table ws-table-all">
+                                        <thead>
+                                            <tr>
+                                                <th>Class</th>
+                                                <th>
+                                                    Extra small<br>
+                                                    &lt;576px
+                                                </th>
+                                                <th>
+                                                    Small<br>
+                                                    &#8805;576px
+                                                </th>
+                                                <th>
+                                                    Medium<br>
+                                                    &#8805;768px
+                                                </th>
+                                                <th>
+                                                    Large<br>
+                                                    &#8805;992px
+                                                </th>
+                                                <th>
+                                                    Extra large<br>
+                                                    &#8805;1200px
+                                                </th>
+                                                <th>
+                                                    XXL<br>
+                                                    &#8805;1400px
+                                                </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><code class="w3-codespan">.container-sm</code></td>
+                                                <td>100%</td>
+                                                <td>540px</td>
+                                                <td>720px</td>
+                                                <td>960px</td>
+                                                <td>1140px</td>
+                                                <td>1320px</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code class="w3-codespan">.container-md</code></td>
+                                                <td>100%</td>
+                                                <td>100%</td>
+                                                <td>720px</td>
+                                                <td>960px</td>
+                                                <td>1140px</td>
+                                                <td>1320px</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code class="w3-codespan">.container-lg</code></td>
+                                                <td>100%</td>
+                                                <td>100%</td>
+                                                <td>100%</td>
+                                                <td>960px</td>
+                                                <td>1140px</td>
+                                                <td>1320px</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code class="w3-codespan">.container-xl</code></td>
+                                                <td>100%</td>
+                                                <td>100%</td>
+                                                <td>100%</td>
+                                                <td>100%</td>
+                                                <td>1140px</td>
+                                                <td>1320px</td>
+                                            </tr>
+                                            <tr>
+                                                <td><code class="w3-codespan">.container-xxl</code></td>
+                                                <td>100%</td>
+                                                <td>100%</td>
+                                                <td>100%</td>
+                                                <td>100%</td>
+                                                <td>100%</td>
+                                                <td>1320px</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
 
                                 <div class="w3-example">
                                     <h3>Example</h3>
-                                    <div class="w3-example">
-                                        <div class="container p-5 my-5 border bg-light">p-5 my-5 border bg-light</div>
-
-                                        <div class="container p-5 my-5 bg-dark text-white">p-5 my-5 bg-dark text-white
-                                        </div>
-
-                                        <div class="container p-5 my-5 bg-primary text-white">p-5 my-5 bg-primary
-                                            text-white
-                                        </div>
-                                        <div class="w3-code notranslate htmlHigh">
-                                            &lt;div class=&quot;container p-5 my-5
-                                            border&quot;&gt;&lt;/div&gt;<br><br>&lt;div class=&quot;container
-                                            p-5 my-5 bg-dark
-                                            text-white&quot;&gt;&lt;/div&gt;<br><br>&lt;div class=&quot;container p-5
-                                            my-5 bg-primary
-                                            text-white&quot;&gt;&lt;/div&gt;</div>
-
-                                    </div>
-                                    <div class="ws-note w3-panel">
-                                        <p>Вы узнаете гораздо больше о цветах и свойствах границ в следующей главе.</p>
-                                    </div>
-
-                                    <hr>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        &lt;div class=&quot;container-sm&quot;&gt;.container-sm&lt;/div&gt;<br>&lt;div
+                                        class=&quot;container-md&quot;&gt;.container-md&lt;/div&gt;<br>&lt;div
+                                        class=&quot;container-lg&quot;&gt;.container-lg&lt;/div&gt;<br>&lt;div
+                                        class=&quot;container-xl&quot;&gt;.container-xl&lt;/div&gt;<br>&lt;div
+                                        class=&quot;container-xxl&quot;&gt;.container-xxl&lt;/div&gt;</div>
+                                    <a></a>&raquo;</a>
                                 </div>
-                                <div class="w3-code notranslate htmlHigh">
-                                    &lt;div class=&quot;container p-5 my-5
-                                    border&quot;&gt;&lt;/div&gt;<br><br>&lt;div class=&quot;container
-                                    p-5 my-5 bg-dark
-                                    text-white&quot;&gt;&lt;/div&gt;<br><br>&lt;div class=&quot;container p-5 my-5
-                                    bg-primary
-                                    text-white&quot;&gt;&lt;/div&gt;</div>
-                                <a target="_blank" href="tryit.asp?filename=trybs_container_color&stacked=h"
-                                    class="w3-btn w3-margin-bottom">Try it
-                                    Yourself &raquo;</a>
+
+
+                                <br>
+                                <div style="width: 41%; margin: auto;">
+                                    <div class="container-sm bg-info">.container-sm 540px</div>
+                                </div>
+
+
+                                <br>
+                                <div style="width: 55%; margin: auto;">
+                                    <div class="container-md bg-info">.container-md 720px</div>
+                                </div>
+                                <br>
+                                <div style="width: 73%; margin: auto;">
+                                    <div class="container-lg bg-info">.container-lg 960px</div>
+                                </div>
+
+                                <br>
+                                <div style="width: 86%; margin: auto;">
+                                    <div class="container-xl bg-info">.container-xl 1140px</div>
+                                </div>
+
+                                <br>
+                                <div style="width: 100%; margin: auto;">
+                                    <div class="container-xxl bg-info">.container-xxl 1320px</div>
+                                </div>
                         </div>
-
-
-                        <hr>
-
-
-
-
-
-
-
-
-
-
-
-
-
-                        </section>
                     </div>
 
-                </div>
 
+                    <aside class=" column is-3-desktop is-12-tablet is-12-mobile w-sidebar" id="w-sidebar">
 
-                <aside class=" column is-3-desktop is-12-tablet is-12-mobile w-sidebar" id="w-sidebar">
+                        <section class="w-region w-region-sidebar-toc">
+                            <div class="w-block" id="block-book-toc">
+                                <h2 class="w-block-title">Содержание</h2>
+                                <div class="w-block-content">
 
-                    <section class="w-region w-region-sidebar-toc">
-                        <div class="w-block" id="block-book-toc">
-                            <h2 class="w-block-title">Содержание</h2>
-                            <div class="w-block-content">
+                                    <ul class="w-block-menu list-unstyled">
+                                        <li>
+                                            <a href="../index.html">Начало
+                                                работы с Bootstrap</a>
 
-                                <ul class="w-block-menu list-unstyled">
-                                    <li>
-                                        <a href="../index.html">Начало
-                                            работы с Bootstrap</a>
+                                        </li>
+                                        <li>
+                                            <a href="bootstrap_containers" hreflang="ru" class="is-active">Контейнеры
+                                                Bootstrap 5</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="bootstrap_containers" hreflang="ru" class="is-active">Контейнеры
-                                            Bootstrap 5</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_grid_system" hreflang="ru">Система
+                                                сеток Bootstrap 5</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_grid_system" hreflang="ru">Система
-                                            сеток
-                                            Bootstrap 5</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_typography" hreflang="ru">Типографика
+                                                в
+                                                Bootstrap 5</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_typography" hreflang="ru">Типографика
-                                            в
-                                            Bootstrap 5</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_tables" hreflang="ru">Таблицы в
+                                                Bootstrap
+                                                5</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_tables" hreflang="ru">Таблицы в
-                                            Bootstrap
-                                            5</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_forms" hreflang="ru">Формы
+                                                в Bootstrap
+                                                5</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_forms" hreflang="ru">Формы
-                                            в Bootstrap
-                                            5</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_buttons" hreflang="ru">Кнопки в
+                                                Bootstrap
+                                                5</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_buttons" hreflang="ru">Кнопки в
-                                            Bootstrap
-                                            5</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_images" hreflang="ru">Изображения в
+                                                Bootstrap 5</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_images" hreflang="ru">Изображения в
-                                            Bootstrap 5</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_dropdowns" hreflang="ru">Выпадающие
+                                                меню</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_dropdowns" hreflang="ru">Выпадающие
-                                            меню</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_button_groups" hreflang="ru">Группа
+                                                кнопок</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_button_groups" hreflang="ru">Группа
-                                            кнопок</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_input_groups" hreflang="ru">Группа
+                                                полей
+                                                ввода</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_input_groups" hreflang="ru">Группа
-                                            полей
-                                            ввода</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_collapse" hreflang="ru">Сворачиваемое
+                                                содержимое</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_collapse" hreflang="ru">Сворачиваемое
-                                            содержимое</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_navs" hreflang="ru">Навигация в
+                                                Bootstrap</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_navs" hreflang="ru">Навигация в
-                                            Bootstrap</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_navbars" hreflang="ru">Панель
+                                                навигации</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_navbars" hreflang="ru">Панель
-                                            навигации</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_breadcrumbs" hreflang="ru">Хлебные
+                                                крошки
+                                                в Bootstrap 5</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_breadcrumbs" hreflang="ru">Хлебные
-                                            крошки
-                                            в Bootstrap 5</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_pagination" hreflang="ru">Пагинация в
+                                                Bootstrap 5</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_pagination" hreflang="ru">Пагинация в
-                                            Bootstrap 5</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_badge" hreflang="ru">Значки в
+                                                Bootstrap
+                                                5</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_badge" hreflang="ru">Значки в
-                                            Bootstrap
-                                            5</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_alerts" hreflang="ru">Уведомления в
+                                                Bootstrap 5</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_alerts" hreflang="ru">Уведомления в
-                                            Bootstrap 5</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_modal" hreflang="ru">Модальные
+                                                окна</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_modal" hreflang="ru">Модальные
-                                            окна</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_progress_bars" hreflang="ru">Прогресс
+                                                в
+                                                Bootstrap 5</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_progress_bars" hreflang="ru">Прогресс
-                                            в
-                                            Bootstrap 5</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_list_groups" hreflang="ru">Группы
+                                                списков</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_list_groups" hreflang="ru">Группы
-                                            списков</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_cards" hreflang="ru">Карточки в
+                                                Bootstrap
+                                                5</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_cards" hreflang="ru">Карточки в
-                                            Bootstrap
-                                            5</a>
+                                        </li>
+                                        <li>
+                                            <a href="/layout/bootstrap5/bootstrap_carousel" hreflang="ru">Карусель в
+                                                Bootstrap 5</a>
 
-                                    </li>
-                                    <li>
-                                        <a href="/layout/bootstrap5/bootstrap_carousel" hreflang="ru">Карусель в
-                                            Bootstrap 5</a>
-
-                                    </li>
-                                </ul>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </div>
-
-
-                    </section>
-
-                </aside>
-
-            </div>
-    </div>
-    </main>
-
-
-
-    <div class="container">
-        <div class="row">
-            <div class="col-6">
-                <div class="w3-clear nextprev">
-                    <a class="w3-left w3-btn" href="../index.html">&#10094; &#10094; &#10094; Предыдущий</a>
+                        </section>
                 </div>
-            </div>
-            <div class="col">
-                <div class="w3-clear nextprev">
-                    <a class="w3-right w3-btn" href="#">Следующий
-                        &#10095; &#10095; &#10095;</a>
-                </div>
-            </div>
 
-        </div>
-    </div>
+                </section>
+
+
+        </main>
 
 
 
-
-    <footer>
-        <div class="container container_text v1">
+        <div class="container">
             <div class="row">
+                <div class="col-6">
+                    <div class="w3-clear nextprev">
+                        <a class="w3-left w3-btn" href="../index.html">&#10094; &#10094; &#10094; Предыдущий</a>
+                    </div>
+                </div>
                 <div class="col">
-                    <p>© 2026 Copyright: VViller</p>
+                    <div class="w3-clear nextprev">
+                        <a class="w3-right w3-btn" href="#">Следующий
+                            &#10095; &#10095; &#10095;</a>
+                    </div>
                 </div>
 
-                <div class="col">
-                    <p>02.01.2026</p>
-                </div>
             </div>
         </div>
-    </footer>
+
+
+
+
+        <footer>
+            <div class="container container_text v1">
+                <div class="row">
+                    <div class="col">
+                        <p>© 2026 Copyright: VViller</p>
+                    </div>
+
+                    <div class="col">
+                        <p>02.01.2026</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
 
