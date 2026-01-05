@@ -48,6 +48,17 @@
 .v5 {
   background-color: #323280;
 }
+
+.vv1 {
+  color: slategray;
+}
+.vv2 {
+  color: #905;
+}
+.vv3 {
+  color: #4b8;
+}
+
 .pictures {
   margin: 20px auto;
   padding: 5px;
@@ -178,6 +189,25 @@ table.ws-table-all {
 .ws-table-all tr {
   border-bottom: 1px solid #ddd;
 }
+
+.w3-cell-row:before,
+.w3-cell-row:after,
+.w3-clear:after,
+.w3-clear:before,
+.w3-bar:before,
+.w3-bar:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.w3-padding-16 {
+  padding-top: 16px !important;
+  padding-bottom: 16px !important;
+}
+.w3-padding-24 {
+  padding-top: 24px !important;
+  padding-bottom: 24px !important;
+}
 /*  */
 .masthead {
   position: -webkit-sticky;
@@ -304,4 +334,48 @@ table.ws-table-all {
 span {
   color: #f14040;
   font-style: italic;
+}
+table.grid {
+  width: 100%;
+  border: none;
+  background-color: #d6e3f0;
+  padding: 0px;
+}
+table.grid tr {
+  text-align: center;
+}
+table.grid td {
+  border: 3px solid rgb(175, 208, 247);
+  padding: 8px;
+}
+.test [class*="col-"] {
+  padding: 15px;
+  background-color: #e7e9eb;
+  border: 1px solid #e3e6e8;
+}
+.ws-grey {
+  background-color: #e7e9eb !important;
+  color: black !important;
+}
+.ws-green {
+  background-color: #04aa6d !important;
+  color: white !important;
+}
+.ws-black {
+  background-color: #282a35 !important;
+  color: white !important;
+}
+.w3-codespan {
+  color: crimson;
+  background-color: #f1f1f1;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 110%;
+}
+.w3-codespan1 {
+  color: #f1f1f1;
+  background-color: crimson;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 110%;
 }

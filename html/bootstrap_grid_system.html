@@ -179,7 +179,7 @@
                                 </p>
 
                                 <div class="w3-responsive">
-                                    <table class="table grid">
+                                    <table class="table table-bordered grid">
                                         <tbody>
                                             <tr>
                                                 <td>span 1</td>
@@ -225,17 +225,853 @@
                                     </table>
                                 </div>
 
+                                <p>Система сеток адаптивна, и расположение столбцов будет автоматически меняться в
+                                    зависимости от размера экрана. <br>
+                                    <br>
+                                    Убедитесь, что сумма не превышает 12 (не обязательно использовать все 12 доступных
+                                    столбцов).
+                                </p>
+
+                                <h3>Классы сетки</h3>
+
+                                <ul>
+                                    <li><span>.col</span> - (очень маленькие устройства — ширина экрана менее 576
+                                        пикселей)</li>
+                                    <li><span>.col-sm</span> - (маленькие устройства — ширина экрана равна или больше
+                                        576 пикселей)</li>
+                                    <li><span>.col-md</span> - (средние устройства — ширина экрана равна или больше 768
+                                        пикселей)</li>
+                                    <li><span>.col-lg</span> - (большие устройства — ширина экрана равна или больше 992
+                                        пикселей)</li>
+                                    <li><span>.col-xl</span> - (очень большие устройства — ширина экрана равна или
+                                        больше 1200 пикселей)</li>
+                                    <li><span>.col-xxl</span> - (очень большие устройства — ширина экрана равна или
+                                        больше 1400 пикселей)</li>
+                                </ul>
+
+                                <p>Приведённые выше классы можно комбинировать для создания более динамичных и гибких
+                                    макетов. <br>
+                                    <br>
+                                    <strong>Совет:</strong> каждый класс масштабируется, поэтому, если вы хотите
+                                    установить одинаковую ширину для <span> sm и md,</span> вам нужно указать
+                                    только <span>sm.</span>
+                                </p>
+
+                                <h3>Базовая структура сетки Bootstrap 5</h3>
+
+                                <p>Ниже представлена базовая структура сетки Bootstrap 5:</p>
+
+                                <div class="w3-example">
+                                    <h3>Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <span class="commentcolor" style="color:slategray">&lt;!-- Управляйте шириной
+                                            столбцов и тем, как они должны
+                                            отображаться на разных устройствах -&gt;</span><br><span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green">
+                                                class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="row"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">div</span> class<span class="attributecolor"
+                                                style="color:green"><span class="attributevaluecolor"
+                                                    style="color:#005cc5"></span></span><span class="tagcolor"
+                                                style="color:#999"></span></span><span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor" style="color:#999">
+                                                class</span><span class="tagcolor"
+                                                style="color:#999">="col-*-*"</span></span><br>&nbsp;
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999"></span>&lt;<span class="attributecolor"
+                                                style="color:green">/div<span class="attributevaluecolor"
+                                                    style="color:#005cc5"></span></span><span class="tagcolor"
+                                                style="color:#999">&lt;</span></span><span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor"
+                                                style="color:#999">/div</span><span class="tagcolor"
+                                                style="color:#999"></span></span><br><span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor" style="color:#999">
+                                                class</span><span class="tagcolor"
+                                                style="color:#999"></span></span><br><span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor" style="color:#999"></span><span
+                                                class="attributecolor" style="color:green"><span
+                                                    class="attributevaluecolor"
+                                                    style="color:#005cc5">="row"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green">
+                                                class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="col-*-*"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="tagcolor"
+                                                style="color:#999"> class</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&gt;</span><span class="attributecolor"
+                                                style="color:green"><span class="attributevaluecolor"
+                                                    style="color:#005cc5">div</span></span><span class="tagcolor"
+                                                style="color:#999"></span></span><span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor" style="color:#999"></span><span
+                                                class="tagcolor" style="color:#999"></span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999"></span><span class="attributecolor"
+                                                style="color:green">&lt;<span class="attributevaluecolor"
+                                                    style="color:#005cc5">&gt;</span></span><span class="tagcolor"
+                                                style="color:#999"></span></span><span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor"
+                                                style="color:#999">/div</span><span class="tagcolor"
+                                                style="color:#999">/div</span></span><br><span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor"
+                                                style="color:#999">/div</span><span class="tagcolor"
+                                                style="color:#999">/div</span></span><br>
+                                        <br><span class="commentcolor" style="color:slategray">&lt;!-- Или пусть
+                                            Bootstrap автоматически обрабатывает
+                                            макет -&gt;</span><br><span class="tagnamecolor" style="color:#905"><span
+                                                class="tagcolor" style="color:#999">&lt;</span>div<span
+                                                class="attributecolor" style="color:green"> class<span
+                                                    class="attributevaluecolor"
+                                                    style="color:#005cc5">="row"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green">
+                                                class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="col"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor" style="color:#999">div</span>
+                                            class<span class="tagcolor" style="color:#999"></span></span><br>&nbsp;
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999"></span><span class="attributecolor"
+                                                style="color:green">&lt;<span class="attributevaluecolor"
+                                                    style="color:#005cc5"> class</span></span><span class="tagcolor"
+                                                style="color:#999">="col"</span></span><span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor"
+                                                style="color:#999"></span>&lt;<span class="tagcolor"
+                                                style="color:#999">/div</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999"></span><span class="attributecolor"
+                                                style="color:green"><span class="attributevaluecolor"
+                                                    style="color:#005cc5"></span></span><span class="tagcolor"
+                                                style="color:#999"></span></span><span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor" style="color:#999"></span><span
+                                                class="tagcolor" style="color:#999"></span></span><br><span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>
+                                    </div>
+                                    <a></a> end</a>
+                                </div>
+
+                                <p>Первый пример: создайте строку (
+                                    <span>&lt;div class="row" &gt;</span>). Затем добавьте нужное количество столбцов
+                                    (теги с
+                                    соответствующими
+                                    классами <span> .col-*-*</span>). Первая звездочка (*) обозначает адаптивность: sm,
+                                    md, lg, xl или
+                                    xxl, а вторая звездочка
+                                    обозначает число, которое для каждой строки должно в сумме давать 12. <br>
+                                    <br>
+                                    Второй пример: вместо того чтобы добавлять число к каждому <span>col</span>,
+                                    позвольте Bootstrap
+                                    управлять макетом, чтобы создать
+                                    столбцы одинаковой ширины: два элемента "col" = 50 % ширины каждого столбца, три
+                                    столбца = 33,33 % ширины каждого
+                                    столбца. Четыре столбца = 25 % ширины и т. д. Вы также можете использовать
+                                    <span> .col-sm|md|lg|xl|xxl</span> для создания
+                                    адаптивных столбцов. <br>
+                                    <br>
+                                    Ниже мы собрали несколько примеров базовых сеточных макетов Bootstrap 5.
+                                </p>
+
+                                <h3>Три Равные колонки</h3>
+
+                                <p>В следующем примере показано, как создать три столбца одинаковой ширины для всех
+                                    устройств и размеров экрана:</p>
+
+                                <div class="w3-example">
+                                    <h3>Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green"> class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="row"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green">
+                                                class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="col"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>.col<span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green">
+                                                class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="col"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>.col<span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green">
+                                                class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="col"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>.col<span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br><span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>
+                                    </div>
+                                    <i class="w3-btn w3-margin-bottom">end</i>
+                                </div>
+
+                                <div class="row test border-dark">
+                                    <div class="col-4 ws-grey">.col</div>
+                                    <div class="col-4 ws-green">.col</div>
+                                    <div class="col-4 ws-grey">.col</div>
+                                </div>
+                                <br>
+                                <hr>
+                                <h3>Адаптивные столбцы</h3>
+
+                                <p>В следующем примере показано, как создать четыре столбца одинаковой ширины, начиная с
+                                    планшетов и заканчивая очень
+                                    большими настольными компьютерами. <strong>На мобильных телефонах или экранах
+                                        шириной менее 576 пикселей столбцы будут
+                                        автоматически накладываться друг на друга</strong>:</p>
+
+
+                                <div class="w3-example">
+                                    <h3>Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green"> class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="col-sm-3"</span></span><span
+                                                class="tagcolor" style="color:#999">&gt;</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green">
+                                                class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="row"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>.col-sm-3<span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor" style="color:#999"></span><span
+                                                class="tagcolor" style="color:#999"></span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999"></span>div<span class="attributecolor"
+                                                style="color:green"><span class="attributevaluecolor"
+                                                    style="color:#005cc5"></span></span><span class="tagcolor"
+                                                style="color:#999"></span></span>.col-sm-3<span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor" style="color:#999"></span><span
+                                                class="tagcolor" style="color:#999"></span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999"></span><span class="attributecolor"
+                                                style="color:green"><span class="attributevaluecolor"
+                                                    style="color:#005cc5"></span></span><span class="tagcolor"
+                                                style="color:#999"> </span></span>.col-sm-3<span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp;
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green"> class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="col-sm-3"</span></span><span
+                                                class="tagcolor" style="color:#999">&gt;</span></span>.col-sm-3<span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br><span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>
+                                    </div>
+                                    <a class="w3-btn w3-margin-bottom">end</a>
+                                </div>
+
+                                <div class="row test">
+                                    <div class="col-sm-3 ws-grey">.col-sm-3</div>
+                                    <div class="col-sm-3 ws-green">.col-sm-3</div>
+                                    <div class="col-sm-3 ws-grey">.col-sm-3</div>
+                                    <div class="col-sm-3 ws-green">.col-sm-3</div>
+                                </div>
+                                <hr>
+
+                                <h3>Две неравные адаптивные колонки</h3>
+
+                                <p>В следующем примере показано, как создать два столбца разной ширины, которые
+                                    начинаются с размера планшета и расширяются
+                                    до размера большого дополнительного рабочего стола:</p>
+
+                                <div class="w3-example">
+                                    <h3>Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green"> class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="col-sm-4"</span></span><span
+                                                class="tagcolor" style="color:#999">&gt;</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green">
+                                                class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="row"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>.col-sm-4<span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green">
+                                                class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="col-sm-8"</span></span><span
+                                                class="tagcolor" style="color:#999">&gt;</span></span>.col-sm-8<span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br><span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>
+                                    </div>
+                                    <i class="w3-btn w3-margin-bottom">end.</i>
+                                </div>
+
+
+                                <div class="row test">
+                                    <div class="col-sm-4 ws-grey">.col-sm-4</div>
+                                    <div class="col-sm-8 ws-green">.col-sm-8</div>
+                                </div>
+                                <br>
+                                <hr>
+                                <h3>Сетка, расположенная горизонтально</h3>
+
+                                <p>Давайте создадим базовую систему сеток, которая на очень маленьких устройствах будет
+                                    вертикальной, а на больших —
+                                    горизонтальной. <br>
+                                    <br>
+                                    В следующем примере показан простой макет с двумя столбцами в режиме
+                                    «свёрнуто-горизонтально». Это означает, что на всех
+                                    экранах, кроме самых маленьких, будет происходить разделение на 50 %/50 %, а на
+                                    самых маленьких экранах макет будет
+                                    автоматически свёрнут (100 %):
+                                </p>
+                                <div class="w3-example">
+                                    <h3>Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green"> class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="container-fluid"</span></span><span
+                                                class="tagcolor" style="color:#999">&gt;</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green">
+                                                class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="row"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>
+                                        &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:#905"><span
+                                                class="tagcolor" style="color:#999">&lt;</span>div<span
+                                                class="attributecolor" style="color:green"> class<span
+                                                    class="attributevaluecolor" style="color:#005cc5">="col-sm-6
+                                                    bg-primary"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>p<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>Lorem ipsum...<span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/p<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>
+                                        &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:#905"><span
+                                                class="tagcolor" style="color:#999">&lt;</span>div<span
+                                                class="attributecolor" style="color:green"> class<span
+                                                    class="attributevaluecolor" style="color:#005cc5">="col-sm-6
+                                                    bg-dark"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>p<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>Sed ut perspiciatis...<span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/p<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>
+                                    </div>
+                                    <i>end</i>
+                                </div>
+
+
+                                <div class="row">
+                                    <div class="col-sm-6 w3-padding-16 bg-primary text-white container">
+                                        col-sm-6
+                                    </div>
+                                    <div class="col-sm-6 w3-padding-16 bg-dark text-white container">
+                                        col-sm-6
+                                    </div>
+                                </div>
+                                <div class="w3-panel ws-note">
+                                    <p style="margin-bottom:8px;"><strong>Совет:</strong> Цифры в <code
+                                            class="w3-codespan">.col-sm-*</code> классах
+                                        указывают, на сколько столбцов должен приходиться блок (из 12). Таким образом,
+                                        <code class="w3-codespan">.col-sm-1</code> занимает 1 столбец, <code
+                                            class="w3-codespan">.col-sm-4</code> — 4
+                                        столбца, <code class="w3-codespan">.col-sm-6</code> — 6 столбцов и т.
+                                        д.<br><br><strong>Примечание:</strong>
+                                        убедитесь, что сумма не превышает 12 (не обязательно использовать все 12
+                                        доступных столбцов):
+                                    </p>
+                                </div>
+
+                                <h3>Автоматические столбцы макета</h3>
+
+                                <p> В Bootstrap 5 есть простой способ создать столбцы одинаковой ширины для всех
+                                    устройств: просто уберите число из
+                                    <code class="w3-codespan">.col-<em>size</em>-*</code> и используйте класс <code
+                                        class="w3-codespan">.col-<em>size</em></code> только для определенного
+                                    количества <strong>элементов
+                                        col</strong>. Bootstrap определит количество столбцов, и каждый из них будет
+                                    иметь одинаковую ширину. Классы
+                                    <em>size</em> (sm, md и т. д.) определяют, <strong>когда</strong> столбцы должны
+                                    быть адаптивными.
+                                </p>
+
+                                <div class="w3-example">
+                                    <h3>Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+
+                                        &lt;div class="w3-white w3-padding"&gt; <br>
+                                        &nbsp;&nbsp;&lt;div class="row w3-padding"&gt;<br>
+                                        &nbsp;&nbsp;&lt;div class="col w3-padding-16 bg-primary text-white
+                                        container"&gt; 1 из 2 &lt;/div&gt;<br>
+                                        &nbsp;&nbsp;&lt;div class="col w3-padding-16 bg-dark text-white container"&gt; 2
+                                        из 2
+                                        &nbsp;&lt;/div&gt;<br>
+                                        &nbsp;&lt;/div&gt;<br>
+                                        <br>
+                                        &nbsp;&lt;div class="row w3-padding"&gt;<br>
+                                        &nbsp;&nbsp;&lt;div class="col w3-padding-16 bg-primary text-white
+                                        container"&gt; 1 из
+                                        4
+                                        &nbsp;&nbsp;&lt;/div&gt;<br>
+                                        &nbsp;&nbsp;&lt;div class="col w3-padding-16 bg-dark text-white container"&gt; 2
+                                        из 4
+                                        &nbsp;&nbsp;&lt;/div&gt;<br>
+                                        &nbsp;&nbsp;&lt;div class="col w3-padding-16 bg-primary text-white
+                                        container"&gt; 3 из
+                                        4
+                                        &nbsp;&nbsp;&lt;/div&gt;<br>
+                                        &nbsp;&nbsp;&lt;div class="col w3-padding-16 bg-dark text-white container"&gt; 4
+                                        из 4
+                                        &nbsp;&nbsp;&lt;/div&gt;<br>
+                                        &nbsp;&lt;/div&gt;<br>
+                                        &lt;/div&gt;
+
+                                    </div>
+                                    <i>end</i>
+                                </div>
 
 
 
 
+                                <div class="w3-white w3-padding">
+                                    <div class="row w3-padding">
+                                        <div class="col w3-padding-16 bg-primary text-white container"> 1 из 2
+                                        </div>
+                                        <div class="col w3-padding-16 bg-dark text-white container"> 2 из 2
+                                        </div>
+                                    </div>
+
+                                    <div class="row w3-padding">
+                                        <div class="col w3-padding-16 bg-primary text-white container"> 1 из 4
+                                        </div>
+                                        <div class="col w3-padding-16 bg-dark text-white container"> 2 из 4
+                                        </div>
+                                        <div class="col w3-padding-16 bg-primary text-white container"> 3 из 4
+                                        </div>
+                                        <div class="col w3-padding-16 bg-dark text-white container"> 4 из 4
+                                        </div>
+                                    </div>
+                                </div>
+                                <br>
+
+                                <h3>Сетка Extra Small</h3>
+
+                                <div class="table-responsive" style="margin:11px 0">
+                                    <table class="ws-table-all table-bordered notranslate">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:18%;">&nbsp;</th>
+                                                <th class="ws-black" style="width:17%;">XSmall</th>
+                                                <th style="width:16%;">Маленький</th>
+                                                <th style="width:16%;">Средний</th>
+                                                <th style="width:16%;">Большой</th>
+                                                <th style="width:16%;">Очень Большой</th>
+                                                <th style="width:16%;">XXL</th>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Префикс класса</strong></td>
+                                                <td class="ws-black"><code class="w3-codespan1">.col-</code></td>
+                                                <td><code class="w3-codespan">.col-sm-</code></td>
+                                                <td><code class="w3-codespan">.col-md-</code></td>
+                                                <td><code class="w3-codespan">.col-lg-</code></td>
+                                                <td><code class="w3-codespan">.col-xl-</code></td>
+                                                <td><code class="w3-codespan">.col-xxl-</code></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Ширина экрана</strong></td>
+                                                <td class="ws-black">&lt;576 px</td>
+                                                <td>&gt;=576 px</td>
+                                                <td>&gt;=768 px</td>
+                                                <td>&gt;=992 px</td>
+                                                <td>&gt;=1200 px</td>
+                                                <td>&gt;=1400 px</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <p>Предположим, у нас есть простая вёрстка с двумя столбцами. Мы хотим, чтобы столбцы
+                                    были разделены на 25 % и 75 % для <strong>ВСЕХ</strong> устройств.</p>
+
+                                <div class="w3-example">
+                                    <h3>Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green"> class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="col-3"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>....<span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green"> class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="col-9"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>....<span class="tagnamecolor"
+                                            style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>
+                                    </div>
+                                    <i>end</i>
+                                </div>
+                                <p>В следующем примере будет выполнено разделение 25%/75% для всех устройств (очень
+                                    маленьких, маленьких, средних, больших, очень больших и гигантских).</p>
+
+                                <div class="row">
+                                    <div class="col-3 w3-padding-16 bg-primary text-white p-3"> col-3 </div>
+                                    <div class="col-9 w3-padding-16 bg-dark text-white p-3"> col-9 </div>
+                                </div>
+
+                                <div class="w3-example">
+                                    <h3>Example</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green"> class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="container-fluid"</span></span><span
+                                                class="tagcolor" style="color:#999">&gt;</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green">
+                                                class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="row"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>
+                                        &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:#905"><span
+                                                class="tagcolor" style="color:#999">&lt;</span>div<span
+                                                class="attributecolor" style="color:green"> class<span
+                                                    class="attributevaluecolor" style="color:#005cc5">="col-3
+                                                    bg-primary"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>p<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>Lorem ipsum...<span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/p<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>
+                                        &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:#905"><span
+                                                class="tagcolor" style="color:#999">&lt;</span>div<span
+                                                class="attributecolor" style="color:green"> class<span
+                                                    class="attributevaluecolor" style="color:#005cc5">="col-9
+                                                    bg-dark"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>p<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>Sed ut perspiciatis...<span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/p<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>
+                                    </div>
+                                    <i class="w3-btn w3-margin-bottom">end</i>
+                                </div>
 
 
+                                <div class="w3-panel ws-note">
+                                    <p style="margin-bottom:8px"><strong>Примечание:</strong> убедитесь, что сумма не
+                                        превышает 12 (не обязательно использовать все 12 доступных столбцов):</p>
+                                </div>
 
+                                <p>Для соотношения 33,3 % / 66,6 % используйте <code class="w3-codespan">.col-4</code> и
+                                    <code class="w3-codespan">.col-8</code> (а для соотношения 50 % / 50 % используйте
+                                    <code class="w3-codespan">.col-6</code> и <code class="w3-codespan">.col-6</code>):
+                                </p>
 
+                                <div class="row">
+                                    <div class="col-4 w3-padding-16 bg-primary text-white p-3"> кол-4 </div>
+                                    <div class="col-8 w3-padding-16 bg-dark text-white p-3"> col-8 </div>
+                                </div>
+                                <br>
 
+                                <div class="row">
+                                    <div class="col-6 w3-padding-16 bg-primary text-white p-3"> кол-6 </div>
+                                    <div class="col-6 w3-padding-16 bg-dark text-white p-3"> кол-6 </div>
+                                </div>
 
+                                <div class="w3-example">
+                                    <h3>Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <span class="commentcolor" style="color:slategray">&lt;!-- 33.3%/66.6% split
+                                            --&gt;</span><br><span class="tagnamecolor" style="color:#905"><span
+                                                class="tagcolor" style="color:#999">&lt;</span>div<span
+                                                class="attributecolor" style="color:green"> class<span
+                                                    class="attributevaluecolor"
+                                                    style="color:#005cc5">="container-fluid"</span></span><span
+                                                class="tagcolor" style="color:#999">&gt;</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green">
+                                                class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="row"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>
+                                        &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:#905"><span
+                                                class="tagcolor" style="color:#999">&lt;</span><span
+                                                class="attributecolor" style="color:green"><span
+                                                    class="attributevaluecolor"
+                                                    style="color:#005cc5"></span></span><span class="tagcolor"
+                                                style="color:#999"></span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span> <span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>Lorem ipsum...<span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/p<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>
+                                        &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:#905"><span
+                                                class="tagcolor" style="color:#999">&lt;</span>div<span
+                                                class="attributecolor" style="color:green"> class<span
+                                                    class="attributevaluecolor" style="color:#005cc5">="col-8
+                                                    bg-dark"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>p<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>Sed ut perspiciatis...<span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/p<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999"></span><span class="tagcolor"
+                                                style="color:#999"></span></span><br><br><span class="commentcolor"
+                                            style="color:slategray">&lt;!-- 50%/50% split --&gt;</span><br><span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green"> class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="container-fluid"</span></span><span
+                                                class="tagcolor" style="color:#999">&gt;</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>div<span class="attributecolor"
+                                                style="color:green">
+                                                class<span class="attributevaluecolor"
+                                                    style="color:#005cc5">="row"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>
+                                        &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:#905"><span
+                                                class="tagcolor" style="color:#999">&lt;</span>div<span
+                                                class="attributecolor" style="color:green"> class<span
+                                                    class="attributevaluecolor" style="color:#005cc5">="col-6
+                                                    bg-primary"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>p<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>Lorem ipsum...<span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/p<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>
+                                        &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:#905"><span
+                                                class="tagcolor" style="color:#999">&lt;</span>div<span
+                                                class="attributecolor" style="color:green"> class<span
+                                                    class="attributevaluecolor" style="color:#005cc5">="col-6
+                                                    bg-dark"</span></span><span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>p<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>Sed ut perspiciatis...<span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/p<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>&nbsp; <span
+                                            class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span><br>
+                                        <span class="tagnamecolor" style="color:#905"><span class="tagcolor"
+                                                style="color:#999">&lt;</span>/div<span class="tagcolor"
+                                                style="color:#999">&gt;</span></span>
+                                    </div>
+                                    <i class="w3-btn w3-margin-bottom">end</i>
+                                </div>
 
+                                <hr>
+
+                                <h3>Автоматические столбцы макета</h3>
+
+                                <p> В Bootstrap 5 есть простой способ создать <strong>столбцы одинаковой ширины</strong>
+                                    для всех устройств: просто
+                                    уберите число из <code class="w3-codespan">.col-*</code> и используйте класс <code
+                                        class="w3-codespan">.col</code>
+                                    только для определённого количества <strong>элементов col</strong>. Bootstrap
+                                    определит количество столбцов, и
+                                    каждый из них получит одинаковую ширину.</p>
+
+                                <div class="w3-example">
+                                    <h3>Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+
+                                        <span class="vv1">&lt; div</span><span class="vv2"> class</span><span
+                                            class="vv3">="row"</span><span class="vv1">&gt;</span><br>
+
+                                        &nbsp;<span class="vv1">&lt;!— Два столбца: ширина 50 % —&gt;</span><br>
+
+                                        &nbsp;<span class="vv1">&lt; div </span> <span class="vv2"> class</span><span
+                                            class="vv3">="col"</span><span class="vv1">&gt;</span>1 из 2<span
+                                            class="vv1">&lt;/div&gt;</span><br>
+
+                                        &nbsp;<span class="vv1">&lt; div </span> <span class="vv2"> class</span><span
+                                            class="vv3">="col"</span><span class="vv1">&gt;</span>2 из 2<span
+                                            class="vv1">&lt;/div&gt;</span><br>
+                                        <span class="vv1">&lt;/div&gt;</span>
+                                        <br>
+
+                                        <span class="vv1">&lt; div</span><span class="vv2"> class</span><span
+                                            class="vv3">="row"</span><span class="vv1">&gt;</span><br>
+
+                                        &nbsp;<span class="vv1">&lt;!— Четыре столбца: ширина 25% —&gt;</span><br>
+
+                                        &nbsp;<span class="vv1">&lt; div </span> <span class="vv2"> class</span><span
+                                            class="vv3">="col"</span><span class="vv1">&gt;</span>1 из 4<span
+                                            class="vv1">&lt;/div&gt;</span><br>
+
+                                        &nbsp;<span class="vv1">&lt; div </span> <span class="vv2"> class</span><span
+                                            class="vv3">="col"</span><span class="vv1">&gt;</span>2 из 4<span
+                                            class="vv1">&lt;/div&gt;</span><br>
+
+                                        &nbsp;<span class="vv1">&lt; div </span> <span class="vv2"> class</span><span
+                                            class="vv3">="col"</span><span class="vv1">&gt;</span>3 из 4<span
+                                            class="vv1">&lt;/div&gt;</span><br>
+
+                                        &nbsp;<span class="vv1">&lt; div </span> <span class="vv2"> class</span><span
+                                            class="vv3">="col"</span><span class="vv1">&gt;</span>4 из 4<span
+                                            class="vv1">&lt;/div&gt;</span><br>
+                                        <span class="vv1">&lt;/div&gt;</span>
+                                    </div>
+                                    <i class="w3-btn w3-margin-top w3-margin-bottom">end</i>
+                                </div>
+
+                                <div class="w3-white w3-padding">
+                                    <div class="row">
+                                        <div class="col w3-padding-16 bg-primary text-white p-3"> 1 из 2 </div>
+                                        <div class="col w3-padding-16 bg-dark text-white p-3"> 2 из 2 </div>
+                                    </div>
+                                    <br>
+
+                                    <div class="row">
+                                        <div class="col w3-padding-16 bg-primary text-white p-3"> 1 из 4 </div>
+                                        <div class="col w3-padding-16 bg-dark text-white p-3"> 2 из 4 </div>
+                                        <div class="col w3-padding-16 bg-primary text-white p-3"> 3 из 4 </div>
+                                        <div class="col w3-padding-16 bg-dark text-white p-3"> 4 из 4 </div>
+                                    </div>
+                                </div>
+                                <br>
+                                <hr>
+                                <h3>Сетка Small</h3>
+                                <div class="table-responsive" style="margin:11px 0">
+                                    <table class="ws-table-all table-bordered notranslate">
+                                        <tbody>
+                                            <tr>
+                                                <th style="width:18%;">&nbsp;</th>
+                                                <th style="width:17%;">XSmall</th>
+                                                <th class="ws-black" style="width:16%;">Маленький</th>
+                                                <th style="width:16%;">Средний</th>
+                                                <th style="width:16%;">Большой</th>
+                                                <th style="width:16%;">Очень Большой</th>
+                                                <th style="width:16%;">XXL</th>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Префикс класса</strong></td>
+                                                <td><code class="w3-codespan">.col-</code></td>
+                                                <td class="ws-black"><code class="w3-codespan1  w3-red">.col-sm-</code>
+                                                </td>
+                                                <td><code class="w3-codespan">.col-md-</code></td>
+                                                <td><code class="w3-codespan">.col-lg-</code></td>
+                                                <td><code class="w3-codespan">.col-xl-</code></td>
+                                                <td><code class="w3-codespan">.col-xxl-</code></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Ширина экрана</strong></td>
+                                                <td>&lt;576 пикселей</td>
+                                                <td class="ws-black">&gt;=576 пикселей</td>
+                                                <td>&gt;=768 пикселей</td>
+                                                <td>&gt;=992 пикселя</td>
+                                                <td>&gt;=1200 пикселей</td>
+                                                <td>&gt;=1400 пикселей</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <p>Предположим, у нас есть простая вёрстка с двумя столбцами. Мы хотим, чтобы на
+                                    небольших устройствах столбцы были
+                                    разделены в соотношении 25%/75%.</p>
+
+                                <div class="ws-note w3-panel">
+                                    <p style="margin-bottom:8px"> К малым устройствам относятся устройства с шириной
+                                        экрана от <strong>576 до 767
+                                            пикселей</strong>.</p>
+                                </div>
 
 
 
