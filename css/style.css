@@ -379,11 +379,3 @@ table.grid td {
   padding-right: 4px;
   font-size: 110%;
 }
-table {
-  table-layout: fixed;
-  width: 100%;
-}
-td,
-th {
-  width: 2%;
-}
