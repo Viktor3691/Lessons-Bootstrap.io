@@ -49,7 +49,19 @@
   background-color: #323280;
 }
 
-.test-blu {
+pre {
+  vv1 {
+    color: rgb(8, 115, 223);
+  }
+  vv2 {
+    color: rgb(66, 198, 238);
+  }
+  vv3 {
+    color: rgb(187, 112, 68);
+  }
+}
+
+.vv1 {
   color: rgb(8, 115, 223);
 }
 .vv2 {

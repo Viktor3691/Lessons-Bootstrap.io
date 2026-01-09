@@ -164,15 +164,244 @@
                                     </div>
 
                                 </div>
-                            </div>
+                            </div><!--container -->
+
 
                             <section id="w-main">
-                                <h3>Основной текст</h3>
+                                <h3>Работа с типографикой в Bootstrap</h3>
+
+                                <img src="../img/typography-dcdc1b86-1000w.webp" alt="typography" class="pictures">
+
+                                <p> В Bootstrap 5 по умолчанию используется значение <code
+                                        class="w3-codespan">font-size</code> в 1rem (по умолчанию 16
+                                    пикселей), а значение <code class="w3-codespan">line-height</code> равно 1,5.</p>
+                                <p> Кроме того, все <code class="w3-codespan">&lt;p&gt;</code> элементы имеют значения
+                                    <code class="w3-codespan">margin-top: 0</code> и <code
+                                        class="w3-codespan">margin-bottom: 1rem</code> (по умолчанию 16
+                                    пикселей).
+                                </p>
+                                <hr>
+
+                                <h2>&lt;h1&gt; — &lt;h6&gt;</h2>
+
+                                <p> Заголовки HTML в Bootstrap 5 (от <code class="w3-codespan">&lt;h1&gt;</code> до
+                                    <code class="w3-codespan">&lt;h6&gt;</code>) с более жирным шрифтом и адаптивным
+                                    размером шрифта.
+                                </p>
+
+                                <div class="w3-example">
+                                    <h3>Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;h1&gt;h1 Bootstrap heading&lt;/h1&gt;
+&lt;h2&gt;h2 Bootstrap heading&lt;/h2&gt;
+&lt;h3&gt;h3 Bootstrap heading&lt;/h3&gt;
+&lt;h4&gt;h4 Bootstrap heading&lt;/h4&gt;
+&lt;h5&gt;h5 Bootstrap heading&lt;/h5&gt;
+&lt;h6&gt;h6 Bootstrap heading&lt;/h6&gt;
+
+<h1>h1 Bootstrap heading</h1>
+<h2>h2 Bootstrap heading</h2>
+<h3>h3 Bootstrap heading</h3>
+<h4>h4 Bootstrap heading</h4>
+<h5>h5 Bootstrap heading</h5>
+<h6>h6 Bootstrap heading</h6>
+</pre>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <p>Вы также можете использовать <code class="w3-codespan">.h1</code> для <code
+                                        class="w3-codespan">.h6</code> классов
+                                    других элементов, чтобы они вели себя как заголовки, если хотите:</p>
+
+                                <div class="w3-example">
+                                    <h3>Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;p class="h1">заголовок начальной загрузки h1&lt;/p&gt;
+&lt;p class="h2">заголовок начальной загрузки h2&lt;/p&gt;
+&lt;p class="h3">заголовок начальной загрузки h3&lt;/p&gt;
+&lt;p class="h4">заголовок начальной загрузки h4&lt;/p&gt;
+&lt;p class="h5">заголовок начальной загрузки h5&lt;/p&gt;
+&lt;p class="h6">заголовок начальной загрузки h6&lt;/p&gt;
+
+<p class="h1">заголовок начальной загрузки h1</p>
+<p class="h2">заголовок начальной загрузки h2</p>
+<p class="h3">заголовок начальной загрузки h3</p>
+<p class="h4">заголовок начальной загрузки h4</p>
+<p class="h5">заголовок начальной загрузки h5</p>
+<p class="h6">заголовок начальной загрузки h6</p>
+</pre>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h3>Отображаемые заголовки</h3>
+
+                                <p> Отображаемые заголовки выделяются сильнее, чем обычные (более крупный шрифт и менее
+                                    насыщенная текстура), и на выбор
+                                    предлагается шесть классов: <code class="w3-codespan">.display-1</code> — <code
+                                        class="w3-codespan">.display-6</code>:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="display-1"&gt;.display-1&lt;/div&gt;
+&lt;div class="display-2"&gt;.display-2&lt;/div&gt;
+&lt;div class="display-3"&gt;.display-3&lt;/div&gt;
+&lt;div class="display-4"&gt;.display-4&lt;/div&gt;
+&lt;div class="display-5"&gt;.display-5&lt;/div&gt;
+&lt;div class="display-6"&gt;.display-6&lt;/div&gt;
+
+<div class="display-1">.display-1</div>
+<div class="display-2">.display-2</div>
+<div class="display-3">.display-3</div>
+<div class="display-4">.display-4</div>
+<div class="display-5">.display-5</div>
+<div class="display-6">.display-6</div>
+</pre>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h3>
+                                    <h2>&lt;small&gt;</h2>
+                                </h3>
+
+                                <p> В Bootstrap 5 элемент HTML <code class="w3-codespan">&lt;small&gt;</code> (и класс
+                                    <code class="w3-codespan">.small</code> ) используется для создания дополнительного
+                                    текста меньшего размера в любом
+                                    заголовке.
+                                </p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="container mt-3"&gt;
+    &lt;h1>Smaller, Secondary Text&lt;/h1&gt;
+    &lt;p>The small element (and the .small class) is used to
+     create a smaller, secondary text in any heading:&lt;/p&gt;
+    &lt;h1>h1 heading &lt;small&gt;secondary text&lt;/small&gt;&lt;/h1&gt;
+    &lt;h2>h2 heading &lt;small&gt;secondary text&lt;/small&gt;&lt;/h2&gt;
+    &lt;h3>h3 heading &lt;small&gt;secondary text&lt;/small&gt;&lt;/h3&gt;
+    &lt;h4>h4 heading &lt;small&gt;secondary text&lt;/small&gt;&lt;/h4&gt;
+    &lt;h5>h5 heading &lt;small&gt;secondary text&lt;/small&gt;&lt;/h5&gt;
+    &lt;h6>h6 heading &lt;small&gt;secondary text&lt;/small&gt;&lt;/h6&gt;
+&lt;/div&gt;
+
+<h1>h1 heading <small>secondary text</small> </h1>
+<h2>h2 heading <small>secondary text</small> </h2>
+<h3>h3 heading <small>secondary text</small> </h3>
+<h4>h4 heading <small>secondary text</small> </h4>
+<h5>h5 heading <small>secondary text</small> </h5>
+<h6>h6 heading <small>secondary text</small> </h6>
+</pre>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h3 class="h2">&lt;mark&gt;</h3>
+
+                                <p class="">Bootstrap 5 будет стилизовать тег <span>mark</span> и класс <span> .mark
+                                    </span>отступом:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+Используйте элемент mark, чтобы &lt;mark style="background-color:#eff309;padding:.2em;"&gt;выделить&lt;/mark&gt; текст.
+
+Используйте элемент mark, чтобы <mark style="background-color:#eff309;padding:.2em;">выделить</mark> текст.
+</pre>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>&lt;abbr&gt;</h2>
+
+                                <p>Bootstrap 5 стилизует элемент HTML <code class="w3-codespan">&lt;abbr&gt;</code>
+                                    пунктирной нижней границей и
+                                    курсором со знаком вопроса при наведении:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;abbr title="Всемирная Организация здравоохранения"
+style="cursor: help;"&gt;ВОЗ&lt;/abbr&gt; была основана в 1948 году.
+
+<abbr title="Всемирная Организация здравоохранения" style="cursor: help;">ВОЗ</abbr> была основана в 1948 году.
+</pre>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>&lt;blockquote&gt;</h2>
+
+                                <p> Добавьте класс <code class="w3-codespan">.blockquote</code> к <code
+                                        class="w3-codespan">&lt;blockquote&gt;</code>
+                                    при цитировании блоков контента из другого источника. А при указании источника,
+                                    например «с сайта WWF», используйте
+                                    класс <code class="w3-codespan">.blockquote-footer</code>:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="container-fluid mt-2"&gt;
+    &lt;blockquote class="blockquote"&gt;
+&lt;For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization,
+WWF works in 100 countries and is supported by
+1.2 million members in the United States and close to 5
+million globally.
+        &lt;footer class="blockquote-footer">From WWF's website&lt;/footer&gt;
+    &lt;/blockquote&gt;
+&lt;/div&gt;
+<div class="container-fluid mt-2">
+    <blockquote class="blockquote">
+For 50 years, WWF has been protecting the future of nature.
+The world's leading conservation organization, WWF works in 100
+countries and is supported by 1.2 million members in the
+United States and close to 5million globally.
+
+<footer class="blockquote-footer">From WWF's website</footer>
+</blockquote>
+</div>
+</pre>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>&lt;dl&gt;</h2>
+
+                                <p>Bootstrap 5 будет стилизовать элемент HTML <code
+                                        class="w3-codespan">&lt;dl&gt;</code> следующим образом:</p>
+
+
+
+
+
+
+
+
+
+
+
 
 
                             </section>
                         </div>
-                    </div>
+                    </div><!--container_text -->
 
 
                     <aside class=" column is-3-desktop is-12-tablet is-12-mobile w-sidebar" id="w-sidebar">
