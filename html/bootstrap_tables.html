@@ -132,16 +132,12 @@
         <main>
 
             <div class="container">
-
                 <div class="columns">
-
-
-
 
                     <div class="container_text">
                         <div class="w-title">
                             <div class="container">
-                                <h1>Таблицы в Bootstrap 5</h1>
+                                <h1>Bootstrap 5: Таблицы<h1>
                             </div>
                         </div>
                         <div class="column is-9-desktop is-12-tablet is-12-mobile w-content">
@@ -167,7 +163,478 @@
                             </div>
 
                             <section id="w-main">
-                                <h3>Базовая таблица</h3>
+
+                                <h2 style="text-align: justify;">Базовая HTML-таблица</h2>
+
+                                <p>Базовая таблица Bootstrap 5 имеет легкие отступы и горизонтальные разделители.</p>
+                                <p>Класс <code>.table</code> добавляет к таблице базовый стиль:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="container mt-3"&gt;
+    &lt;h2>Basic Table&lt;/h2&gt;
+    &lt;p>The .table class adds basic styling (light padding and horizontal dividers) to a table:&lt;/p&gt;
+    &lt;table class="table"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Firstname&lt;/th&gt;
+                &lt;th&gt;Lastname&lt;/th&gt;
+                &lt;th&gt;Email&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;John&lt;/td&gt;
+                &lt;td&gt;Doe&lt;/td&gt;
+                &lt;td&gt;john@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Mary&lt;/td&gt;
+                &lt;td&gt;Moe&lt;/td&gt;
+                &lt;td>mary@example.com&lt;/td>
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;July&lt;/td&gt;
+                &lt;td&gt;Dooley&lt;/td&gt;
+                &lt;td&gt;july@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;</pre>
+                                        <div class="container mt-3">
+                                            <h2>Basic Table</h2>
+                                            <p>The .table class adds basic styling (light padding and horizontal
+                                                dividers) to a table:</p>
+                                            <table class="table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Firstname</th>
+                                                        <th>Lastname</th>
+                                                        <th>Email</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>John</td>
+                                                        <td>Doe</td>
+                                                        <td>john@example.com</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mary</td>
+                                                        <td>Moe</td>
+                                                        <td>mary@example.com</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>July</td>
+                                                        <td>Dooley</td>
+                                                        <td>july@example.com</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2 style="text-align: justify;">Полосатые ряды</h2>
+
+                                <p>Класс <code>.table-striped</code> добавляет в таблицу полоски зебры:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="container mt-3"&gt;
+    &lt;h2&gt;Striped Rows&lt;/h2&gt;
+    &lt;p>The .table-striped class adds zebra-stripes to a table:&lt;/p&gt;
+    &lt;table class="table table-striped"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th&gt;Firstname&lt;/th&gt;
+                &lt;th&gt;Lastname&lt;/th&gt;
+                &lt;th&gt;Email&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td&gt;John&lt;/td&gt;
+                &lt;td&gt;Doe&lt;/td&gt;
+                &lt;td&gt;john@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td>Mary&lt;/td&gt;
+                &lt;td>Moe&lt;/td&gt;
+                &lt;td&gt;mary@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;July&lt;/td&gt;
+                &lt;td&gt;Dooley&lt;/td&gt;
+                &lt;td&gt;july@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="container mt-3">
+                                            <h2>Striped Rows</h2>
+                                            <p>The .table-striped class adds zebra-stripes to a table:</p>
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Firstname</th>
+                                                        <th>Lastname</th>
+                                                        <th>Email</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>John</td>
+                                                        <td>Doe</td>
+                                                        <td>john@example.com</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mary</td>
+                                                        <td>Moe</td>
+                                                        <td>mary@example.com</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>July</td>
+                                                        <td>Dooley</td>
+                                                        <td>july@example.com</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2 style="text-align: justify;">HTML-таблица с рамкой</h2>
+
+                                <p>Класс <code>.table-bordered</code> добавляет границы со всех сторон таблицы и ячеек:
+                                </p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="container mt-3"&gt;
+    &lt;h2&gt;Bordered Table&lt;/h2&gt;
+    &lt;p&gt;The .table-bordered class adds borders on all sides of the table and the cells:&lt;/p&gt;
+    &lt;table class="table table-bordered"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th>Firstname&lt;/th&gt;
+                &lt;th>Lastname&lt;/th&gt;
+                &lt;th>Email&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td>John&lt;/td&gt;
+                &lt;td>Doe&lt;/td&gt;
+                &lt;td>john@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Mary&lt;/td&gt;
+                &lt;td&gt;Moe&lt;/td&gt;
+                &lt;td&gt;mary@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;July&lt;/td&gt;
+                &lt;td&gt;Dooley&lt;/td&gt;
+                &lt;td&gt;july@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="container mt-3">
+                                            <h2>Bordered Table</h2>
+                                            <p>The .table-bordered class adds borders on all sides of the table and the
+                                                cells:</p>
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Firstname</th>
+                                                        <th>Lastname</th>
+                                                        <th>Email</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>John</td>
+                                                        <td>Doe</td>
+                                                        <td>john@example.com</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mary</td>
+                                                        <td>Moe</td>
+                                                        <td>mary@example.com</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>July</td>
+                                                        <td>Dooley</td>
+                                                        <td>july@example.com</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2 style="text-align: justify;">Наведите курсор на строки таблицы HTML</h2>
+
+                                <p>Класс <code>.table-hover</code> добавляет эффект наведения (серый цвет фона) на
+                                    строки таблицы:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="container mt-3"&gt;
+    &lt;h2>Hover Rows&lt;/h2&gt;
+    &lt;p>The .table-hover class enables a hover state (grey background on mouse over) on table rows:&lt;/p&gt;
+    &lt;table class="table table-hover"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th>Firstname&lt;/th&gt;
+                &lt;th>Lastname&lt;/th&gt;
+                &lt;th>Email&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td>John&lt;/td&gt;
+                &lt;td>Doe&lt;/td&gt;
+                &lt;td>john@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Mary&lt;/td&gt;
+                &lt;td&gt;Moe&lt;/td&gt;
+                &lt;td&gt;mary@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td>July&lt;/td&gt;
+                &lt;td>Dooley&lt;/td&gt;
+                &lt;td>july@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="container mt-3">
+                                            <h2>Hover Rows</h2>
+                                            <p>The .table-hover class enables a hover state (grey background on mouse
+                                                over) on table rows:</p>
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Firstname</th>
+                                                        <th>Lastname</th>
+                                                        <th>Email</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>John</td>
+                                                        <td>Doe</td>
+                                                        <td>john@example.com</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mary</td>
+                                                        <td>Moe</td>
+                                                        <td>mary@example.com</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>July</td>
+                                                        <td>Dooley</td>
+                                                        <td>july@example.com</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2 style="text-align: justify;">Черная/темная таблица HTML</h2>
+
+                                <p>Класс <code>.table-dark</code> добавляет к таблице черный фон:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="container mt-3"&gt;
+    &lt;h2&gt;Black/Dark Table&lt;/h2&gt;
+    &lt;p&gt;The .table-dark class adds a black background to the table:&lt;/p&gt;
+    &lt;table class="table table-dark"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th>Firstname&lt;/th&gt;
+                &lt;th>Lastname&lt;/th&gt;
+                &lt;th>Email&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td>John&lt;/td&gt;
+                &lt;td>Doe&lt;/td&gt;
+                &lt;td>john@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Mary&lt;/td&gt;
+                &lt;td&gt;Moe&lt;/td&gt;
+                &lt;td&gt;mary@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td>July&lt;/td&gt;
+                &lt;td>Dooley&lt;/td&gt;
+                &lt;td>july@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="container mt-3">
+                                            <h2>Black/Dark Table</h2>
+                                            <p>The .table-dark class adds a black background to the table:</p>
+                                            <table class="table table-dark">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Firstname</th>
+                                                        <th>Lastname</th>
+                                                        <th>Email</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>John</td>
+                                                        <td>Doe</td>
+                                                        <td>john@example.com</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mary</td>
+                                                        <td>Moe</td>
+                                                        <td>mary@example.com</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>July</td>
+                                                        <td>Dooley</td>
+                                                        <td>july@example.com</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2 style="text-align: justify;">HTML-таблица с темными полосками</h2>
+
+                                <p>Объедините <code>.table-dark</code> и <code>.table-striped</code>, чтобы создать
+                                    темную полосатую таблицу:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="container mt-3"&gt;
+    &lt;h2&gt;Dark Striped Table&lt;/h2&gt;
+    &lt;p&gt;Combine .table-dark and .table-striped to create a dark, striped table:&lt;/p&gt;
+    &lt;table class="table table-dark table-striped"&gt;
+        &lt;thead&gt;
+            &lt;tr&gt;
+                &lt;th>Firstname&lt;/th&gt;
+                &lt;th>Lastname&lt;/th&gt;
+                &lt;th>Email&lt;/th&gt;
+            &lt;/tr&gt;
+        &lt;/thead&gt;
+        &lt;tbody&gt;
+            &lt;tr&gt;
+                &lt;td>John&lt;/td&gt;
+                &lt;td>Doe&lt;/td&gt;
+                &lt;td>john@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td&gt;Mary&lt;/td&gt;
+                &lt;td&gt;Moe&lt;/td&gt;
+                &lt;td&gt;mary@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+            &lt;tr&gt;
+                &lt;td>July&lt;/td&gt;
+                &lt;td>Dooley&lt;/td&gt;
+                &lt;td>july@example.com&lt;/td&gt;
+            &lt;/tr&gt;
+        &lt;/tbody&gt;
+    &lt;/table&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="container mt-3">
+                                            <h2>Dark Striped Table</h2>
+                                            <p>Combine .table-dark and .table-striped to create a dark, striped table:
+                                            </p>
+                                            <table class="table table-dark table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Firstname</th>
+                                                        <th>Lastname</th>
+                                                        <th>Email</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>John</td>
+                                                        <td>Doe</td>
+                                                        <td>john@example.com</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mary</td>
+                                                        <td>Moe</td>
+                                                        <td>mary@example.com</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>July</td>
+                                                        <td>Dooley</td>
+                                                        <td>july@example.com</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                             </section>
