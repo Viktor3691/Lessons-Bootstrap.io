@@ -223,16 +223,152 @@
 
                                 <h2>Элементы кнопок</h2>
 
+                                <p>Стили кнопок Bootstrap 5 предназначены для использования с элементом <a
+                                        href="../html/bootstrap_buttons.html">&lt;button&gt;</a>, но их
+                                    также можно применять к элементам <a
+                                        href="../html/bootstrap_buttons.html">&lt;input&gt;</a> и <a
+                                        href="../html/bootstrap_buttons.html">&lt;a&gt;</a>.</p>
 
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;a class="btn btn-primary" href="#" role="button">Ссылка&lt;/a&gt;
+&lt;button class="btn btn-primary" type="submit">Кнопка&lt;/button&gt;
+&lt;input class="btn btn-primary" type="button" value="Ввод"&gt;
+&lt;input class="btn btn-primary" type="submit" value="Отправка"&gt;
+                                        </pre>
+                                        <a class="btn btn-primary" href="#" role="button">Ссылка</a>
+                                        <button class="btn btn-primary" type="submit">Кнопка</button>
+                                        <input class="btn btn-primary" type="button" value="Ввод">
+                                        <input class="btn btn-primary" type="submit" value="Отправка">
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
 
+                                <p>При использовании элемента <span class="tag">&lt;a&gt;</span> в качестве кнопки
+                                    (например, запуска клиентского
+                                    скрипта вместо перехода к другому адресу) указывайте <span
+                                        class="var">role="button"</span>.</p>
+                                <p>По возможности рекомендуется использовать элемент <span
+                                        class="tag">&lt;button&gt;</span>, поскольку он обеспечивает
+                                    наилучшую согласованность между браузерами.</p>
+                                <hr>
 
+                                <h2>Контурные кнопки</h2>
 
+                                <p>Используйте классы <span class="class">.btn-outline-*</span> для применения
+                                    семантического цвета только к контуру
+                                    кнопки.</p>
 
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;button type="button" class="btn btn-outline-primary"&gt;Основная&lt;/button&gt;
+&lt;button type="button" class="btn btn-outline-secondary"&gt;Вторичная&lt;/button&gt;
+&lt;button type="button" class="btn btn-outline-info"&gt;Инфо&lt;/button&gt;
+&lt;button type="button" class="btn btn-outline-success"&gt;Успех&lt;/button&gt;
+&lt;button type="button" class="btn btn-outline-warning"&gt;Предупреждение&lt;/button&gt;
+&lt;button type="button" class="btn btn-outline-danger"&gt;Опасность&lt;/button&gt;
+&lt;button type="button" class="btn btn-outline-light"&gt;Светлая&lt;/button&gt;
+&lt;button type="button" class="btn btn-outline-dark"&gt;Тёмная&lt;/button&gt;
+</pre>
+                                        <button type="button" class="btn btn-outline-primary">Основная</button>
+                                        <button type="button" class="btn btn-outline-secondary">Вторичная</button>
+                                        <button type="button" class="btn btn-outline-info">Инфо</button>
+                                        <button type="button" class="btn btn-outline-success">Успех</button>
+                                        <button type="button" class="btn btn-outline-warning">Предупреждение</button>
+                                        <button type="button" class="btn btn-outline-danger">Опасность</button>
+                                        <button type="button" class="btn btn-outline-light v1">Светлая</button>
+                                        <button type="button" class="btn btn-outline-dark">Тёмная</button>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
 
+                                <h2>Размер кнопки</h2>
 
+                                <p>Вы можете указать размер кнопки с помощью классов <span class="class">.btn-lg</span>
+                                    и <span class="class">.btn-sm</span>. Вставьте их в дополнение к другим классам
+                                    кнопок. Вот так:</p>
 
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;button type="button" class="btn btn-success btn-sm"&gt;Маленькая&lt;/button&gt;
+&lt;button type="button" class="btn btn-success"&gt;По умолчанию&lt;/button&gt;
+&lt;button type="button" class="btn btn-success btn-lg"&gt;Большая&lt;/button&gt;
+                                    </pre>
+                                        <button type="button" class="btn btn-success btn-sm">Маленькая</button>
+                                        <button type="button" class="btn btn-success">По умолчанию</button>
+                                        <button type="button" class="btn btn-success btn-lg">Большая</button>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
 
+                                <h2>Блочные кнопки</h2>
 
+                                <p>Кнопки Bootstrap 4 включали класс <span class="class">.btn-block</span> для создания
+                                    блочных кнопок, но он не вошёл в
+                                    Bootstrap 5.</p>
+                                <p>Блочные кнопка занимает всю ширину своего родителя. В Bootstrap 5 вы можете создать
+                                    такую с помощью различных
+                                    служебных классов. Вот пример:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="d-grid gap-2"&gt;
+    &lt;button class="btn btn-primary" type="button"&gt;Блочная кнопка&lt;/button&gt;
+&lt;/div&gt;
+                                    </pre>
+                                        <div class="d-grid gap-2">
+                                            <button class="btn btn-primary" type="button">Блочная кнопка</button>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Отключенные кнопки</h2>
+
+                                <p>Bootstrap предлагает определённые стили для состояния <span
+                                        class="attribute">disabled</span> (а также для других
+                                    состояний, например <span class="attribute">active</span>).</p>
+                                <p>Если вам нужно отключить кнопку, использующую элемент <span
+                                        class="tag">&lt;a&gt;</span>, вы можете указать класс
+                                    <span class="class">.disabled</span>. Вам не нужно делать это с кнопками, которые
+                                    используют элементы <span class="tag">&lt;button&gt;</span> и <span
+                                        class="tag">&lt;input&gt;</span>. Чтобы отключить эти кнопки,
+                                    используйте стандартный HTML-атрибут <span class="attribute">disabled</span>.
+                                </p>
+                                <p>Вот пример отключения кнопок разных типов:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;p>&lt;a href="#" class="btn btn-primary btn-lg disabled" role="button">Элемент «a»&lt;/a&gt;&lt;/p&gt;
+
+&lt;p>&lt;button type="button" class="btn btn-lg btn-primary" disabled="disabled">Элемент «button»&lt;/button&gt;&lt;/p&gt;
+
+&lt;p>&lt;input type="button" class="btn btn-lg btn-primary" disabled="disabled" value="Элемент «input»"&gt;&lt;/p&gt;
+</pre>
+                                        <p><a href="#" class="btn btn-primary btn-lg disabled" role="button">Элемент
+                                                «a»</a></p>
+
+                                        <p><button type="button" class="btn btn-lg btn-primary"
+                                                disabled="disabled">Элемент «button»</button></p>
+
+                                        <p><input type="button" class="btn btn-lg btn-primary" disabled="disabled"
+                                                value="Элемент «input»"></p>&lt;
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
 
 
 

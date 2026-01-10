@@ -481,9 +481,97 @@
                                 <div class="w3-example">
                                     <h3> Пример</h3>
                                     <div class="w3-code notranslate htmlHigh">
+
+                                        <div class="highlight">
+                                            <pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">input</span> <span class="na">class</span><span class="o">=</span><span class="s">"form-control"</span> <span class="na">id</span><span class="o">=</span><span class="s">"disabledInput"</span> <span class="na">type</span><span class="o">=</span><span class="s">"text"</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">"Здесь отключен ввод..."</span> <span class="na">disabled</span><span class="p">&gt;</span>
+</span></span></code></pre>
+                                        </div>
+
+                                        <input class="form-control" id="disabledInput" type="text"
+                                            placeholder="Здесь отключен ввод..." disabled>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <p>Добавьте атрибут <code>disabled</code> к <code>&lt;fieldset&gt;</code>, чтобы
+                                    отключить все элементы управления
+                                    внутри. Браузеры обрабатывают все элементы управления собственными формами (элементы
+                                    <code>&lt;input&gt;</code>,
+                                    <code>&lt;select&gt;</code> и <code>&lt;button&gt;</code>) внутри
+                                    <code>&lt;fieldset disabled&gt;</code> как
+                                    отключенные, предотвращая взаимодействие с ними как с клавиатуры, так и с помощью
+                                    мыши.
+                                </p>
+                                <p>Однако, если Ваша форма также включает пользовательские элементы, похожие на кнопки,
+                                    такие как
+                                    <code>&lt;a class="btn btn-*"&gt;...&lt;/a&gt;</code>, им будет присвоен стиль
+                                    только
+                                    <code>pointer-events: none</code>, что означает, что они по-прежнему могут
+                                    фокусироваться и управляться с помощью
+                                    клавиатуры. В этом случае Вы должны вручную изменить эти элементы управления,
+                                    добавив <code>tabindex="-1"</code>,
+                                    чтобы они не получали фокус, и <code>aria-disabled="disabled"</code>, чтобы
+                                    сигнализировать о своем состоянии
+                                    вспомогательным технологиям.
+                                </p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
                                         <pre>
-<input class="form-control" id="disabledInput" type="text" placeholder="Здесь отключен ввод..." disabled>
-                                    </pre>
+&lt;form&gt;
+    &lt;fieldset disabled&gt;
+        &lt;legend&gt;Пример отключенного набора полей&lt;/legend&gt;
+        &lt;div class="mb-3"&gt;
+            &lt;label for="disabledTextInput" class="form-label"&gt;Отключенное поле ввода&lt;/label&gt;
+            &lt;input type="text" id="disabledTextInput" class="form-control" placeholder="Отключенное поле ввода"&gt;
+        &lt;/div&gt;
+        &lt;div class="mb-3"&gt;
+            &lt;label for="disabledSelect" class="form-label"&gt;Отключено меню выбора&lt;/label&gt;
+            &lt;select id="disabledSelect" class="form-select"&gt;
+                &lt;option>Отключен элемент выбора&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/div&gt;
+        &lt;div class="mb-3"&gt;
+            &lt;div class="form-check"&gt;
+                &lt;input class="form-check-input" type="checkbox" id="disabledFieldsetCheck" disabled&gt;
+                &lt;label class="form-check-label" for="disabledFieldsetCheck"&gt;
+                    Не могут это проверить
+                &lt;/label&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;button type="submit" class="btn btn-primary"&gt;Отправить&lt;/button&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+                                </pre>
+                                        <form>
+                                            <fieldset disabled>
+                                                <legend>Пример отключенного набора полей</legend>
+                                                <div class="mb-3">
+                                                    <label for="disabledTextInput" class="form-label">Отключенное поле
+                                                        ввода</label>
+                                                    <input type="text" id="disabledTextInput" class="form-control"
+                                                        placeholder="Отключенное поле ввода">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="disabledSelect" class="form-label">Отключено меню
+                                                        выбора</label>
+                                                    <select id="disabledSelect" class="form-select">
+                                                        <option>Отключен элемент выбора</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox"
+                                                            id="disabledFieldsetCheck" disabled>
+                                                        <label class="form-check-label" for="disabledFieldsetCheck">
+                                                            Не могут это проверить
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <button type="submit" class="btn btn-primary">Отправить</button>
+                                            </fieldset>
+                                        </form>&lt;
                                     </div>
                                     <i><span style="color:#e7e9eb;">end.</span></i>
                                 </div>
