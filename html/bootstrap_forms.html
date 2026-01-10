@@ -141,7 +141,7 @@
                     <div class="container_text">
                         <div class="w-title">
                             <div class="container">
-                                <h1>Bootstrap 5 Сетки</h1>
+                                <h1>Формы в Bootstrap 5</h1>
                             </div>
                         </div>
                         <div class="column is-9-desktop is-12-tablet is-12-mobile w-content">
@@ -167,7 +167,344 @@
                             </div>
 
                             <section id="w-main">
-                                <h3>Система сеток Bootstrap 5</h3>
+                                <h3>Базовая форма</h3>
+
+                                <img src="../img/form.webp" alt="form" class="pictures">
+
+                                <p>Bootstrap 5 предлагает стиль по умолчанию, который применяется к большинству
+                                    элементов форм. Он также предлагает классы
+                                    для специфических целей.</p>
+
+                                <p>Элементы управления формой Bootstrap расширяются на наши стили перезагруженных форм с
+                                    помощью классов. Используйте эти
+                                    классы, чтобы выбрать их индивидуальные дисплеи для более согласованного рендеринга
+                                    в браузерах и на разных устройствах. <br>
+                                    <br>
+                                    Обязательно используйте соответствующий атрибут type для всех полей ввода (например,
+                                    email для адреса электронной почты
+                                    или number для числовой информации) чтобы воспользоваться преимуществами новых
+                                    элементов управления вводом, таких как
+                                    проверка электронной почты, выбор номера и т.д. <br>
+                                    <br>
+                                    Вот быстрый пример, демонстрирующий стили формы Bootstrap. Продолжайте читать, чтобы
+                                    узнать о необходимых классах,
+                                    макете формы и многом другом.
+                                </p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;form&gt;
+    &lt;div class="mb-3"&gt;
+        &lt;label for="exampleInputEmail1" class="form-label"&gt;Адрес электронной почты&lt;/label&gt;
+        &lt;input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"&gt;
+        &lt;div id="emailHelp" class="form-text"&gt;Мы никогда никому не передадим вашу электронную почту.&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="mb-3"&gt;
+        &lt;label for="exampleInputPassword1" class="form-label">Пароль&lt;/label&gt;
+        &lt;input type="password" class="form-control" id="exampleInputPassword1"&gt;
+    &lt;/div&gt;
+    &lt;div class="mb-3 form-check"&gt;
+        &lt;input type="checkbox" class="form-check-input" id="exampleCheck1">
+        &lt;label class="form-check-label" for="exampleCheck1">Проверить меня&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;button type="submit" class="btn btn-primary"&gt;Отправить&lt;/button&gt;
+&lt;/form>
+                                </pre>
+                                        <form>
+                                            <div class="mb-3">
+                                                <label for="exampleInputEmail1" class="form-label">Адрес электронной
+                                                    почты</label>
+                                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                                    aria-describedby="emailHelp">
+                                                <div id="emailHelp" class="form-text">Мы никогда никому не передадим
+                                                    вашу электронную почту.</div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label for="exampleInputPassword1" class="form-label">Пароль</label>
+                                                <input type="password" class="form-control" id="exampleInputPassword1">
+                                            </div>
+                                            <div class="mb-3 form-check">
+                                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                                <label class="form-check-label" for="exampleCheck1">Проверить
+                                                    меня</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Отправить</button>
+                                        </form>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <h2>Строчная форма</h2>
+
+                                <p>Используйте классы<span> .row-cols-* </span>для создания адаптивных горизонтальных
+                                    макетов. Использование <span>.col-12 </span> помогает размещать
+                                    элементы форм для узких областей просмотра.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;<span>form class="row row-cols-lg-auto g-3 align-items-center" action="/html/tags/html_form_tag_action.cfm"</span>&gt;
+    &lt;<span>div class="col-12"</span>&gt;
+        &lt;label for="first_name">Имя&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;<span>div class="col-12"</span>&gt;
+        &lt;input type="text" class="form-control" id="first_name" name="first_name"&gt;
+    &lt;/div&gt;
+    &lt;<span>div class="col-12</span>"&gt;
+        &lt;label for="last_name">Фамилия&lt;/label&gt;
+    &lt;/div&gt;
+    &lt;<span>div class="col-12</span>"&gt;
+        &lt;input type="text" class="form-control" id="last_name" name="last_name"&gt;
+    &lt;/div&gt;
+    &lt;<span>div class="col-12"</span>&gt;
+        &lt;button type="submit" class="btn btn-primary">Отправить&lt;/button>
+    &lt;/div&gt;
+&lt;/form&gt;
+                                    </pre>
+                                        <form class="row row-cols-lg-auto g-3 align-items-center"
+                                            action="/html/tags/html_form_tag_action.cfm">
+                                            <div class="col-12">
+                                                <label for="first_name">Имя</label>
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="first_name"
+                                                    name="first_name">
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="last_name">Фамилия</label>
+                                            </div>
+                                            <div class="col-12">
+                                                <input type="text" class="form-control" id="last_name" name="last_name">
+                                            </div>
+                                            <div class="col-12">
+                                                <button type="submit" class="btn btn-primary">Отправить</button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Справочный текст</h2>
+
+                                <p>Bootstrap 5 предлагает класс <span class="class">.form-text</span>, который можно
+                                    использовать для указания
+                                    справочного текста. Вы можете комбинировать этот класс со вспомогательными классами,
+                                    такими как <span class="class">.text-muted</span>.</p>
+                                <p>Также следует использовать атрибут <span class="attribute">aria-describedby</span>,
+                                    чтобы связать справочный текст с
+                                    элементом формы. Это гарантирует, что экранные читалки смогут озвучить текст, когда
+                                    пользователь сфокусируется на
+                                    форме.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;label for="accountId">Идентификатор&lt;/label&gt;
+&lt;input type="text" id="accountId" class="form-control" <span>aria-describedby="helpAccountId"</span>&gt;
+&lt;span id="helpAccountId" <span>class="form-text text-muted"</span>&gt;Идентификатор учётной записи указан в верхней части счёта.&lt;/span&gt;
+
+                                    </pre>
+                                        <label for="accountId">Идентификатор</label>
+                                        <input type="text" id="accountId" class="form-control"
+                                            aria-describedby="helpAccountId">
+                                        <span id="helpAccountId" class="form-text text-muted">Идентификатор учётной
+                                            записи указан в верхней части счёта.</span>
+
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Статичный элемент управления</h2>
+
+                                <p>Вы можете использовать <span> .form-control-plaintext</span> в элементе
+                                    <span>&lt;input&gt;,</span> чтобы поставить обычный текст рядом с меткой
+                                    (например, вместо поля ввода).
+                                </p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;form&gt;
+    &lt;div class="mb-3 row"&gt;
+        &lt;label for="username" class="col-sm-2 col-form-label"&gt;Имя пользователя&lt;/label&gt;
+        &lt;div class="col-sm-10"&gt;
+            &lt;input type="text" readonly <span>class="form-control-plaintext"</span> id="username" value="HomerJay"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="mb-3 row"&gt;
+        &lt;label for="pwd" class="col-sm-2 col-form-label">Пароль&lt;/label&gt;
+        &lt;div class="col-sm-10"&gt;
+            &lt;input type="password" class="form-control" id="pwd">
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/form&gt;
+                                    </pre>
+                                        <form>
+                                            <div class="mb-3 row">
+                                                <label for="username" class="col-sm-2 col-form-label">Имя
+                                                    пользователя</label>
+                                                <div class="col-sm-10">
+                                                    <input type="text" readonly class="form-control-plaintext"
+                                                        id="username" value="HomerJay">
+                                                </div>
+                                            </div>
+                                            <div class="mb-3 row">
+                                                <label for="pwd" class="col-sm-2 col-form-label">Пароль</label>
+                                                <div class="col-sm-10">
+                                                    <input type="password" class="form-control" id="pwd">
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Флажки и переключатели</h2>
+
+                                <p>Bootstrap 5 предлагает такие классы, как <span class="class">.form-check</span>,
+                                    <span class="class">.form-check-label</span>, <span
+                                        class="class">.form-check-input</span> и <span
+                                        class="class">.form-check-inline</span> для отображения флажков и
+                                    переключателей.
+                                </p>
+                                <p>Чтобы отобразить сгруппированные флажки или переключатели, вложите каждый из них в
+                                    <span class="tag">&lt;div&gt;</span> с классом <span
+                                        class="class">.form-check</span>.
+                                </p>
+                                <p>Кроме того, добавьте <span class="class">.form-check-label</span> к тегу <a
+                                        href="/html/label">&lt;label&gt;</a> и
+                                    <span class="class">.form-check-input</span> к тегу <a
+                                        href="/html/input">&lt;input&gt;</a>.
+                                </p>
+                                <p>В Bootstrap 5 флажки и переключатели по умолчанию располагаются друг под другом. Вы
+                                    можете отобразить их в одну
+                                    строку, добавив <span class="class">.form-check-inline</span> к окружающему <span
+                                        class="tag">&lt;div&gt;</span>.
+                                    Сохраните <span class="class">.form-check-input</span> в теге <span
+                                        class="tag">&lt;input&gt;</span>.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;!-- Флажки --&gt;
+&lt;div class="form-check form-check-inline"&gt;
+    &lt;input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="1"&gt;
+    &lt;label class="form-check-label">1&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="form-check form-check-inline"&gt;
+    &lt;input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="2"&gt;
+    &lt;label class="form-check-label">2&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="form-check form-check-inline"&gt;
+    &lt;input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="3"&gt;
+    &lt;label class="form-check-label"&gt;3&lt;/label&gt;
+&lt;/div&gt;
+</pre>
+                                        <!-- Флажки -->
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox1"
+                                                value="1">
+                                            <label class="form-check-label">1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox2"
+                                                value="2">
+                                            <label class="form-check-label">2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="checkbox" id="inlineCheckbox3"
+                                                value="3">
+                                            <label class="form-check-label">3</label>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+
+&lt;!-- Переключатели --&gt;
+&lt;div class="form-check form-check-inline"&gt;
+    &lt;input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="1"&gt;
+    &lt;label class="form-check-label">1&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="form-check form-check-inline"&gt;
+    &lt;input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="2"&gt;
+    &lt;label class="form-check-label">2&lt;/label&gt;
+&lt;/div&gt;
+&lt;div class="form-check form-check-inline"&gt;
+    &lt;input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="3"&gt;
+    &lt;label class="form-check-label">3&lt;/label&gt;
+&lt;/div&gt;
+</pre>
+
+                                        <!-- Переключатели -->
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio1" value="1">
+                                            <label class="form-check-label">1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio2" value="2">
+                                            <label class="form-check-label">2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions"
+                                                id="inlineRadio3" value="3">
+                                            <label class="form-check-label">3</label>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Деактивированные формы</h2>
+
+                                <p>Добавьте логический атрибут <code>disabled</code> для ввода, чтобы предотвратить
+                                    взаимодействие с пользователем и
+                                    сделать его более светлым.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+<input class="form-control" id="disabledInput" type="text" placeholder="Здесь отключен ввод..." disabled>
+                                    </pre>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                             </section>
