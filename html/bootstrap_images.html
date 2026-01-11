@@ -170,6 +170,197 @@
                             <section id="w-main">
                                 <h3>Адаптивные изображения</h3>
 
+                                <p>Bootstrap предлагает класс <span class="tag">.img-fluid</span>, который позволяет
+                                    сделать изображение соответствующим
+                                    образом масштабируемым на разных устройствах. Данный класс применяет к изображению
+                                    <span class="var">max-width:
+                                        100%</span> и <span class="var">height: auto</span>. Это гарантирует, что
+                                    изображение будет масштабироваться в
+                                    соответствии с родительским элементом.
+                                </p>
+                                <p>Чтобы увидеть масштабирование следующего изображения, откройте просмотр в новом окне,
+                                    а затем измените размер
+                                    браузера.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;img src="../img/1.avif" class="img-fluid" alt="Пример фотографии"&gt;
+                                </pre>
+                                        <img src="../img/1.avif" class="img-fluid" alt="Пример фотографии">
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Скруглённые уголки и эскизы</h2>
+
+                                <p>Вы можете использовать Bootstrap для отображения изображений со скруглёнными уголками
+                                    или в виде круга. Это
+                                    достигается с помощью классов <span class="class">.rounded-*</span>.</p>
+                                <p>Вы также можете использовать класс <span class="class">.img-thumbnail</span>, чтобы
+                                    добавить к изображению
+                                    скруглённую однопиксельную рамку.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;img src="../img/2.avif" class="rounded-circle" alt="Пример изображения"&gt;
+</pre>
+                                        <img src="../img/2.avif" class="rounded-circle pictures"
+                                            alt="Пример изображения">
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;img src="../img/3.avif" class="img-thumbnail" alt="Пример изображения"&gt;
+</pre>
+                                        <img src="../img/3.avif" class="img-thumbnail" alt="Пример изображения">
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <p>Служебные классы можно применять к любому элементу, а не только к изображениям.
+                                    Классы для создания скругленных
+                                    элементов:</p>
+
+                                <ul>
+                                    <li>.rounded</li>
+                                    <li>.rounded-top</li>
+                                    <li>.rounded-end</li>
+                                    <li>.rounded-bottom</li>
+                                    <li>.rounded-start</li>
+                                    <li>.rounded-circle</li>
+                                    <li>.rounded-pill</li>
+                                </ul>
+                                <hr>
+
+                                <h2>Выравнивание изображения</h2>
+
+                                <p>Вы можете использовать либо вспомогательные классы для выравнивания изображений по
+                                    горизонтали.</p>
+                                <p>Используйте классы <span class="class">.float-start</span>, <span
+                                        class="class">.float-end</span> и <span class="class">.float-*-*</span>, чтобы
+                                    сместить изображение влево или вправо. Эти классы перемещают элемент
+                                    влево или вправо или отключают обтекание в зависимости от текущего размера области
+                                    просмотра.</p>
+
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;img src="../img/5.jpg" class="rounded-circle float-start" alt="Пример изображения" style="width: 30%;"&gt;
+
+
+<img src="../img/5.jpg" class="rounded-circle float-start" alt="Пример изображения" style="width: 30%;">
+</pre>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;img src="../img/6.jpg" class="rounded-circle float-end" alt="Пример изображения" style="width: 30%;"&gt;
+<img src="../img/6.jpg" class="rounded-circle float-end" alt="Пример изображения" style="width: 30%;">
+                                </pre>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <p>Вспомогательные адаптивные классы:</p>
+                                <ul>
+                                    <li>.float-start</li>
+                                    <li>.float-end</li>
+                                    <li>.float-none</li>
+                                    <li>.float-sm-start</li>
+                                    <li>.float-sm-end</li>
+                                    <li>.float-sm-none</li>
+                                    <li>.float-md-start</li>
+                                    <li>.float-md-end</li>
+                                    <li>.float-md-none</li>
+                                    <li>.float-lg-start</li>
+                                    <li>.float-lg-end</li>
+                                    <li>.float-lg-none</li>
+                                    <li>.float-xl-start</li>
+                                    <li>.float-xl-end</li>
+                                    <li>.float-xl-none</li>
+                                    <li>.float-xxl-start</li>
+                                    <li>.float-xxl-end</li>
+                                    <li>.float-xxl-none</li>
+                                </ul>
+                                <p>Классы <span class="class">.float-none</span> и <span
+                                        class="class">.float-*-none</span> отключают обтекание.</p>
+                                <hr>
+
+                                <h3>Центрирование не блочных изображений</h3>
+
+                                <p>Используйте класс <span class="class">.mx-auto</span> для центрирования изображения с
+                                    добавлением <span class="class">.d-block</span>. При этом устанавливается значение
+                                    <span class="var">margin: auto</span>.
+                                </p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;img src="../img/7.jpg" class="img-circle mx-auto d-block" alt="Пример фотографии" style="width: 30%;"&gt;
+
+<img src="../img/7.jpg" class="img-circle mx-auto d-block" alt="Пример фотографии" style="width: 30%;">
+</pre>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <p>Вы также можете использовать любой из адаптивных классов <span
+                                        class="class">.mx-*-auto</span>.</p>
+                                <hr>
+
+                                <h3>Центрирование блочных изображений</h3>
+
+                                <p>Вы можете использовать класс <span class="class">.text-center</span> на родительском
+                                    изображении, чтобы выровнять по
+                                    центру не блочное изображение.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="text-center"&gt;
+  &lt;img src="../img/8.avif" class="img-circle" alt="Пример фотографии" style="width: 30%;"&gt;
+&lt;/div&gt;
+
+<div class="text-center">
+    <img src="../img/8.avif" class="img-circle" alt="Пример фотографии" style="width: 30%;">
+</div>
+</pre>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
                             </section>
                         </div>

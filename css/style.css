@@ -77,6 +77,12 @@ pre {
   border: 5px solid rgb(188, 204, 248);
   width: 100%;
 }
+.pictures1 {
+  margin: 20px auto;
+  padding: 5px;
+  border: 5px solid rgb(188, 204, 248);
+  width: 50%;
+}
 kbd {
   background: var(--prcd-kbd-bg, #dcdcdc);
   border-width: 3px 4px 5px;
