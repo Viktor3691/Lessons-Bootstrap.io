@@ -141,7 +141,7 @@
                     <div class="container_text">
                         <div class="w-title">
                             <div class="container">
-                                <h1>Bootstrap 5 Сетки</h1>
+                                <h1>Bootstrap 5 Выпадающие меню</h1>
                             </div>
                         </div>
                         <div class="column is-9-desktop is-12-tablet is-12-mobile w-content">
@@ -168,7 +168,188 @@
                             </div>
 
                             <section id="w-main">
-                                <h3>Система сеток Bootstrap 5</h3>
+                                <h3>Базовое выпадающее меню</h3>
+
+                                <p>Выпадающее меню — это переключаемое меню, которое позволяет пользователю выбрать одно
+                                    значение из заранее заданного
+                                    списка:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="dropdown" style="margin:16px 0 24px 0"&gt;
+    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt; Кнопка выпадающего списка
+    &lt;/button&gt;
+    &lt;ul class="dropdown-menu"&gt;
+        &lt;li>&lt;a class="dropdown-item" href="javascript:void(0)"&gt;Link 1&lt;/a>&lt;/li&gt;
+        &lt;li>&lt;a class="dropdown-item" href="javascript:void(0)"&gt;Link 2&lt;/a>&lt;/li&gt;
+        &lt;li>&lt;a class="dropdown-item" href="javascript:void(0)"&gt;Link 3&lt;/a>&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+                                    </pre>
+                                        <div class="dropdown" style="margin:16px 0 24px 0">
+                                            <button type="button" class="btn btn-primary dropdown-toggle"
+                                                data-bs-toggle="dropdown"> Кнопка выпадающего списка
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="javascript:void(0)">Link 1</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0)">Link 2</a></li>
+                                                <li><a class="dropdown-item" href="javascript:void(0)">Link 3</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <h3>Объяснение примера</h3>
+
+                                <p> Класс <code class="w3-codespan">.dropdown</code> обозначает выпадающее меню. </p>
+                                <p>Чтобы открыть выпадающее меню, используйте кнопку или ссылку с классом <code
+                                        class="w3-codespan">.dropdown-toggle</code> и атрибутом <code
+                                        class="w3-codespan">data-bs-toggle="dropdown"</code> .</p>
+                                <p>Добавьте <code class="w3-codespan">.dropdown-menu</code> класс к элементу контейнера,
+                                    например, <code class="w3-codespan">&lt;div&gt;</code> или <code
+                                        class="w3-codespan">&lt;ul&gt;</code>, чтобы фактически создать
+                                    выпадающее меню. Затем добавьте <code class="w3-codespan">.dropdown-item</code>
+                                    класс к каждому элементу (ссылкам
+                                    или кнопкам) внутри выпадающего меню.</p>
+                                <hr>
+
+                                <h2>Выпадающий Разделитель</h2>
+
+                                <p>Класс <code class="w3-codespan">.dropdown-divider</code> используется для разделения
+                                    ссылок в выпадающем меню тонкой
+                                    горизонтальной линией:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="dropdown" style="margin:16px 0 24px 0"&gt;
+    &lt;button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false"> Кнопка выпадающего списка &lt;/button&gt;
+    &lt;div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" style=""&gt;
+        &lt;a class="dropdown-item" href="javascript:void(0);">Link 1&lt;/a&gt;
+        &lt;a class="dropdown-item" href="javascript:void(0);">Link 2&lt;/a&gt;
+        &lt;a class="dropdown-item" href="javascript:void(0);">Link 3&lt;/a&gt;
+        <span>&lt;div class="dropdown-divider">&lt;/div&gt;</span>
+        &lt;a class="dropdown-item" href="javascript:void(0);">Another link&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="dropdown" style="margin:16px 0 24px 0">
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false"> Кнопка выпадающего списка </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton2" style="">
+                                                <a class="dropdown-item" href="javascript:void(0);">Link 1</a>
+                                                <a class="dropdown-item" href="javascript:void(0);">Link 2</a>
+                                                <a class="dropdown-item" href="javascript:void(0);">Link 3</a>
+                                                <div class="dropdown-divider"></div>
+                                                <a class="dropdown-item" href="javascript:void(0);">Another link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Раскрывающийся заголовок</h2>
+
+                                <p>Класс <code class="w3-codespan">.dropdown-header</code> используется для добавления
+                                    заголовков в выпадающее меню:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="dropdown" style="margin:16px 0 24px 0"&gt;
+    &lt;button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton3" data-bs-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false"> Кнопка выпадающего списка &lt;/button&gt;
+    &lt;div class="dropdown-menu" aria-labelledby="dropdownMenuButton3"&gt;
+        <span>&lt;h5 class="dropdown-header" style="margin-top:0;font-weight:500">Dropdown header 1&lt;/h5&gt;</span>
+        &lt;a class="dropdown-item" href="javascript:void(0);">Link 1&lt;/a&gt;
+        &lt;a class="dropdown-item" href="javascript:void(0);">Link 2&lt;/a&gt;
+        &lt;a class="dropdown-item" href="javascript:void(0);">Link 3&lt;/a&gt;
+        <span>h5 class="dropdown-header" style="margin-top:0;font-weight:500">Dropdown header 2&lt;/h5&gt;</span>&lt;
+        &lt;a class="dropdown-item" href="javascript:void(0);">Another link&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                    </pre>
+                                        <div class="dropdown" style="margin:16px 0 24px 0">
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton3" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false"> Кнопка выпадающего списка </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                                <h5 class="dropdown-header" style="margin-top:0;font-weight:500">
+                                                    Dropdown header 1</h5>
+                                                <a class="dropdown-item" href="javascript:void(0);">Link 1</a>
+                                                <a class="dropdown-item" href="javascript:void(0);">Link 2</a>
+                                                <a class="dropdown-item" href="javascript:void(0);">Link 3</a>
+                                                <h5 class="dropdown-header" style="margin-top:0;font-weight:500">
+                                                    Dropdown header 2</h5>
+                                                <a class="dropdown-item" href="javascript:void(0);">Another link</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Отключенные и активные элементы</h2>
+
+                                <p>Выделите конкретный элемент выпадающего списка с помощью класса <code
+                                        class="w3-codespan">.active</code> (добавляет
+                                    синий фон). </p>
+                                <p> Чтобы отключить элемент в выпадающем меню, используйте класс <code
+                                        class="w3-codespan">.disabled</code> (при
+                                    наведении курсор меняет цвет текста на светло-серый и появляется значок «нет
+                                    парковки»):</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="dropdown" style="margin:16px 0 24px 0"&gt;
+    &lt;button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton4" data-bs-toggle="dropdown"
+        aria-haspopup="true" aria-expanded="false"&gt; Кнопка выпадающего списка &lt;/button&gt;
+    &lt;div class="dropdown-menu" aria-labelledby="dropdownMenuButton4"&gt;
+        &lt;a class="dropdown-item" href="javascript:void(0);"&gt;Normal&lt;/a&gt;
+        &lt;a class="dropdown-item active" href="javascript:void(0);"&gt;Active&lt;/a&gt;
+        &lt;a class="dropdown-item disabled" href="javascript:void(0);">Disabled&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="dropdown" style="margin:16px 0 24px 0">
+                                            <button class="btn btn-primary dropdown-toggle" type="button"
+                                                id="dropdownMenuButton4" data-bs-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="false"> Кнопка выпадающего списка </button>
+                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                                                <a class="dropdown-item" href="javascript:void(0);">Normal</a>
+                                                <a class="dropdown-item active" href="javascript:void(0);">Active</a>
+                                                <a class="dropdown-item disabled"
+                                                    href="javascript:void(0);">Disabled</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                             </section>
@@ -237,8 +418,7 @@
                                         </li>
                                         <li>
                                             <a href="../html/bootstrap_input_groups.html" hreflang="ru">Группа
-                                                полей
-                                                ввода</a>
+                                                полей вода</a>
 
                                         </li>
                                         <li>
