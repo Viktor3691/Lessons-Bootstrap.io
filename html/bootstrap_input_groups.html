@@ -141,7 +141,7 @@
                     <div class="container_text">
                         <div class="w-title">
                             <div class="container">
-                                <h1>Bootstrap 5 Сетки</h1>
+                                <h2 style="text-align: justify;">Группы полей ввода</h2>
                             </div>
                         </div>
                         <div class="column is-9-desktop is-12-tablet is-12-mobile w-content">
@@ -168,7 +168,314 @@
                             </div>
 
                             <section id="w-main">
-                                <h3>Система сеток Bootstrap 5</h3>
+
+                                <h2 style="text-align: justify;">Группы ввода</h2>
+
+                                <p>Класс <code>.input-group</code> — это контейнер для улучшения ввода путем добавления
+                                    значка, текста или кнопки перед
+                                    или за полем ввода в качестве «текста справки».</p>
+                                <p>Чтобы стилизовать указанный текст справки, используйте класс
+                                    <code>.input-group-text</code>:
+                                </p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="input-group mb-3"&gt;
+    &lt;<span>span class="input-group-text"&gt;@&lt;/span</span>&gt;
+    &lt;input type="text" class="form-control" placeholder="Username" style="z-index:0"&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">@</span>
+                                            <input type="text" class="form-control" placeholder="Username"
+                                                style="z-index:0">
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="input-group mb-3"&gt;
+    &lt;input type="text" class="form-control" placeholder="Your Email" style="z-index:0"&gt;
+    &lt;<span>span class="input-group-text">@example.com&lt;/span</span>&gt;
+&lt;/div&gt;
+                                </pre>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Your Email"
+                                                style="z-index:0">
+                                            <span class="input-group-text">@example.com</span>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2 style="text-align: justify;">Размер входной группы</h2>
+
+                                <p>Используйте класс <code>.input-group-sm</code> для небольших групп ввода и
+                                    <code>.input-group-lg</code> для больших.
+                                    группы входов:
+                                </p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="input-group mb-3 <span>input-group-sm</span>"&gt;
+    &lt;span class="input-group-text"&gt;Small&lt;/span&gt;
+    &lt;input type="text" class="form-control" style="z-index:0"&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="input-group mb-3 input-group-sm">
+                                            <span class="input-group-text">Small</span>
+                                            <input type="text" class="form-control" style="z-index:0">
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="input-group mb-3"&gt;
+    &lt;span class="input-group-text">Default&lt;/span&gt;
+    &lt;input type="text" class="form-control" style="z-index:0"&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Default</span>
+                                            <input type="text" class="form-control" style="z-index:0">
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="input-group mb-3 input-group-lg"&gt;
+    &lt;span class="input-group-text">Large&lt;/span&gt;
+    &lt;input type="text" class="form-control" style="z-index:0"&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="input-group mb-3 input-group-lg">
+                                            <span class="input-group-text">Large</span>
+                                            <input type="text" class="form-control" style="z-index:0">
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2 style="text-align: justify;">Несколько входов и помощников</h2>
+
+                                <p>Добавьте несколько входов или дополнений:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="input-group mb-3"&gt;
+    &lt;span class="input-group-text">Person&lt;/span&gt;
+    &lt;input type="text" class="form-control" placeholder="First Name" style="z-index:0"&gt;
+    &lt;input type="text" class="form-control" placeholder="Last Name" style="z-index:0"&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">Person</span>
+                                            <input type="text" class="form-control" placeholder="First Name"
+                                                style="z-index:0">
+                                            <input type="text" class="form-control" placeholder="Last Name"
+                                                style="z-index:0">
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="input-group mb-3"&gt;
+    &lt;span class="input-group-text"&gt;One&lt;/span&gt;
+    &lt;span class="input-group-text"&gt;Two&lt;/span&gt;
+    &lt;span class="input-group-text"&gt;Three&lt;/span&gt;
+    &lt;input type="text" class="form-control" style="z-index:0"&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text">One</span>
+                                            <span class="input-group-text">Two</span>
+                                            <span class="input-group-text">Three</span>
+                                            <input type="text" class="form-control" style="z-index:0">
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2 style="text-align: justify;">Группа ввода с флажками и радио</h2>
+
+                                <p>Вместо текста вы также можете использовать флажки или переключатели:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="input-group mb-3"&gt;
+    &lt;div class="input-group-text"&gt;
+        &lt;<span>input type="checkbox" style="z-index:0"</span>&gt;
+    &lt;/div&gt;
+    &lt;input type="text" class="form-control" placeholder="Some text" style="z-index:0"&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-text">
+                                                <input type="checkbox" style="z-index:0">
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Some text"
+                                                style="z-index:0">
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="input-group mb-3"&gt;
+    &lt;div class="input-group-text"&gt;
+        &lt;<span>input type="radio" style="z-index:0"</span>&gt;
+    &lt;/div&gt;
+    &lt;input type="text" class="form-control" placeholder="Some text" style="z-index:0"&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="input-group mb-3">
+                                            <div class="input-group-text">
+                                                <input type="radio" style="z-index:0">
+                                            </div>
+                                            <input type="text" class="form-control" placeholder="Some text"
+                                                style="z-index:0">
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2 style="text-align: justify;">Кнопки группы ввода</h2>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="input-group mb-3"&gt;
+    &lt;button class="btn btn-outline-primary" type="button" style="z-index:1"&gt;Basic Button&lt;/button&gt;
+    &lt;input type="text" class="form-control" placeholder="Some text" style="z-index:0"&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="input-group mb-3">
+                                            <button class="btn btn-outline-primary" type="button"
+                                                style="z-index:1">Basic Button</button>
+                                            <input type="text" class="form-control" placeholder="Some text"
+                                                style="z-index:0">
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="input-group mb-3"&gt;
+    &lt;input type="text" class="form-control" placeholder="Search" style="z-index:0"&gt;
+    &lt;button class="btn btn-success" type="button" style="z-index:1">Go&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Search"
+                                                style="z-index:0">
+                                            <button class="btn btn-success" type="button" style="z-index:1">Go</button>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="input-group mb-3"&gt;
+    &lt;input type="text" class="form-control" placeholder="Something clever.." style="z-index:0"&gt;
+    &lt;button class="btn btn-primary" type="button" style="z-index:1"&gt;OK&lt;/button&gt;
+    &lt;button class="btn btn-danger" type="button" style="z-index:1"&gt;Cancel&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Something clever.."
+                                                style="z-index:0">
+                                            <button class="btn btn-primary" type="button" style="z-index:1">OK</button>
+                                            <button class="btn btn-danger" type="button"
+                                                style="z-index:1">Cancel</button>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2 style="text-align: justify;">Группа ввода с раскрывающимся списком</h2>
+
+                                <p>Добавьте раскрывающуюся кнопку в группу ввода. <strong>Обратите внимание, что вам не
+                                        нужна оболочка <span> .dropdown,</span> как обычно.</strong>
+                                </p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="input-group mt-3 mb-3" style="z-index:1"&gt;
+    &lt;button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown"&gt;
+        Dropdown button
+    &lt;/button&gt;
+    &lt;ul class="dropdown-menu" style="z-index:0"&gt;
+        &lt;li&gt;&lt;a class="dropdown-item" href="javascrip:void(0)">Link 1&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="dropdown-item" href="javascrip:void(0)">Link 2&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;a class="dropdown-item" href="javascrip:void(0)">Link 3&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul>
+    &lt;input type="text" class="form-control" placeholder="Username">
+&lt;/div>
+</pre>
+                                        <div class="input-group mt-3 mb-3" style="z-index:1">
+                                            <button type="button" class="btn btn-primary dropdown-toggle"
+                                                data-bs-toggle="dropdown">
+                                                Dropdown button
+                                            </button>
+                                            <ul class="dropdown-menu" style="z-index:0">
+                                                <li><a class="dropdown-item" href="javascrip:void(0)">Link 1</a></li>
+                                                <li><a class="dropdown-item" href="javascrip:void(0)">Link 2</a></li>
+                                                <li><a class="dropdown-item" href="javascrip:void(0)">Link 3</a></li>
+                                            </ul>
+                                            <input type="text" class="form-control" placeholder="Username">
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+
+
+
+
+
+
+
 
 
                             </section>
@@ -255,8 +562,7 @@
 
                                         </li>
                                         <li>
-                                            <a href="../html/bootstrap_breadcrumbs.html" hreflang="ru">Хлебные
-                                                крошки
+                                            <a href="../html/bootstrap_breadcrumbs.html" hreflang="ru">Хлебные крошки
                                                 в Bootstrap 5</a>
 
                                         </li>
