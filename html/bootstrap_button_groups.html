@@ -172,17 +172,19 @@
                                 </p>
                                 <h2>Горизонтальная группа кнопок</h2>
 
+                                <h4>Большие кнопки:</h4>
+
                                 <div class="w3-example">
                                     <h3> Пример</h3>
                                     <div class="w3-code notranslate htmlHigh">
                                         <pre>
-&lt;div class="btn-group" style="margin:5px 0 10px 0;"&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
-  &lt;button type="button" class="btn btn-primary"&gt;Sony&lt;/button&gt;
+&lt;<span>div class="btn-group btn-group-lg"</span>&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Sony&lt;/button&gt;
 &lt;/div&gt;
-                                </pre>
-                                        <div class="btn-group" style="margin:5px 0 10px 0;">
+</pre>
+                                        <div class="btn-group btn-group-lg">
                                             <button type="button" class="btn btn-primary">Apple</button>
                                             <button type="button" class="btn btn-primary">Samsung</button>
                                             <button type="button" class="btn btn-primary">Sony</button>
@@ -191,10 +193,108 @@
                                     <i><span style="color:#e7e9eb;">end.</span></i>
                                 </div>
 
+                                <h4>Кнопки по умолчанию:</h4>
 
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;<span>div class="btn-group"</span>&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Sony&lt;/button&gt;
+&lt;/div&gt;
+                                </pre>
+                                        <div class="btn-group">
+                                            <button type="button" class="btn btn-primary">Apple</button>
+                                            <button type="button" class="btn btn-primary">Samsung</button>
+                                            <button type="button" class="btn btn-primary">Sony</button>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
 
+                                <h4>Маленькие кнопки:</h4>
 
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;<span>div class="btn-group btn-group-sm"</span>&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Sony&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="btn-group btn-group-sm">
+                                            <button type="button" class="btn btn-primary">Apple</button>
+                                            <button type="button" class="btn btn-primary">Samsung</button>
+                                            <button type="button" class="btn btn-primary">Sony</button>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
 
+                                <h2>Группы вертикальных кнопок</h2>
+
+                                <p>Bootstrap 5 также поддерживает группы вертикальных кнопок:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;<span>div class="btn-group-vertical"</span> style="margin:5px 0 10px 0;"&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Sony&lt;/button&gt;
+&lt;/di&gt;>
+</pre>
+                                        <div class="btn-group-vertical" style="margin:5px 0 10px 0;">
+                                            <button type="button" class="btn btn-primary">Apple</button>
+                                            <button type="button" class="btn btn-primary">Samsung</button>
+                                            <button type="button" class="btn btn-primary">Sony</button>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Группы кнопок рядом друг с другом</h2>
+
+                                <p>По умолчанию группы кнопок отображаются «в ряд», то есть при наличии нескольких групп
+                                    они располагаются рядом друг с
+                                    другом:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="btn-group" style="margin:2px 0 5px 0;"&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Apple&lt;/button&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Samsung&lt;/button&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Sony&lt;/button&gt;
+&lt;/div&gt;
+&lt;div class="btn-group" style="margin:2px 0 5px 0;"&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;BMW&lt;/button&gt;
+    &lt;button type="button" class="btn btn-primary"&gt;Mercedes&lt;/button&gt;
+    &lt;utton type="button" class="btn btn-primary"&gt;Volvo&lt;/button&gt;
+&lt;/div>
+</pre>
+                                        <div class="btn-group" style="margin:2px 0 5px 0;">
+                                            <button type="button" class="btn btn-primary">Apple</button>
+                                            <button type="button" class="btn btn-primary">Samsung</button>
+                                            <button type="button" class="btn btn-primary">Sony</button>
+                                        </div>
+                                        <div class="btn-group" style="margin:2px 0 5px 0;">
+                                            <button type="button" class="btn btn-primary">BMW</button>
+                                            <button type="button" class="btn btn-primary">Mercedes</button>
+                                            <button type="button" class="btn btn-primary">Volvo</button>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
 
                                 <h2>Сгруппированные кнопки с выпадающим списком</h2>
 
@@ -237,6 +337,17 @@
                                     </div>
                                     <i><span style="color:#e7e9eb;">end.</span></i>
                                 </div>
+
+
+
+
+
+
+
+
+
+
+
 
 
 
