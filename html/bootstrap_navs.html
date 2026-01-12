@@ -141,7 +141,7 @@
                     <div class="container_text">
                         <div class="w-title">
                             <div class="container">
-                                <h1>Bootstrap 5 Сетки</h1>
+                                <h1>Навигация в Bootstrap 5</h1>
                             </div>
                         </div>
                         <div class="column is-9-desktop is-12-tablet is-12-mobile w-content">
@@ -167,7 +167,466 @@
                             </div>
 
                             <section id="w-main">
-                                <h3>Система сеток Bootstrap 5</h3>
+
+                                <h3>Базовая навигация</h3>
+
+                                <p>Класс <span class="class">.nav</span> (и связанные с ним классы) позволяет превратить
+                                    список во вкладки и
+                                    навигационные «таблетки».</p>
+                                <p>Чтобы создать вкладку или таблетку, добавьте класс .nav и либо <span
+                                        class="class">.nav-pills</span>, либо <span class="class">.nav-tabs</span> к
+                                    элементу <a href="/html/ul">&lt;ul&gt;</a>, содержащий список элементов
+                                    навигации.</p>
+                                <p>Однако использование <span class="tag">&lt;ul&gt;</span> не является обязательным —
+                                    вы можете просто использовать
+                                    свою собственную навигацию.</p>
+                                <p>Bootstrap 5 предлагает базовый стиль, который можно использовать с элементами
+                                    навигации. Вы можете либо добавить
+                                    дополнительные стили Bootstrap к этой базе, либо настроить её в соответствии со
+                                    своими потребностями.</p>
+                                <p>Базовый компонент навигации использует класс <span class="class">.nav</span> для
+                                    внешнего элемента навигации, такого
+                                    как элемент <span class="tag">&lt;ul&gt;</span> или <a
+                                        href="/html/nav">&lt;nav&gt;</a>.</p>
+
+                                <h3>Для элементов &lt;ul&gt;</h3>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;ul <span>class="nav"</span>&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link active" href="#"&gt;HTML&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;CSS&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#">JavaScript&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#">Просмотр&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+                                </pre>
+                                        <ul class="nav">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#">HTML</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">CSS</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">JavaScript</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Просмотр</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h3>Для элементов &lt;nav&gt;</h3>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;nav <span>class="nav"</span>&gt;
+    &lt;a class="nav-link active" href="#">HTML&lt;/a&gt;
+    &lt;a class="nav-link" href="#"&gt;CSS&lt;/a&gt;
+    &lt;a class="nav-link" href="#"&gt;JavaScript&lt;/a&gt;
+    &lt;a class="nav-link" href="#"&gt;Просмотр&lt;/a&gt;
+&lt;/nav&gt;
+</pre>
+                                        <nav class="nav">
+                                            <a class="nav-link active" href="#">HTML</a>
+                                            <a class="nav-link" href="#">CSS</a>
+                                            <a class="nav-link" href="#">JavaScript</a>
+                                            <a class="nav-link" href="#">Просмотр</a>
+                                        </nav>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Вертикальная навигация</h2>
+
+                                <p>Добавьте класс <span>.flex-column</span> к элементу <span>.nav, </span>чтобы
+                                    расположить элементы навигации
+                                    вертикально.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;<vv1>nav </vv1><span>class="nav flex-column"</span>&gt;
+    &lt;a class="nav-link active" href="#">HTML&lt;/a&gt;
+    &lt;a class="nav-link" href="#"&gt;CSS&lt;/a&gt;
+    &lt;a class="nav-link" href="#"&gt;JavaScript&lt;/a&gt;
+    &lt;a class="nav-link" href="#"&gt;Просмотр&lt;/a&gt;
+&lt;<vv1>/nav</vv1>&gt;
+                                    </pre>
+                                        <nav class="nav flex-column">
+                                            <a class="nav-link active" href="#">HTML</a>
+                                            <a class="nav-link" href="#">CSS</a>
+                                            <a class="nav-link" href="#">JavaScript</a>
+                                            <a class="nav-link" href="#">Просмотр</a>
+                                        </nav>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Вкладки</h2>
+
+                                <p>Добавьте <span>class="nav nav-tabs"</span> к элементу <span>&lt;ul&gt;,</span>
+                                    содержащий список пунктов
+                                    навигации. Также используйте
+                                    <span>class="active",</span> чтобы сделать вкладку выделенной.
+                                </p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;<vv1>ul</vv1> <span>class="nav nav-tabs"</span>&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link <vv2>active</vv2>" href="#"&gt;HTML&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;CSS&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;JavaScript&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;Просмотр&lt;/a&gt;
+    &lt;/li&gt;
+&lt;<vv1>/ul</vv1>&gt;
+</pre>
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#">HTML</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">CSS</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">JavaScript</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Просмотр</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Таблетки</h2>
+
+                                <p>Измените класс <span class="class">.nav-tabs</span> на <span
+                                        class="class">.nav-pills</span>, чтобы вместо вкладок
+                                    отображались таблетки.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;ul class="nav <span>nav-pills"</span>&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link active" href="#"&lt;HTML&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;CSS&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;JavaScript&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;Просмотр&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+                                        <ul class="nav  nav-pills">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#">HTML</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">CSS</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">JavaScript</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Просмотр</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Таблетки по вертикали</h2>
+
+                                <p>Как и с любой навигацией, вы можете расположить таблетки вертикально, добавив
+                                    служебный класс <span>.flex-column</span> в список
+                                    классов.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;ul class="nav nav-pills <span>flex-column"</span>&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link active" href="#"&gt;HTML&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;CSS&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;JavaScript&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;Просмотр&lt;/a&gt;
+    &lt;/li&gt;
+</ul>
+                                    </pre>
+                                        <ul class="nav nav-pills flex-column">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" href="#">HTML</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">CSS</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">JavaScript</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">Просмотр</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Выравнивание по горизонтали</h2>
+
+                                <p>По умолчанию навигация выровнена по левому краю, но вы можете использовать служебные
+                                    классы для их выравнивания. К
+                                    примеру, вы можете указать <span>.justify-content-center,</span> чтобы выровнять
+                                    навигацию по
+                                    центру.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;ul class="nav <span>justify-content-center"</span>&gt;
+    &lt;a class="nav-link active" href="#"&gt;HTML&lt;/a&gt;
+    &lt;a class="nav-link" href="#"&gt;CSS&lt;/a&gt;
+    &lt;a class="nav-link" href="#"&gt;JavaScript&lt;/a&gt;
+    &lt;a class="nav-link" href="#"&gt;Просмотр&lt;/a&gt;
+&lt;/ul&gt;
+</pre>
+                                        <ul class="nav justify-content-center">
+                                            <a class="nav-link active" href="#">HTML</a>
+                                            <a class="nav-link" href="#">CSS</a>
+                                            <a class="nav-link" href="#">JavaScript</a>
+                                            <a class="nav-link" href="#">Просмотр</a>
+                                        </ul>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Отключение ссылок</h2>
+
+                                <p>Вы можете добавить класс <span class="class">.disabled</span>, чтобы вкладка или
+                                    таблетка казалась отключенной.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;ul class="nav nav-pills">
+    &lt;li class="nav-item">
+        &lt;a class="nav-link" href="#"&gt;HTML&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item">
+        &lt;a class="nav-link" href="#"&gt;CSS&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;JavaScript&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link <span>disabled"</span> href="#"&gt;Просмотр&lt;/a&gt;
+    &lt;/li&gt;
+</ul>
+</pre>
+                                        <ul class="nav nav-pills">
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">HTML</a>&lt;
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">CSS</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">JavaScript</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link disabled" href="#">Просмотр</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Вкладки с выпадающим меню</h2>
+
+                                <p>Вы можете добавить выпадающее меню на вкладку или таблетку. В этом случае класс <span
+                                        class="class">.dropdown</span>
+                                    применяется к элементу <a href="/html/li">&lt;li&gt;</a> (а не к элементу <a
+                                        href="/html/div">&lt;div&gt;</a>).</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;ul class="nav nav-tabs"&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link active" aria-current="page" href="#"&gt;HTML&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;CSS&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item <span>dropdown</span> "&gt;
+        &lt;a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false">Просмотр&lt;/a&gt;
+        &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a class="dropdown-item" href="#">Телефон&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="dropdown-item" href="#">Планшет&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="dropdown-item" href="#">Ноутбук&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;
+                &lt;hr class="dropdown-divider"&gt;
+            &lt;/li&gt;
+            &lt;li>&lt;a class="dropdown-item" href="#"&gt;Компьютер&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+</ul>
+                                        </pre>
+                                        <ul class="nav nav-tabs">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#">HTML</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">CSS</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                                    role="button" aria-expanded="false">Просмотр</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Телефон</a></li>
+                                                    <li><a class="dropdown-item" href="#">Планшет</a></li>
+                                                    <li><a class="dropdown-item" href="#">Ноутбук</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Компьютер</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h3>Таблетки</h3>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;ul class="nav nav-pills"&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link active" aria-current="page" href="#"&gt;HTML&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item"&gt;
+        &lt;a class="nav-link" href="#"&gt;CSS&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="nav-item dropdown"&gt;
+        &lt;a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+            aria-expanded="false"&gt;Просмотр&lt;/a&gt;
+        &lt;ul class="dropdown-menu"&gt;
+            &lt;li&gt;&lt;a class="dropdown-item" href="#">Телефон&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="dropdown-item" href="#">Планшет&lt;/&gt;>&lt;/li&gt;
+            &lt;li&gt;&lt;a class="dropdown-item" href="#">Ноутбук&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;
+                &lt;hr class="dropdown-divider"&gt;
+            &lt;/li&gt;
+            &lt;li>&lt;a class="dropdown-item" href="#">Компьютер&lt;/a>&lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+</pre>
+                                        <ul class="nav nav-pills">
+                                            <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="#">HTML</a>
+                                            </li>
+                                            <li class="nav-item">
+                                                <a class="nav-link" href="#">CSS</a>
+                                            </li>
+                                            <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"
+                                                    role="button" aria-expanded="false">Просмотр</a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">Телефон</a></li>
+                                                    <li><a class="dropdown-item" href="#">Планшет</a></li>
+                                                    <li><a class="dropdown-item" href="#">Ноутбук</a></li>
+                                                    <li>
+                                                        <hr class="dropdown-divider">
+                                                    </li>
+                                                    <li><a class="dropdown-item" href="#">Компьютер</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Панели с вкладками</h2>
+
+                                <p>Вы даже можете использовать Bootstrap для создания панелей содержимого с вкладками.
+                                </p>
+                                <p>Для этого убедитесь, что каждый тег <a href="/html/a">&lt;a&gt;</a> в навигации
+                                    содержит <span class="var">data-bs-toggle="tab"</span> или <span
+                                        class="var">data-bs-toggle="pill"</span> (в зависимости от
+                                    того, используете ли вы вкладки или таблетки). Затем под списком вкладок добавьте <a
+                                        href="/html/div">&lt;div&gt;</a> с классом <span
+                                        class="class">.tab-content</span>, который будет хранить
+                                    содержимое. Затем для каждой его части вложите ещё один <span
+                                        class="tag">&lt;div&gt;</span> с классом <span class="class">.tab-pane</span>.
+                                </p>
+                                <p>Кроме того, вы можете сделать так, чтобы вкладки появлялись плавно, добавив класс
+                                    <span class="class">.fade</span> к
+                                    каждому <span class="class">.tab-pane</span>. Первая (или активная панель) также
+                                    должна содержать класс <span class="class">.show</span> для правильного появления
+                                    начального содержимого.</p>
+
+
+
+
+
+
+
+
 
 
                             </section>
