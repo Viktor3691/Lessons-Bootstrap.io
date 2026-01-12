@@ -141,7 +141,8 @@
                     <div class="container_text">
                         <div class="w-title">
                             <div class="container">
-                                <h1>Bootstrap 5 Сетки</h1>
+                                <h1>Bootstrap 5 Сворачиваемое
+                                    содержимое</h1>
                             </div>
                         </div>
                         <div class="column is-9-desktop is-12-tablet is-12-mobile w-content">
@@ -168,7 +169,295 @@
                             </div>
 
                             <section id="w-main">
-                                <h3>Система сеток Bootstrap 5</h3>
+                                <h3>
+                                    <h2>Базовый сворачиваемый блок</h2>
+                                </h3>
+
+                                <p>Сворачиваемые блоки полезны, когда нужно скрыть или показать большой объем контента:
+                                </p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div style="margin:16px 0"&gt;
+    &lt;button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo"&gt;Нажми на
+        Меня&lt;/button&gt;
+    &lt;div id="demo" <span>class="collapse"</span>&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                        <div style="margin:16px 0">
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="collapse"
+                                                data-bs-target="#demo">Нажми на
+                                                Меня</button>
+                                            <div id="demo" class="collapse">
+                                                <pre>
+        Слава русского оружия
+
+История России – это летопись не только мирных свершений, но и ратных
+подвигов, мужества и самоотверженности воинов,
+отстаивавших независимость и честь Родины. С древних времен, когда
+дружины славянских князей мечом и щитом утверждали
+свою власть, до современности, когда российские военнослужащие выполняют
+задачи по защите национальных интересов,
+русское оружие было символом силы и непобедимости.
+
+
+Вспомним ледовое побоище, когда русские воины под предводительством
+Александра Невского разгромили рыцарей Тевтонского
+ордена, показав всему миру, что Русь не сломить. Или Куликовскую битву,
+где Дмитрий Донской, собрав под свои знамена
+разрозненные княжества, нанес сокрушительный удар по Золотой Орде,
+положив начало освобождению от ига.
+
+
+Нельзя не упомянуть и Отечественную войну 1812 года, когда русский
+народ, поднявшись на борьбу с наполеоновским
+нашествием, проявил небывалый героизм и стойкость. Бородино, Тарутино,
+Малоярославец – эти названия навсегда вписаны в
+анналы русской воинской славы.
+
+
+И в годы Великой Отечественной войны, когда советские солдаты, ценой
+неимоверных усилий и жертв, отстояли свободу и
+независимость своей страны и всего мира от фашистской чумы, русское
+оружие вновь доказало свою мощь и надежность.
+Сталинград, Курская дуга, взятие Берлина – эти победы стали символом
+героизма и непобедимости русского солдата.
+
+
+История русского оружия – это история мужества, стойкости и
+самоотверженности русских воинов, которые во все времена
+отстаивали честь, свободу и независимость своей Родины. Эта слава
+заслужена кровью и потом многих поколений, и она
+должна быть сохранена и передана будущим поколениям.
+                                                </pre>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <h3>Объяснение примера</h3>
+
+                                <p> Класс <code class="w3-codespan">.collapse</code> указывает на сворачиваемый элемент
+                                    (в нашем примере это
+                                    &lt;div&gt;); это содержимое, которое будет отображаться или скрываться при нажатии
+                                    на кнопку. </p>
+                                <p>Чтобы управлять (отображать/скрывать) сворачиваемым содержимым, добавьте атрибут
+                                    <code class="w3-codespan">data-bs-toggle="collapse"</code> к элементу &lt;a&gt; или
+                                    &lt;button&gt;. Затем добавьте
+                                    атрибут <code class="w3-codespan">data-bs-target="#id"</code> для связи кнопки с
+                                    выпадающим содержимым (&lt;div
+                                    id="demo"&gt;).
+                                </p>
+                                <p><strong>Примечание:</strong> для элементов &lt;a&gt; вместо атрибута <code
+                                        class="w3-codespan">href</code> можно
+                                    использовать атрибут <code class="w3-codespan">data-bs-target</code>:</p>
+                                <p>По умолчанию сворачиваемое содержимое скрыто. Однако вы можете добавить класс <code
+                                        class="w3-codespan">.show</code>
+                                    для отображения содержимого по умолчанию:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="container mt-3"&gt;
+    &lt;h2&gt;Показывать сворачиваемый контент по умолчанию&lt;/h2&gt;
+    &lt;p&gt;Добавьте класс show рядом с классом collapse, чтобы отображать содержимое по умолчанию.&lt;/p&gt;
+    &lt;p&gt;Нажмите на кнопку, чтобы переключаться между отображением и скрытием содержимого.&lt;/p&gt;
+    &lt;button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo"&gt;Simple
+        collapsible&lt;/button&gt;
+    &lt;div id="demo" class="collapse show"&gt;
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    &lt;/div&gt;
+&lt;/div>
+                                    </pre>
+                                        <div class="container mt-3">
+                                            <h2>Показывать сворачиваемый контент по умолчанию</h2>
+                                            <p>Добавьте класс show рядом с классом collapse, чтобы отображать содержимое
+                                                по умолчанию.</p>
+                                            <p>Нажмите на кнопку, чтобы переключаться между отображением и скрытием
+                                                содержимого.</p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="collapse"
+                                                data-bs-target="#demo">Simple
+                                                collapsible</button>
+                                            <div id="demo" class="collapse show">
+                                                <pre>
+Старый Новый год – это удивительный парадокс, который продолжает жить в
+наших сердцах и традициях. Это как тихий шепот
+уходящего праздника, предлагающий нам еще один шанс оглянуться назад,
+подвести итоги и приветствовать наступающий год с
+новыми надеждами.
+
+Этот праздник – мост между прошлым и будущим. Он напоминает о старом,
+юлианском календаре, который когда-то определял
+ритм нашей жизни. И хотя мы давно перешли на григорианский календарь,
+память о прошлом жива. Старый Новый год дарит нам
+время для замедления, возможность насладиться моментом и еще раз ощутить
+тепло семейного очага.
+
+В этот вечер многие семьи собираются вместе, чтобы разделить праздничный
+ужин. На столе традиционно появляются блюда,
+которые символизируют изобилие и процветание: кутья, вареники, пироги.
+Это время для обмена добрыми пожеланиями и
+надеждами на счастливый год.
+
+Несмотря на то, что Старый Новый год не является официальным праздником,
+он по-прежнему отмечается с теплотой и
+радостью. Это день, когда можно вернуться к традициям, вспомнить о
+корнях и просто насладиться атмосферой уюта и
+волшебства. Он напоминает нам о важности сохранения культурного наследия
+и о том, что даже в современном мире есть место
+для старых добрых традиций.
+                                              </pre>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Аккордеон</h2>
+
+                                <p>Сворачиваемое содержимое часто применяется для создания «аккордеона». Аккордеоны
+                                    популярны для такого содержимого,
+                                    как часто задаваемые вопросы, обзоры продуктов и др.</p>
+                                <p>Вы можете использовать карточки Bootstrap для создания стиля аккордеона, как показано
+                                    ниже.</p>
+                                <p>Добавьте класс <span class="class">.show</span> к сворачиваемому содержимому, чтобы
+                                    оно раскрывалось при загрузке
+                                    страницы. Также используйте <span class="var">aria-expanded="true"</span> в этом
+                                    случае.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div id="faq" role="tablist" aria-multiselectable="true"&gt;
+
+    &lt;div class="card"&gt;
+        &lt;div class="card-header" role="tab" id="questionOne"&gt;
+            &lt;h5 class="card-title"&gt;
+                &lt;a data-bs-toggle="collapse" data-parent="#faq" href="#answerOne"
+                  <span>aria-expanded="true"</span> aria-controls="answerOne"&gt;
+                    Что делать, если ботинки мне велики?
+                &lt;/a&gt;
+            &lt;/h5&gt;
+        &lt;/div&gt;
+        &lt;div id="answerOne" <span>class="collapse <mark>show</mark> "</span> role="tabcard" aria-labelledby="questionOne"&gt;
+            &lt;div class="card-body"&gt;
+                Набей ботинки газетами или тряпками.
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="card"&gt;
+        &lt;div class="card-header" role="tab" id="questionTwo"&gt;
+            &lt;h5 class="card-title"&gt;
+                &lt;a class="collapsed" data-bs-toggle="collapse" data-parent="#faq" href="#answerTwo"
+                   <vv1>aria-expanded="false"</vv1>  aria-controls="answerTwo"&gt;
+                    Могу ли я носить ботинки в квартире?
+                &lt;/a&gt;
+            &lt;/h5&gt;
+        &lt;/div&gt;
+        &lt;div id="answerTwo" <vv1>class="collapse"</vv1>  role="tabcard" aria-labelledby="questionTwo"&gt;
+            &lt;div class="card-body"&gt;
+                Нет. Твоя мама должна была сказать тебе об этом.
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+    &lt;div class="card"&gt;
+        &lt;div class="card-header" role="tab" id="questionThree"&gt;
+            &lt;h5 class="card-title"&gt;
+                &lt;a class="collapsed" data-bs-toggle="collapse" data-parent="#faq" href="#answerThree"
+                   <vv1>aria-expanded="false"</vv1>  aria-controls="answerThree">
+                    Что делать, если мокрые ботинки становятся скользкими?
+                &lt;/a&gt;
+            &lt;/h5&gt;
+        &lt;/div&gt;
+        &lt;div id="answerThree" <vv1>class="collapse"</vv1> role="tabcard" aria-labelledby="questionThree"&gt;
+            &lt;div class="card-body"&gt;
+                Держи ботинки сухими.
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;
+</pre>
+                                        <div id="faq" role="tablist" aria-multiselectable="true">
+
+                                            <div class="card">
+                                                <div class="card-header" role="tab" id="questionOne">
+                                                    <h5 class="card-title">
+                                                        <a data-bs-toggle="collapse" data-parent="#faq"
+                                                            href="#answerOne" aria-expanded="true"
+                                                            aria-controls="answerOne">
+                                                            Что делать, если ботинки мне велики?
+                                                        </a>
+                                                    </h5>
+                                                </div>
+                                                <div id="answerOne" class="collapse show" role="tabcard"
+                                                    aria-labelledby="questionOne">
+                                                    <div class="card-body">
+                                                        Набей ботинки газетами или тряпками.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card">
+                                                <div class="card-header" role="tab" id="questionTwo">
+                                                    <h5 class="card-title">
+                                                        <a class="collapsed" data-bs-toggle="collapse"
+                                                            data-parent="#faq" href="#answerTwo" aria-expanded="false"
+                                                            aria-controls="answerTwo">
+                                                            Могу ли я носить ботинки в квартире?
+                                                        </a>
+                                                    </h5>
+                                                </div>
+                                                <div id="answerTwo" class="collapse" role="tabcard"
+                                                    aria-labelledby="questionTwo">
+                                                    <div class="card-body">
+                                                        Нет. Твоя мама должна была сказать тебе об этом.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="card">
+                                                <div class="card-header" role="tab" id="questionThree">
+                                                    <h5 class="card-title">
+                                                        <a class="collapsed" data-bs-toggle="collapse"
+                                                            data-parent="#faq" href="#answerThree" aria-expanded="false"
+                                                            aria-controls="answerThree">
+                                                            Что делать, если мокрые ботинки становятся скользкими?
+                                                        </a>
+                                                    </h5>
+                                                </div>
+                                                <div id="answerThree" class="collapse" role="tabcard"
+                                                    aria-labelledby="questionThree">
+                                                    <div class="card-body">
+                                                        Держи ботинки сухими.
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+
+
+
+
 
 
                             </section>

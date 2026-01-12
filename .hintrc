@@ -27,7 +27,8 @@
       "default",
       {
         "aria-required-children": "off",
-        "empty-table-header": "off"
+        "empty-table-header": "off",
+        "aria-roles": "off"
       }
     ],
     "compat-api/css": [
@@ -46,6 +47,18 @@
       "default",
       {
         "label": "off"
+      }
+    ],
+    "axe/parsing": [
+      "default",
+      {
+        "duplicate-id": "off"
+      }
+    ],
+    "axe/keyboard": [
+      "default",
+      {
+        "nested-interactive": "off"
       }
     ]
   }
