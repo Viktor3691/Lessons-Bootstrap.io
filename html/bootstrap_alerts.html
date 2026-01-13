@@ -141,7 +141,13 @@
                     <div class="container_text">
                         <div class="w-title">
                             <div class="container">
-                                <h1>Bootstrap 5 Сетки</h1>
+
+                                <div class="w-title">
+                                    <div class="container">
+                                        <h1>Уведомления в Bootstrap 5</h1>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                         <div class="column is-9-desktop is-12-tablet is-12-mobile w-content">
@@ -167,7 +173,121 @@
                             </div>
 
                             <section id="w-main">
-                                <h3>Система сеток Bootstrap 5</h3>
+
+                                <img src="../img/16.gif" alt="16" class="pictures">
+
+                                <p>Bootstrap предлагает простой способ создания стилизованного блока уведомления с
+                                    помощью специального компонента.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="alert alert-primary" role="alert"&gt;Основное уведомление&lt;/div&gt;
+&lt;div class="alert alert-secondary" role="alert"&gt;Вторичное уведомление&lt;/div&gt;
+&lt;div class="alert alert-success" role="alert"&gt;Уведомление об успехе&lt;/div&gt;
+&lt;div class="alert alert-info" role="alert"&gt;Информационное уведомление&lt;/div&gt;
+&lt;div class="alert alert-warning" role="alert"&gt;Уведомление с предупреждением&lt;/div&gt;
+&lt;div class="alert alert-danger" role="alert"&gt;Уведомление об опасности&lt;/div&gt;
+&lt;div class="alert alert-light" role="alert"&gt;Светлое уведомление&lt;/div&gt;
+&lt;div class="alert alert-dark" role="alert"&gt;Тёмное уведомление&lt;/div&gt;
+                                    </pre>
+                                        <div class="alert alert-primary" role="alert">Основное уведомление</div>
+                                        <div class="alert alert-secondary" role="alert">Вторичное уведомление</div>
+                                        <div class="alert alert-success" role="alert">Уведомление об успехе</div>
+                                        <div class="alert alert-info" role="alert">Информационное уведомление</div>
+                                        <div class="alert alert-warning" role="alert">Уведомление с предупреждением
+                                        </div>
+                                        <div class="alert alert-danger" role="alert">Уведомление об опасности</div>
+                                        <div class="alert alert-light" role="alert">Светлое уведомление</div>
+                                        <div class="alert alert-dark" role="alert">Тёмное уведомление</div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Закрываемые уведомления</h2>
+
+                                <p>Вы можете создавать закрываемые уведомления, добавив кнопку закрытия и класс <span
+                                        class="class">.alert-dismissible</span>. К кнопке закрытия добавьте атрибут
+                                    <span class="var">data-bs-dismiss="alert"</span>. Обязательно используйте элемент <a
+                                        href="/html/button">&lt;button&gt;</a> для правильного поведения на всех
+                                    устройствах.
+                                </p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="alert alert-success <span>alert-dismissible</span>" role="alert"&gt;
+    &lt;strong>Поздравляем!&lt;/strong&gt; Вы успешно завязали шнурки!
+    &lt;<vv1>button </vv1>type="button" class="btn-close" <span>data-bs-dismiss="alert" </span>aria-label="Закрыть"&gt;&lt;<vv1>/button</vv1>&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="alert alert-success alert-dismissible" role="alert">
+                                            <strong>Поздравляем!</strong> Вы успешно завязали шнурки!
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                aria-label="Закрыть"></button>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Эффект плавного исчезновения</h2>
+
+                                <p>Вы можете придать уведомлениям при их закрытии лёгкий эффект исчезновения, добавив
+                                    классы <span class="class">.fade</span> и <span class="class">.show</span>.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="alert alert-success alert-dismissible <span>fade show</span>" role="alert"&gt;
+    &lt;strong&gt;Поздравляем!&lt;/strong> Вы успешно завязали шнурки!
+    &lt;button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Закрыть">&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                            <strong>Поздравляем!</strong> Вы успешно завязали шнурки!
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                aria-label="Закрыть"></button>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Уведомления со ссылками</h2>
+
+                                <p>Используйте класс <span class="class">.alert-link</span> в теге <a
+                                        href="/html/a">&lt;a&gt;</a>, чтобы цвет ссылки
+                                    совпадал с цветом текста.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="alert alert-success alert-dismissible fade show" role="alert"&gt;
+    &lt;strong&gt;Поздравляем!&lt;/strong&gt; Теперь вы готовы к
+    &lt;a href="#" <span>class="alert-link"</span>&gt;следующим шнуркам&lt;/a&gt;.
+    &lt;button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Закрыть">&lt;/button&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                            <strong>Поздравляем!</strong> Теперь вы готовы к
+                                            <a href="#" class="alert-link">следующим шнуркам</a>.
+                                            <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                                aria-label="Закрыть"></button>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+
+
+
+
 
 
                             </section>

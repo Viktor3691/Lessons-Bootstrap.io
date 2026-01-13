@@ -141,7 +141,13 @@
                     <div class="container_text">
                         <div class="w-title">
                             <div class="container">
-                                <h1>Bootstrap 5 Сетки</h1>
+
+                                <div class="w-title">
+                                    <div class="container">
+                                        <h1>Модальные окна</h1>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                         <div class="column is-9-desktop is-12-tablet is-12-mobile w-content">
@@ -166,10 +172,201 @@
 
                                 </div>
                             </div>
-
+                            <br>
                             <section id="w-main">
-                                <h3>Система сеток Bootstrap 5</h3>
 
+                                <img src="../img/17.webp" alt="17" class="pictures">
+                                <br>
+
+                                <p>Bootstrap позволяет добавить на ваш сайт модальное диалоговое окно. Модальное окно —
+                                    это диалоговое окно, которое
+                                    получает фокус, в то время как остальная часть экрана затемнена или выделена серым
+                                    цветом. Это заставляет
+                                    пользователя выполнить действие в диалоговом окне, прежде чем продолжить.</p>
+                                <p>Чтобы создать модальное окно, используйте класс <span class="class">.modal</span>
+                                    вместе с другими классами <span class="class">.modal-*</span> для определения
+                                    каждого раздела модального окна.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"&gt;
+    Открыть модальное окно
+&lt;/button&gt;
+&lt;div <span>class="modal</span> fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+    &lt;div <span>class="modal-dialog"</span>&gt;
+        &lt;div <span>class="modal-content"</span>&gt;
+            &lt;div <span>class="modal-header"</span>&gt;
+                &lt;h5 <span>class="modal-title"</span> id="exampleModalLabel"&gt;Заголовок&lt;/h5&gt;
+                &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"&gt;&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div <span>class="modal-body"</span>&gt;
+                Содержимое…
+            &lt;/div&gt;
+            &lt;div <span>class="modal-footer</span>"&gt;
+                &lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary">Сохранить изменения&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            Открыть модальное окно
+                                        </button>
+                                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Заголовок</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Закрыть"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Содержимое…
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Закрыть</button>
+                                                        <button type="button" class="btn btn-primary">Сохранить
+                                                            изменения</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Статичный фон</h2>
+
+                                <p>Модальное окно в предыдущем примере будет закрываться всякий раз, когда пользователь
+                                    щёлкает за его пределами. Вы
+                                    можете убрать эту возможность, сделав следующее:</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"&gt;
+    Открыть модальное окно
+&lt;/button&gt;
+&lt;div class="modal <vv1>fade</vv1>" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true"&gt;
+    &lt;div class="modal-dialog"&gt;
+        &lt;div class="modal-content"&gt;
+            &lt;div class="modal-header"&gt;
+                &lt;h5 class="modal-title" id="staticBackdropLabel">Заголовок&lt;/h5&gt;
+                &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body"&gt;
+                Содержимое…
+            &lt;/div&gt;
+            &lt;div class="modal-footer"&gt;
+                &lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal&gt;&lt;Закрыть&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary">Понятно&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                    </pre>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#staticBackdrop">
+                                            Открыть модальное окно
+                                        </button>
+                                        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                            data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                            aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="staticBackdropLabel">Заголовок</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Закрыть"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Содержимое…
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Закрыть</button>
+                                                        <button type="button" class="btn btn-primary">Понятно</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Удаление эффект плавного появления</h2>
+
+                                <p>Вы можете удалить класс <span class="class">.fade</span>, чтобы избавиться от эффекта
+                                    плавного появления окна.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"&gt;
+    Открыть модальное окно
+&lt;/button&gt;
+&lt;<vv1>div class="modal"</vv1> id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"&gt;
+    &lt;div class="modal-dialog"&gt;
+        &lt;div class="modal-content"&gt;
+            &lt;div class="modal-header"&gt;
+                &lt;h5 class="modal-title" id="exampleModalLabel">Заголовок&lt;/h5&gt;
+                &lt;button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть">&lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class="modal-body"&gt;
+                Содержимое…
+            &lt;/div&gt;
+            &lt;div class="modal-footer"&gt;
+                &lt;button type="button" class="btn btn-secondary" data-bs-dismiss="modal"&gt;Закрыть&lt;/button&gt;
+                &lt;button type="button" class="btn btn-primary">Сохранить изменения&lt;/button&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                            data-bs-target="#exampleModal">
+                                            Открыть модальное окно
+                                        </button>
+                                        <div class="modal" id="exampleModal" tabindex="-1"
+                                            aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title" id="exampleModalLabel">Заголовок</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Закрыть"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        Содержимое…
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Закрыть</button>
+                                                        <button type="button" class="btn btn-primary">Сохранить
+                                                            изменения</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <p>С модальными окнами Bootstrap вы можете делать гораздо больше, чем здесь показано.
+                                    Подробное описание смотрите в <a
+                                        href="https://getbootstrap.com/docs/5.3/components/modal/">документации
+                                        Bootstrap</a>.</p>
 
                             </section>
                         </div>

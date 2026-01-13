@@ -141,7 +141,14 @@
                     <div class="container_text">
                         <div class="w-title">
                             <div class="container">
-                                <h1>Bootstrap 5 Сетки</h1>
+
+                                <div class="w-title">
+                                    <div class="container">
+                                        <h1>Пагинация в Bootstrap 5</h1>
+                                    </div>
+                                </div>
+
+
                             </div>
                         </div>
                         <div class="column is-9-desktop is-12-tablet is-12-mobile w-content">
@@ -167,7 +174,361 @@
                             </div>
 
                             <section id="w-main">
-                                <h3>Система сеток Bootstrap 5</h3>
+
+                                <img src="../img/14.webp" alt="14" class="pictures">
+
+                                <p>Класс <span class="class">.pagination</span> в Bootstrap делает именно то, что
+                                    обещает его название — он выполняет
+                                    пагинацию.</p>
+                                <p>Пагинация обычно используется для навигации по нескольким страницам в серии.
+                                    Например, в результатах поиска, которые
+                                    выдают много страниц, есть пагинация, которая позволяет пользователю перейти на
+                                    следующую страницу или даже
+                                    перескочить на несколько страниц вперёд.</p>
+
+                                <h2>Пагинация по умолчанию</h2>
+
+                                <p>Чтобы создать нумерацию страниц по умолчанию, добавьте класс <span
+                                        class="class">.pagination</span> к элементу <a href="/html/ul">&lt;ul&gt;</a>,
+                                    который содержит список страниц.</p>
+                                <p>Также добавьте <span class="class">.page-item</span> к каждому элементу <a
+                                        href="/html/li">&lt;li&gt;</a> и <span class="class">.page-link</span> к каждому
+                                    элементу <a href="/html/a">&lt;a&gt;</a>.</p>
+                                <p>Кроме того, во имя семантического HTML, всё это должно быть заключено в элемент <a
+                                        href="/html/nav">&lt;nav&gt;</a> с
+                                    атрибутом <span class="attribute">aria-label</span>, отражающим его назначение.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;nav <span>aria-label</span>="Навигация по страницам"&gt;
+  &lt;<span>ul class="pagination"</span>&gt;
+    &lt;li class=<span>"page-item"</span>&gt;&lt;a href="#" class=<span>"page-link"</span> aria-label="Предыдущая"&gt;
+        &lt;span aria-hidden="true"&gt;&laquo;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=<span>"page-item"</span>&gt;&lt;a href="#" class=<span>"page-link"</span>&gt;1&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=<span>"page-item"</span>&gt;&lt;a href="#" class=<span>"page-link"</span>&gt;2&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=<span>"page-item"</span>&gt;&lt;a href="#" class=<span>"page-link"</span>&gt;3&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=<span>"page-item"</span>&gt;&lt;a href="#" class=<span>"page-link"</span>&gt;4&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=<span>"page-item"</span>&gt;&lt;a href="#" class=<span>"page-link"</span>&gt;5&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=<span>"page-item"</span>&gt;&lt;a href="#" class=<span>"page-link"</span>&gt;6&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=<span>"page-item"</span>&gt;&lt;a href="#" class=<span>"page-link"</span>&gt;7&lt;/a&gt;&lt;/li&gt;
+    &lt;li class=<span>"page-item"</span>&gt;&lt;a href="#" class=<span>"page-link"</span> aria-label="Следующая"&gt;
+        &lt;span aria-hidden="true">&raquo;&lt;/span&gt;
+      &lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+                                    </pre>
+                                        <nav aria-label="Навигация по страницам">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link" aria-label="Предыдущая">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">6</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">7</a></li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link" aria-label="Следующая">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h3>Активное состояние текущей страницы</h3>
+
+                                <p>Добавьте класс <span class="class">.active</span> к элементу <span
+                                        class="tag">&lt;li&gt;</span>, который показывает
+                                    текущую страницу (страницу, на которой в данный момент находится пользователь).</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;nav aria-label="Навигация по страницам"&gt;
+    &lt;ul class="pagination"&gt;
+        &lt;li class="page-item"&gt;
+            &lt;a href="#" class="page-link" aria-label="Предыдущая"&gt;
+                &lt;span aria-hidden="true&gt;&gt;&laquo;&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link"&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link"&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link"&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=<span>"page-item active"</span>&gt;&lt;a href="#" class="page-link"&gt;4&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link"&gt;5&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link"&gt;6&lt;/a>&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link"&gt;7&lt;/a>&lt;/li&gt;
+        &lt;li class="page-item"&gt;
+            &lt;a href="#" class="page-link" aria-label="Следующая"&gt;
+                &lt;span aria-hidden="true"&gt;&raquo;&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+</pre>
+                                        <nav aria-label="Навигация по страницам">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link" aria-label="Предыдущая">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                                <li class="page-item active"><a href="#" class="page-link">4</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">6</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">7</a></li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link" aria-label="Следующая">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h3>Отключение пункта</h3>
+
+                                <p>Добавьте класс <span class="class">.disabled</span> в элемент <span
+                                        class="tag">&lt;li&gt;</span>, чтобы отключить
+                                    данный пункт.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;nav aria-label="Навигация по страницам"&gt;
+    &lt;ul class="pagination"&gt;
+        &lt;li class="page-item"&gt;
+            &lt;a href="#" class="page-link" aria-label="Предыдущая"&gt;
+                &lt;span aria-hidden="true"&gt;&laquo;&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link"&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link"&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link"&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;<span>li class="page-item disabled"</span>&gt;&lt;a href="#" class="page-link"&gt;4</a>&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link"&gt;5</a>&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link"&gt;6</a>&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link"&gt;7</a>&lt;/li&gt;
+        &lt;li class="page-item"&gt;
+            &lt;a href="#" class="page-link" aria-label="Следующая"&gt;
+                &lt;span aria-hidden="true"&gt;&raquo;&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+</pre>
+                                        <nav aria-label="Навигация по страницам">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link" aria-label="Предыдущая">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                                <li class="page-item disabled"><a href="#" class="page-link">4</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">6</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">7</a></li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link" aria-label="Следующая">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h3>Размер пагинации</h3>
+
+                                <p>Добавьте <span class="class">.pagination-lg</span> или <span
+                                        class="class">.pagination-sm</span> к элементу <span
+                                        class="tag">&lt;ul&gt;</span>, чтобы увеличить или уменьшить размер элементов
+                                    управления нумерацией страниц.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;nav aria-label="Навигация по страницам"&gt;
+    &lt;ul class="pagination <span>pagination-lg</span>"&gt;
+        &lt;li class="page-item"&gt;
+            &lt;a href="#" class="page-link" aria-label="Предыдущая"&gt;
+                &lt;span aria-hidden="true">&laquo;&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link">1&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link">2&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link">3&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link">4&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link">5&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link">6&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;&lt;a href="#" class="page-link">7&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="page-item"&gt;
+            &lt;a href="#" class="page-link" aria-label="Следующая"&gt;
+                &lt;span aria-hidden="true">&raquo;&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+
+</pre>
+                                        <nav aria-label="Навигация по страницам">
+                                            <ul class="pagination pagination-lg">
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link" aria-label="Предыдущая">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">6</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">7</a></li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link" aria-label="Следующая">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+
+
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;nav aria-label="Навигация по страницам"&gt;
+<vv1>&lt;ul class="pagination <span></span>"&gt;</vv1>
+&lt;li class="page-item"&gt;
+&lt;a href="#" class="page-link" aria-label="Предыдущая"&gt;
+&lt;span aria-hidden="true">&laquo;&lt;/span&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="page-item"&gt;&lt;a href="#" class="page-link">1&lt;/a&gt;&lt;/li&gt;
+&lt;li class="page-item"&gt;&lt;a href="#" class="page-link">2&lt;/a&gt;&lt;/li&gt;
+&lt;li class="page-item"&gt;&lt;a href="#" class="page-link">3&lt;/a&gt;&lt;/li&gt;
+&lt;li class="page-item"&gt;&lt;a href="#" class="page-link">4&lt;/a&gt;&lt;/li&gt;
+&lt;li class="page-item"&gt;&lt;a href="#" class="page-link">5&lt;/a&gt;&lt;/li&gt;
+&lt;li class="page-item"&gt;&lt;a href="#" class="page-link">6&lt;/a&gt;&lt;/li&gt;
+&lt;li class="page-item"&gt;&lt;a href="#" class="page-link">7&lt;/a&gt;&lt;/li&gt;
+&lt;li class="page-item"&gt;
+&lt;a href="#" class="page-link" aria-label="Следующая"&gt;
+&lt;span aria-hidden="true">&raquo;&lt;/span&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+</pre>
+                                        <nav aria-label="Навигация по страницам">
+                                            <ul class="pagination">
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link" aria-label="Предыдущая">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">6</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">7</a></li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link" aria-label="Следующая">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;nav aria-label="Навигация по страницам"&gt;
+&lt;ul class="pagination <span>pagination-sm</span>"&gt;
+&lt;li class="page-item"&gt;
+&lt;a href="#" class="page-link" aria-label="Предыдущая"&gt;
+&lt;span aria-hidden="true">&laquo;&lt;/span&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;li class="page-item"&gt;&lt;a href="#" class="page-link">1&lt;/a&gt;&lt;/li&gt;
+&lt;li class="page-item"&gt;&lt;a href="#" class="page-link">2&lt;/a&gt;&lt;/li&gt;
+&lt;li class="page-item"&gt;&lt;a href="#" class="page-link">3&lt;/a&gt;&lt;/li&gt;
+&lt;li class="page-item"&gt;&lt;a href="#" class="page-link">4&lt;/a&gt;&lt;/li&gt;
+&lt;li class="page-item"&gt;&lt;a href="#" class="page-link">5&lt;/a&gt;&lt;/li&gt;
+&lt;li class="page-item"&gt;&lt;a href="#" class="page-link">6&lt;/a&gt;&lt;/li&gt;
+&lt;li class="page-item"&gt;&lt;a href="#" class="page-link">7&lt;/a&gt;&lt;/li&gt;
+&lt;li class="page-item"&gt;
+&lt;a href="#" class="page-link" aria-label="Следующая"&gt;
+&lt;span aria-hidden="true">&raquo;&lt;/span&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/nav&gt;
+</pre>
+                                        <nav aria-label="Навигация по страницам">
+                                            <ul class="pagination pagination-sm">
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link" aria-label="Предыдущая">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item"><a href="#" class="page-link">1</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">2</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">3</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">4</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">5</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">6</a></li>
+                                                <li class="page-item"><a href="#" class="page-link">7</a></li>
+                                                <li class="page-item">
+                                                    <a href="#" class="page-link" aria-label="Следующая">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+
 
 
                             </section>
