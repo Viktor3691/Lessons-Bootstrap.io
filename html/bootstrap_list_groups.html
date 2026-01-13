@@ -141,7 +141,13 @@
                     <div class="container_text">
                         <div class="w-title">
                             <div class="container">
-                                <h1>Bootstrap 5 Сетки</h1>
+
+                                <div class="w-title">
+                                    <div class="container">
+                                        <h1>Группы списков Bootstrap 5</h1>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                         <div class="column is-9-desktop is-12-tablet is-12-mobile w-content">
@@ -168,7 +174,126 @@
                             </div>
 
                             <section id="w-main">
-                                <h3>Система сеток Bootstrap 5</h3>
+
+                                <img src="../img/19.jpg" alt="19" class="pictures">
+
+                                <p>В Bootstrap группы списков — это компонент, который стилизует неупорядоченные списки
+                                    определённым образом. Это
+                                    позволяет создавать более сложные списки с пользовательским содержимым, не увязая в
+                                    проблемах с оформлением.</p>
+                                <hr>
+
+                                <h2>Создание группы списков по умолчанию</h2>
+
+                                <p>Чтобы создать группу списков по умолчанию, примените класс <span
+                                        class="class">.list-group</span> к тегу <a href="/html/ul">&lt;ul&gt;</a> и
+                                    класс <span class="class">.list-group-item</span> к каждому тегу <a
+                                        href="/html/li">&lt;li&gt;</a>.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;<vv1>ul </vv1><span>class="list-group"</span>&gt;
+    &lt;<vv1>li</vv1> <span>class="list-group-item"</span>&gt;These Boots Are Made For Walking&lt;<vv1>/li</vv1>&gt;
+    &lt;<vv1>li</vv1> <span>class="list-group-item"</span>&gt;Eleanor, Put Your Boots On&lt;<vv1>/li</vv1>&gt;
+    &lt;<vv1>li</vv1> <span>class="list-group-item"</span>&gt;Puss 'n' Boots&lt;<vv1>/li</vv1>&gt;
+    &lt;<vv1>li</vv1> <span>class="list-group-item"</span>&gt;Die With Your Boots On&lt;<vv1>/li</vv1>&gt;
+    &lt;<vv1>li</vv1> <span>class="list-group-item"</span>&gt;Fairies Wear Boots&lt;<vv1>/li</vv1>&gt;
+&lt;<vv1>/ul</vv1>&gt;
+                                        </pre>
+                                        <ul class="list-group">
+                                            <li class="list-group-item">These Boots Are Made For Walking</li>
+                                            <li class="list-group-item">Eleanor, Put Your Boots On</li>
+                                            <li class="list-group-item">Puss 'n' Boots</li>
+                                            <li class="list-group-item">Die With Your Boots On</li>
+                                            <li class="list-group-item">Fairies Wear Boots</li>
+                                        </ul>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Значки</h2>
+
+                                <p>Вы можете добавить значки в группу списков. Выровнять их по отношению к остальному
+                                    содержимому можно с помощью
+                                    классов типа <span class="class">.justify-content-between</span> (что
+                                    расшифровывается как <span class="var">justify-content: space-between</span>).</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;ul class="list-group">
+    &lt;li class="list-group-item d-flex <span>justify-content-between </span>align-items-center"&gt;
+        These Boots Are Made For Walking
+        &lt;span class="badge bg-primary rounded-pill"&gt;15&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class="list-group-item d-flex <span>justify-content-between</span> align-items-center"&gt;
+        Eleanor, Put Your Boots On
+        &lt;span class="badge bg-primary rounded-pill">38&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class="list-group-item d-flex <span>justify-content-between</span> align-items-center"&gt;
+        Puss 'n' Boots
+        &lt;span class="badge bg-primary rounded-pill"&gt&lt;76&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class="list-group-item d-flex <span>justify-content-between </span>align-items-center"&gt;
+        Die With Your Boots On
+        &lt;span class="badge bg-primary rounded-pill"&gt;112&lt;/span&gt;
+    &lt;/li&gt;
+    &lt;li class="list-group-item d-flex <span>justify-content-between </span>align-items-center"&gt;
+        Fairies Wear Boots
+        &lt;span class="badge bg-primary rounded-pill"&gt;181&lt;/span&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+
+                                    </pre>
+                                        <ul class="list-group">
+                                            <li
+                                                class="list-group-item d-flex justify-content-between align-items-center">
+                                                These Boots Are Made For Walking
+                                                <span class="badge bg-primary rounded-pill">15</span>
+                                            </li>
+                                            <li
+                                                class="list-group-item d-flex justify-content-between align-items-center">
+                                                Eleanor, Put Your Boots On
+                                                <span class="badge bg-primary rounded-pill">38</span>
+                                            </li>
+                                            <li
+                                                class="list-group-item d-flex justify-content-between align-items-center">
+                                                Puss 'n' Boots
+                                                <span class="badge bg-primary rounded-pill">76</span>
+                                            </li>
+                                            <li
+                                                class="list-group-item d-flex justify-content-between align-items-center">
+                                                Die With Your Boots On
+                                                <span class="badge bg-primary rounded-pill">112</span>
+                                            </li>
+                                            <li
+                                                class="list-group-item d-flex justify-content-between align-items-center">
+                                                Fairies Wear Boots
+                                                <span class="badge bg-primary rounded-pill">181</span>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                             </section>
