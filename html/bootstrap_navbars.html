@@ -170,25 +170,307 @@
 
                             <section id="w-main">
 
-                                <h2>Базовая панель навигации</h2>
+                                <h2>Базовые панель навигации</h2>
 
                                 <img src="../img/12.webp" alt="12" class="pictures">
 
+                                <p>Панель навигации Bootstrap 5 — это простая оболочка для размещения фирменного стиля,
+                                    навигации и других элементов в
+                                    навигационном заголовке.</p>
 
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;nav class="navbar navbar-expand-sm navbar-light bg-faded"&gt;
+    &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-content"
+        aria-controls="nav-content" aria-expanded="false" aria-label="Переключатель навигации"&gt;
+        &lt;span class="navbar-toggler-icon">&lt;/span>
+    </button>
+    &lt;!-- Бренд --&gt;
+    &lt;a class="navbar-brand" href="#">Лого&lt;/a&gt;
+    &lt;!-- Ссылки --&gt;
+    &lt;div class="collapse navbar-collapse" id="nav-content"&gt;
+        &lt;ul class="navbar-nav"&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#">Ссылка 1&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#">Ссылка 2&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#">Ссылка 3&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+</pre>
+                                        <nav class="navbar navbar-expand-sm navbar-light bg-faded">
+                                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#nav-content" aria-controls="nav-content"
+                                                aria-expanded="false" aria-label="Переключатель навигации">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </button>
+                                            <!-- Бренд -->
+                                            <a class="navbar-brand" href="#">Лого</a>
+                                            <!-- Ссылки -->
+                                            <div class="collapse navbar-collapse" id="nav-content">
+                                                <ul class="navbar-nav">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Ссылка 1</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Ссылка 2</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Ссылка 3</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
 
+                                <p>Вот объяснение:</p>
 
+                                <ul>
+                                    <li>Заключите всё в элемент <a href="/html/nav">&lt;nav&gt;</a> с классом <span
+                                            class="class">.navbar</span> и
+                                        классом <span class="class">.navbar-expand{-sm|-md|-lg|-xl|-xxl}</span>, а также
+                                        выберите цветовую схему.</li>
+                                    <li>Для переключений меню на небольших устройствах используйте элемент <a
+                                            href="/html/button">&lt;button&gt;</a> с
+                                        классом <span class="class">.navbar-toggler</span>. Для отображения «гамбургера»
+                                        используйте класс <span class="class">.navbar-toggler-icon</span> в элементе <a
+                                            href="/html/span">&lt;span&gt;</a>.</li>
+                                    <li>Для списка ссылок используйте элемент <a href="/html/ul">&lt;ul&gt;</a> с
+                                        классом <span class="class">.navbar-nav</span>.</li>
+                                    <li>Для каждого отдельного элемента списка используйте <a
+                                            href="/html/li">&lt;li&gt;</a> с классом <span
+                                            class="class">.nav-item</span>.</li>
+                                    <li>Для отдельных ссылок используйте <a href="/html/a">&lt;a&gt;</a> с классом
+                                        .nav-link.</li>
+                                </ul>
+                                <hr>
 
+                                <h2>Панель навигации с выпадающим меню</h2>
 
+                                <p>Вы можете добавить выпадающие меню в свою панель навигации. Просто вставьте код
+                                    выпадающего меню в элемент <span class="tag">&lt;li&gt;</span> с классом <span
+                                        class="class">.dropdown</span>.</p>
 
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;nav class="navbar navbar-expand-sm navbar-light bg-faded"&gt;
+    &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-content"
+        aria-controls="nav-content" aria-expanded="false" aria-label="Переключатель навигации"&gt;
+        &lt;span class="navbar-toggler-icon&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;!-- Бренд --&gt;
+    &lt;a class="navbar-brand" href="#">Логотип&lt;/a&gt;
+    &lt;!-- Ссылки --&gt;
+    &lt;div class="collapse navbar-collapse" id="nav-content"&gt;
+        &lt;ul class="navbar-nav"&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#">Ссылка 1&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#">Ссылка 2&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;<span>li class="nav-item dropdown"</span>&gt;
+                &lt;a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="Preview" href="#" role="button"
+                    aria-haspopup="true" aria-expanded="false"&gt;
+                    Выпадающее меню
+                &lt;/a&gt;
+                &lt;div class="dropdown-menu" aria-labelledby="Просмотр"&gt;
+                    &lt;a class="dropdown-item" href="#">Действие&lt;/a&gt;
+                    &lt;a class="dropdown-item" href="#">Другое действие&lt;/a&gt;
+                    &lt;a class="dropdown-item" href="#">Что-то ещё&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+</pre>
+                                        <nav class="navbar navbar-expand-sm navbar-light bg-faded">
+                                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#nav-content" aria-controls="nav-content"
+                                                aria-expanded="false" aria-label="Переключатель навигации">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </button>
+                                            <!-- Бренд -->
+                                            <a class="navbar-brand" href="#">Логотип</a>
+                                            <!-- Ссылки -->
+                                            <div class="collapse navbar-collapse" id="nav-content">
+                                                <ul class="navbar-nav">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Ссылка 1</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Ссылка 2</a>
+                                                    </li>
+                                                    <li class="nav-item dropdown">
+                                                        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown"
+                                                            id="Preview" href="#" role="button" aria-haspopup="true"
+                                                            aria-expanded="false">
+                                                            Выпадающее меню
+                                                        </a>
+                                                        <div class="dropdown-menu" aria-labelledby="Просмотр">
+                                                            <a class="dropdown-item" href="#">Действие</a>
+                                                            <a class="dropdown-item" href="#">Другое действие</a>
+                                                            <a class="dropdown-item" href="#">Что-то ещё</a>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
 
+                                <h2>Текущая страница</h2>
 
+                                <p>Используйте класс <span class="class">.active</span>, чтобы отметить ссылку, ведущую
+                                    на текущую страницу или раздел
+                                    (примените его к <span class="tag">&lt;li&gt;</span>).</p>
+                                <p>Также добавьте <span class="tag">&lt;span&gt;</span> с классом <span
+                                        class="class">.sr-only</span>, чтобы сообщить об
+                                    этом экранным читалкам.</p>
 
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;nav class="navbar navbar-expand-sm navbar-light bg-faded"&gt;
+    &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-content"
+        aria-controls="nav-content" aria-expanded="false" aria-label="Переключатель навигации">
+        &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;!-- Бренд --&gt;
+    &lt;a class="navbar-brand" href="#">Логотип&lt;/a>
+    &lt;!-- Ссылки --&gt;
+    &lt;div class="collapse navbar-collapse" id="nav-content">
+        &lt;ul class="navbar-nav"&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#"&gt;Ссылка 1&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;<span>li class="nav-item active"</span>&gt;
+                &lt;a class="nav-link" href="#"&gt;Ссылка 2 &lt;<span>span class="sr-only"</span>&gt;(текущая)&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#"&gt;Ссылка 3&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+</pre>
+                                        <nav class="navbar navbar-expand-sm navbar-light bg-faded">
+                                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#nav-content" aria-controls="nav-content"
+                                                aria-expanded="false" aria-label="Переключатель навигации">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </button>
+                                            <!-- Бренд -->
+                                            <a class="navbar-brand" href="#">Логотип</a>
+                                            <!-- Ссылки -->
+                                            <div class="collapse navbar-collapse" id="nav-content">
+                                                <ul class="navbar-nav">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Ссылка 1</a>
+                                                    </li>
+                                                    <li class="nav-item active">
+                                                        <a class="nav-link" href="#">Ссылка 2 <span
+                                                                class="sr-only">(текущая)</span></a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Ссылка 3</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
 
+                                <h2>Выравнивание</h2>
 
+                                <p>Для выравнивания элементов на панели навигации можно использовать любой из
+                                    вспомогательных классов, предназначенных
+                                    для выравнивания (например, <span class="class">.me-auto</span> или <span
+                                        class="class">.justify-content-end</span>).</p>
 
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;nav class="navbar navbar-expand-sm navbar-light bg-faded"&gt;
+    &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-content"
+        aria-controls="nav-content" aria-expanded="false" aria-label="Toggle navigation"&gt;
+        &lt;span class="navbar-toggler-icon"&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;!-- Бренд --&gt;
+    &lt;a class="navbar-brand" href="#"&gt;Логотип&lt;/a&gt;
+    &lt;!-- Ссылки --&gt;
+    &lt;div class="collapse navbar-collapse <span>justify-content-end"</span> id="nav-content"&gt;
+        &lt;ul class="navbar-nav"&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#"&gt;Ссылка 1&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#"&gt;Ссылка 2&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#"&gt;Ссылка 3&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;
+                                        </pre>
+                                        <nav class="navbar navbar-expand-sm navbar-light bg-faded">
+                                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#nav-content" aria-controls="nav-content"
+                                                aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="navbar-toggler-icon"></span>
+                                            </button>
+                                            <!-- Бренд -->
+                                            <a class="navbar-brand" href="#">Логотип</a>
+                                            <!-- Ссылки -->
+                                            <div class="collapse navbar-collapse justify-content-end" id="nav-content">
+                                                <ul class="navbar-nav">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Ссылка 1</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Ссылка 2</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Ссылка 3</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </nav>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
 
-
-
+                                <p>Флекс-классы берут свои имена из фактического объявления свойств и значений флексов.
+                                    Это позволяет легко определить
+                                    имя наиболее подходящего класса для конкретной ситуации.</p>
+                                <p>Вы также можете добавить адаптивные сокращения, чтобы выравнивание действовало только
+                                    в определённых размерах области
+                                    просмотра. Например, <span class="class">.justify-content-lg-end</span> применяет
+                                    <span class="var">justify-content:
+                                        end</span> на больших устройствах и выше.
+                                </p>
+                                <p>Документация Bootstrap содержит полный список <a
+                                        href="https://getbootstrap.com/docs/5.3/utilities/flex/">флекс-классов</a>,
+                                    который вы можете использовать в
+                                    качестве справочника.</p>
 
 
                             </section>
