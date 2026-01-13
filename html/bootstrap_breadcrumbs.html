@@ -141,7 +141,7 @@
                     <div class="container_text">
                         <div class="w-title">
                             <div class="container">
-                                <h1>Bootstrap 5 Сетки</h1>
+                                <h1>Хлебные крошки в Bootstrap 5</h1>>
                             </div>
                         </div>
                         <div class="column is-9-desktop is-12-tablet is-12-mobile w-content">
@@ -168,7 +168,145 @@
                             </div>
 
                             <section id="w-main">
-                                <h3>Система сеток Bootstrap 5</h3>
+                                <h2>Создание хлебных крошек</h2>
+                                <br>
+                                <img src="../img/13.gif " alt="13" class="pictures1"><br>
+                                <br>
+                                <p>Bootstrap предлагает класс <span class="class">.breadcrumb</span>, который стилизует
+                                    список в виде хлебных крошек.
+                                </p>
+                                <p>Bootstrap добавляет к списку разделители (с помощью <a
+                                        href="/css/before">::before</a> и <a href="/css/content">content</a>), а также
+                                    <span class="var">display: inline-block</span> к элементу <a
+                                        href="/html/li">&lt;li&gt;</a>&nbsp;— в результате получается эффект «хлебных
+                                    крошек».
+                                </p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;nav aria-label=<span>"breadcrumb"</span>&gt;
+    &lt;<span>ul class="breadcrumb"</span>&gt;
+        &lt;li class=<span>"breadcrumb-item"></span>&lt;a href="#"&gt;Главная&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=<span>"breadcrumb-item"</span>&gt;&lt;a href="#&gt;&gt;Фрукты&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=<span>"breadcrumb-item active"</span>&gt;Груши&lt;/li&gt;
+    &lt;/ul&gt;
+</nav>
+                                        </pre>
+                                        <nav aria-label="breadcrumb">
+                                            <ul class="breadcrumb">
+                                                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                                                <li class="breadcrumb-item"><a href="#">Фрукты</a></li>
+                                                <li class="breadcrumb-item active">Груши</li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <p>Для создания хлебных крошек:</p>
+
+                                <ul>
+                                    <li>Хорошей идеей будет поместить хлебные крошки в элемент <a
+                                            href="/html/nav">&lt;nav&gt;</a> с <span
+                                            class="var">aria-label="breadcrumb"</span>.</li>
+                                    <li>Добавьте класс <span class="class">.breadcrumb</span> к элементу <a
+                                            href="/html/ul">&lt;ul&gt;</a>, который
+                                        отображает хлебные крошки.</li>
+                                    <li>Добавьте класс <span class="class">.breadcrumb-item</span> к каждому элементу <a
+                                            href="/html/li">&lt;li&gt;</a>
+                                        внутри хлебных крошек.</li>
+                                    <li>Также добавьте <span class="var">class="active"</span> к элементу <span
+                                            class="tag">&lt;li&gt;</span>, который
+                                        показывает текущую страницу или раздел (страницу, на которой находится
+                                        пользователь)&nbsp;— это почти всегда
+                                        будет последний пункт.</li>
+                                </ul>
+                                <hr>
+
+                                <h2>Изменение разделителя</h2>
+
+                                <p>Bootstrap автоматически добавляет разделитель в хлебные крошки. Вы можете изменить
+                                    разделитель с помощью
+                                    пользовательского свойства <span class="attribute">--bs-breadcrumb-divider</span>:
+                                </p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;nav style=<span>"--bs-breadcrumb-divider: '&gt;';"</span> aria-label="breadcrumb"&gt;
+    &lt;ul class="breadcrumb"&gt;
+        &lt;li class="breadcrumb-item">&lt;a href="#"&gt;Главная&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="breadcrumb-item">&lt;a href="#"&gt;Фрукты&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="breadcrumb-item active"&gt;Груши&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+                                </pre>
+                                        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                                            <ul class="breadcrumb">
+                                                <li class="breadcrumb-item"><a href="#">Главная</a></li>
+                                                <li class="breadcrumb-item"><a href="#">Фрукты</a></li>
+                                                <li class="breadcrumb-item active">Груши</li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <p>Разделитель также можно поменять с помощью Sass-переменной <span
+                                        class="var">$breadcrumb-divider</span> или
+                                    перевернуть с помощью <span class="var">$breadcrumb-divider-flipped</span> для
+                                    текста, идущего справа налево.</p>
+                                <hr>
+
+                                <h2>Хлебные крошки без списка</h2>
+
+                                <p>Хлебные крошки не обязательно должны быть в виде списка. При необходимости вы можете
+                                    использовать их в таком виде:
+                                </p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;nav class="breadcrumb" aria-label="breadcrumb"&gt;
+    &lt;a class="breadcrumb-item" href="#"&gt;Главная&lt;/a&gt;
+    &lt;a class="breadcrumb-item" href="#"&gt;Фрукты&lt;/a&gt;
+    &lt;span class="breadcrumb-item active"&gt;Груши&lt;/span&gt;
+&lt;/nav&gt;
+</pre>
+                                        <nav class="breadcrumb" aria-label="breadcrumb">
+                                            <a class="breadcrumb-item" href="#">Главная</a>
+                                            <a class="breadcrumb-item" href="#">Фрукты</a>
+                                            <span class="breadcrumb-item active">Груши</span>
+                                        </nav>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+
+                                <section class="container w-credit">
+                                    <div class="columns">
+                                        <div class="column is-6 w-credit-author"><i class="icon-user"></i> Автор: Йен
+                                            Диксон</div>
+                                        <div class="column is-6 w-credit-changed"><i class="icon-calendar"></i>
+                                            Последнее изменение: 22.02.2024</div>
+                                    </div>
+                                </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
                             </section>
