@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="ru" data-bs-theme="auto">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="VViller">
+    <meta name="copyright" content="Copyright © 2025">
+    <meta name="revisit-after" content="28 day">
+    <title>Bootstrap 5</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../assets/favicon.ico" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <noscript><img src="https://mc.yandex.ru/watch/94497409" class="hide" alt=""></noscript>
+
+    <div class="container">
+
+        <header class="header">
+            <div class="container_text align-items-center v1">
+                <div class="row row-cols-auto align-items-center">
+                    <div class="col ">
+                        <a class="navbar-brand" href="#">
+                            <h4>Stepik курс - Frontend разработчик <br>на HTML, CSS и
+                                JavaScript</h4>
+                        </a>
+                    </div>
+                    <div class="col ">
+                        <h2><a class="navbar-brand p-5" href="#">
+                                <img src="../img/bootstrap.svg" alt="bootstrap.svg" width="60" height="48"
+                                    class="d-inline-block align-text-top">
+                                Bootstrap
+                            </a></h2>
+                    </div>
+
+                    <div class="col  ">
+                        <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap" aria-label="Основная навигация">
+
+                            <button class="navbar-toggler d-flex d-lg-none order-3 p-2" type="button"
+                                data-bs-toggle="offcanvas" data-bs-target="#bdNavbar" aria-controls="bdNavbar"
+                                aria-expanded="false" aria-label="Переключать навигацию">
+                                <svg class="bi" width="24" height="24" aria-hidden="true">
+                                    <use xlink:href="#three-dots"></use>
+                                </svg>
+                            </button>
+
+                            <div class="offcanvas-lg offcanvas-end flex-grow-1" tabindex="-1" id="bdNavbar"
+                                aria-labelledby="bdNavbarOffcanvasLabel">
+
+
+                                <div class="offcanvas-body p-5 pt-0 p-lg-0">
+                                    <hr class="d-lg-none text-white-50">
+                                    <ul class="navbar-nav flex-row flex-wrap bd-navbar-nav">
+                                        <li class="nav-item col-6 col-lg-auto">
+                                            <a class="nav-link py-2 px-0 px-lg-2"
+                                                href="https://getbootstrap.com/docs/5.3/getting-started/introduction/"
+                                                target="_blank" rel="noopener">Документ</a>
+                                        </li>
+                                        <li class="nav-item col-6 col-lg-auto">
+                                            <a class="nav-link py-2 px-0 px-lg-2"
+                                                href="https://getbootstrap.com/docs/5.3/examples/" target="_blank"
+                                                rel="noopener">Примеры</a>
+                                        </li>
+                                        <li class="nav-item col-6 col-lg-auto">
+                                            <a class="nav-link py-2 px-0 px-lg-2" href="https://icons.getbootstrap.com/"
+                                                target="_blank" rel="noopener">Иконки</a>
+                                        </li>
+
+
+                                    </ul>
+
+                                    <hr class="d-lg-none text-white-100">
+
+                                    <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
+                                        <li class="nav-item col-6 col-lg-auto">
+                                            <a class="nav-link py-2 px-0 px-lg-2"
+                                                href="https://github.com/Viktor3691/Lessons-Bootstrap.io"
+                                                target="_blank" rel="noopener" aria-label="GitHub">
+                                                <img src="../img/github.svg.png" alt="github" class="git">
+                                                <small class="d-lg-none ms-2">GitHub</small>
+                                            </a>
+                                        </li>
+                                    </ul>
+
+
+                                    <div class="dropdown" data-bs-theme="light">
+                                        <button type="button" class="dropdown-item d-flex align-items-center active"
+                                            data-bs-theme-value="light" aria-pressed="true">
+                                            <svg class="bi me-2 opacity-50">
+                                                <use href="#sun-fill"></use>
+                                            </svg>
+                                            Light
+                                            <svg class="bi ms-auto d-none">
+                                                <use href="#check2"></use>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                    <div class="dropdown" data-bs-theme="dark">
+                                        <button type="button" class="dropdown-item d-flex align-items-center"
+                                            data-bs-theme-value="dark" aria-pressed="false">
+                                            <svg class="bi me-2 opacity-50">
+                                                <use href="#moon-stars-fill"></use>
+                                            </svg>
+                                            Dark
+                                            <svg class="bi ms-auto d-none">
+                                                <use href="#check2"></use>
+                                            </svg>
+                                        </button>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </nav>
+
+                    </div>
+
+                </div>
+            </div>
+        </header>
+
+
+
+        <main>
+
+            <div class="container">
+
+                <div class="columns">
+
+
+
+
+                    <div class="container_text">
+                        <div class="w-title">
+                            <div class="container">
+
+                                <div class="w-title">
+                                    <div class="container">
+                                        <h1>Карусель в Bootstrap 5</h1>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="column is-9-desktop is-12-tablet is-12-mobile w-content">
+                                <div data-drupal-messages-fallback class="hidden"></div>
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div class="w3-clear nextprev">
+                                                <a class="w3-left w3-btn" href="../html/bootstrap_cards.html">&#10094;
+                                                    &#10094; &#10094;
+                                                    Предыдущий</a>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="w3-clear nextprev">
+                                                <a class="w3-right w3-btn" href="#">Следующий
+                                                    &#10095; &#10095; &#10095;</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <section id="w-main">
+
+                                    <p>Карусель — это компонент Bootstrap, он позволяет добавить перелистывающие
+                                        изображения с текстом, которые появляются,
+                                        приостанавливаются, а затем исчезают. Элементы управления позволяют пользователю
+                                        прокручивать изображения вперёд или
+                                        назад в пределах набора. По сути, это прокручивающаяся область с элементами
+                                        управления.</p>
+
+                                    <div class="w3-example">
+                                        <h3> Пример</h3>
+                                        <div class="w3-code notranslate htmlHigh">
+                                            <pre>
+&lt;div id="myCarousel" class="<span>carousel slide</span> w-50 ms-auto me-auto" <span>data-bs-ride="carousel</span>"&gt;
+    &lt;div class="<span>carousel-inner</span>" role="listbox"&gt;
+
+        &lt;div class="<span>carousel-item active</span>"&gt;
+            &lt;img class="d-block w-100" src="image/27m.jpg" alt="First slide"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="<span>carousel-item</span>"&gt;
+            &lt;img class="d-block w-100" src="image/28m.jpg" alt="Second slide"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="<span>carousel-item</span>"&gt;
+            &lt;img class="d-block w-100" src="image/30m.jpg" alt="Third slide"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="<span>carousel-item active</span>"&gt;
+            &lt;img class="d-block w-100" src="image/27m.jpg" alt="First slide"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="<span>carousel-item</span>"&gt;
+            &lt;img class="d-block w-100" src="image/28m.jpg" alt="Second slide"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="<span>carousel-item</span>"&gt;
+            &lt;img class="d-block w-100" src="image/30m.jpg" alt="Third slide"&gt;
+        &lt;/div&gt;
+
+    &lt;div&gt;
+&lt;/div&gt;
+                                        </pre>
+                                            <div id="myCarousel" class="carousel slide w-50 ms-auto me-auto"
+                                                data-bs-ride="carousel">
+
+                                                <div class="carousel-inner" role="listbox">
+                                                    <div class="carousel-item active">
+                                                        <img class="d-block w-100" src="../img/21.png" alt="1 slide">
+                                                    </div>
+
+                                                    <div class="carousel-item">
+                                                        <img class="d-block w-100" src="../img/22.png" alt="2 slide">
+                                                    </div>
+
+                                                    <div class="carousel-item">
+                                                        <img class="d-block w-100" src="../img/23.png" alt="3 slide">
+                                                    </div>
+
+                                                    <div class="carousel-inner" role="listbox">
+                                                        <div class="carousel-item active">
+                                                            <img class="d-block w-100" src="../img/24.png"
+                                                                alt="1 slide">
+                                                        </div>
+
+                                                        <div class="carousel-item">
+                                                            <img class="d-block w-100" src="../img/25.png"
+                                                                alt="2 slide">
+                                                        </div>
+
+                                                        <div class="carousel-item">
+                                                            <img class="d-block w-100" src="../img/26.png"
+                                                                alt="3 slide">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <i><span style="color:#e7e9eb;">end.</span></i>
+                                    </div>
+                                    <hr>
+
+                                    <h2>Пояснение</h2>
+
+                                    <p>Для создания базовой карусели:</p>
+
+                                    <ul>
+                                        <li>Примените <span class="class">.carousel</span> и <span
+                                                class="class">.slide</span> к внешнему контейнеру (с
+                                            собственным идентификатором).</li>
+                                        <li>Для прокручиваемого содержимого оберните все элементы в <span
+                                                class="class">.carousel-inner</span> и присвойте
+                                            каждому элементу класс <span class="class">.carousel-item</span>.</li>
+                                        <li>Также необходимо применить <span class="class">.active</span> к одному из
+                                            слайдов карусели, иначе карусель не
+                                            будет видна. Этот класс позволяет вам установить один слайд в качестве
+                                            начального (иными словами, стартового
+                                            слайда).</li>
+                                        <li>Для автоматического запуска карусели используйте атрибут <span
+                                                class="class">.data-bs-ride</span>.</li>
+                                    </ul>
+                                    <hr>
+
+                                    <h2>Добавление элементов управления</h2>
+
+
+
+
+
+
+
+
+
+
+                                </section>
+                            </div>
+                        </div>
+
+
+                        <aside class=" column is-3-desktop is-12-tablet is-12-mobile w-sidebar" id="w-sidebar">
+
+                            <section class="w-region w-region-sidebar-toc">
+                                <div class="w-block" id="block-book-toc">
+                                    <h2 class="w-block-title">Содержание</h2>
+                                    <div class="w-block-content">
+
+                                        <ul class="w-block-menu list-unstyled">
+                                            <li>
+                                                <a href="../index.html">Начало
+                                                    работы с Bootstrap</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_containers.html" hreflang="ru">Контейнеры
+                                                    Bootstrap 5</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_grid_system.html" hreflang="ru">Система
+                                                    сеток Bootstrap 5</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_typography.html" hreflang="ru">Типографика
+                                                    в
+                                                    Bootstrap 5</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_tables.html" hreflang="ru">Таблицы в
+                                                    Bootstrap
+                                                    5</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_forms.html" hreflang="ru">Формы в Bootstrap
+                                                    5</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_buttons.html" hreflang="ru">Кнопки в
+                                                    Bootstrap
+                                                    5</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_images.html" hreflang="ru">Изображения
+                                                    в Bootstrap 5</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_dropdowns.html" hreflang="ru">Выпадающие
+                                                    меню</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_button_groups.html" hreflang="ru">Группа
+                                                    кнопок</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_input_groups.html" hreflang="ru">Группа
+                                                    полей ввода</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_collapse.html" hreflang="ru">Сворачиваемое
+                                                    содержимое</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_navs.html" hreflang="ru">Навигация в
+                                                    Bootstrap</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_navbars.html" hreflang="ru">Панель
+                                                    навигации</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_breadcrumbs.html" hreflang="ru">Хлебные
+                                                    крошки в Bootstrap 5</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_pagination.html" hreflang="ru">Пагинация в
+                                                    Bootstrap 5</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_badge.html" hreflang="ru">Значки в
+                                                    Bootstrap 5</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_alerts.html" hreflang="ru">Уведомления
+                                                    в Bootstrap 5</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_modal.html" hreflang="ru">Модальные
+                                                    окна</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_progress_bars.html" hreflang="ru">Прогресс в
+                                                    Bootstrap 5</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_list_groups.html" hreflang="ru">Группы
+                                                    списков</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="../html/bootstrap_cards.html" hreflang="ru">Карточки в
+                                                    Bootstrap 5</a>
+
+                                            </li>
+                                            <li>
+                                                <a href="bootstrap_carousel.html" hreflang="ru"
+                                                    class="is-active">Карусель в
+                                                    Bootstrap 5</a>
+
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </section>
+                        </aside>
+
+
+
+                    </div>
+
+        </main>
+
+
+
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="w3-clear nextprev">
+                        <a class="w3-left w3-btn" href="../html/bootstrap_cards.html">&#10094; &#10094; &#10094;
+                            Предыдущий</a>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="w3-clear nextprev">
+                        <a class="w3-right w3-btn" href="#">Следующий
+                            &#10095; &#10095; &#10095;</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+
+        <footer>
+            <div class="container container_text v1">
+                <div class="row">
+                    <div class="col">
+                        <p>© 2026 Copyright: VViller</p>
+                    </div>
+
+                    <div class="col">
+                        <p>02.01.2026</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../bootstrap/js/scripts.js"></script>
+
+
+</body>
+
+</html>

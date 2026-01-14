@@ -141,7 +141,7 @@
                     <div class="container_text">
                         <div class="w-title">
                             <div class="container">
-                                <h1>Bootstrap 5 Сетки</h1>
+                                <h1>Карусель в Bootstrap 5</h1>
                             </div>
                         </div>
                         <div class="column is-9-desktop is-12-tablet is-12-mobile w-content">
@@ -167,7 +167,472 @@
                             </div>
 
                             <section id="w-main">
-                                <h3>Система сеток Bootstrap 5</h3>
+
+                                <p>Карусель — это компонент Bootstrap, он позволяет добавить перелистывающие
+                                    изображения с текстом, которые появляются,
+                                    приостанавливаются, а затем исчезают. Элементы управления позволяют пользователю
+                                    прокручивать изображения вперёд или
+                                    назад в пределах набора. По сути, это прокручивающаяся область с элементами
+                                    управления.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div id="myCarousel" class="<span>carousel slide</span> w-50 ms-auto me-auto" <span>data-bs-ride="carousel</span>"&gt;
+    &lt;div class="<span>carousel-inner</span>" role="listbox"&gt;
+
+        &lt;div class="<span>carousel-item active</span>"&gt;
+            &lt;img class="d-block w-100" src="image/27m.jpg" alt="1 slide"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="<span>carousel-item</span>"&gt;
+            &lt;img class="d-block w-100" src="image/28m.jpg" alt="2 slide"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="<span>carousel-item</span>"&gt;
+            &lt;img class="d-block w-100" src="image/30m.jpg" alt="3 slide"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="<span>carousel-item</span>"&gt;
+            &lt;img class="d-block w-100" src="image/27m.jpg" alt="4 slide"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="<span>carousel-item</span>"&gt;
+            &lt;img class="d-block w-100" src="image/28m.jpg" alt="5 slide"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="<span>carousel-item</span>"&gt;
+            &lt;img class="d-block w-100" src="image/30m.jpg" alt="6 slide"&gt;
+        &lt;/div&gt;
+
+    &lt;div&gt;
+&lt;/div&gt;
+                                        </pre>
+                                        <div id="myCarousel" class="carousel slide w-50 ms-auto me-auto"
+                                            data-bs-ride="carousel">
+
+                                            <div class="carousel-inner" role="listbox">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="../img/21.png" alt="1 slide">
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="../img/22.png" alt="2 slide">
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="../img/23.png" alt="3 slide">
+                                                </div>
+
+                                                <div class="carousel-inner" role="listbox">
+                                                    <div class="carousel-item">
+                                                        <img class="d-block w-100" src="../img/24.png" alt="4 slide">
+                                                    </div>
+
+                                                    <div class="carousel-item">
+                                                        <img class="d-block w-100" src="../img/25.png" alt="5 slide">
+                                                    </div>
+
+                                                    <div class="carousel-item">
+                                                        <img class="d-block w-100" src="../img/26.png" alt="6 slide">
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Пояснение</h2>
+
+                                <p>Для создания базовой карусели:</p>
+
+                                <ul>
+                                    <li>Примените <span class="class">.carousel</span> и <span
+                                            class="class">.slide</span> к внешнему контейнеру (с
+                                        собственным идентификатором).</li>
+                                    <li>Для прокручиваемого содержимого оберните все элементы в <span
+                                            class="class">.carousel-inner</span> и присвойте
+                                        каждому элементу класс <span class="class">.carousel-item</span>.</li>
+                                    <li>Также необходимо применить <span class="class">.active</span> к одному из
+                                        слайдов карусели, иначе карусель не
+                                        будет видна. Этот класс позволяет вам установить один слайд в качестве
+                                        начального (иными словами, стартового
+                                        слайда).</li>
+                                    <li>Для автоматического запуска карусели используйте атрибут <span
+                                            class="class">.data-bs-ride</span>.</li>
+                                </ul>
+                                <hr>
+
+                                <h2>Добавление элементов управления</h2>
+
+                                <p>Чтобы добавить элементы управления «Предыдущий/Следующий», используйте <a
+                                        href="/html/a">&lt;a&gt;</a> с <span class="class">.carousel-control-prev</span>
+                                    или <span class="class">carousel-control-next</span>. Ещё добавьте
+                                    <a href="/html/span">&lt;span&gt;</a> с <span
+                                        class="class">.carousel-control-prev-icon</span> или <span
+                                        class="class">.carousel-control-next-icon</span>.
+                                </p>
+                                <p>Также добавьте <span class="class">.data-bs-target</span> для каждого элемента
+                                    управления с идентификатором карусели,
+                                    которой он управляет.</p>
+                                <p>Чтобы обеспечить работу с экранными читалками, добавьте &lt;span&gt; со словами
+                                    «Предыдущий» или «Следующий» и
+                                    присвойте им класс <span class="class">.visually-hidden</span>. Это скроет этот
+                                    текст от браузеров, но зачитает его
+                                    в экранных читалках.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div id="myCarousel" class="carousel slide bg-inverse w-50 ms-auto me-auto" data-bs-ride="carousel"&gt;
+    &lt;div class="carousel-inner" role="listbox"&gt;
+
+        &lt;div class="carousel-item active"&gt;
+            &lt;img class="d-block w-100" src="image/30m.jpg" alt="Первый слайд"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="carousel-item"&gt;
+            &lt;img class="d-block w-100" src="image/28m.jpg" alt="Второй слайд"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="carousel-item"&gt;
+            &lt;img class="d-block w-100" src="image/27m.jpg" alt="Третий слайд"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="carousel-item"&gt;
+        &lt;img class="d-block w-100" src="image/30m.jpg" alt="Четвёртый слайд"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="carousel-item"&gt;
+        &lt;img class="d-block w-100" src="image/28m.jpg" alt="Пятый слайд"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="carousel-item"&gt;
+        &lt;img class="d-block w-100" src="image/27m.jpg" alt="Шестой слайд"&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+    &lt;a <span>class="carousel-control-prev"</span> href="#myCarousel" role="button" data-bs-target="#myCarousel" data-bs-slide="prev"&gt;
+        &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+        &lt;span <span>class="visually-hidden"</span>>Предыдущий&lt;/span&gt;
+    &lt;/a&gt;
+
+    &lt;a <span>class="carousel-control-next"</span> href="#myCarousel" role="button" data-bs-target="#myCarousel" data-bs-slide="next"&gt;
+        &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+        &lt;span <span>class="visually-hidden"</span>>Следующий&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/div&gt;
+                                    </pre>
+                                        <div id="myCarousel" class="carousel slide bg-inverse w-50 ms-auto me-auto"
+                                            data-bs-ride="carousel">
+                                            <div class="carousel-inner" role="listbox">
+
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="../img/27.png" alt="Первый слайд">
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="../img/28.png" alt="Второй слайд">
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="../img/29.png" alt="Третий слайд">
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="../img/30.png"
+                                                        alt="Четвёртый слайд">
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="../img/31.png" alt="Пятый слайд">
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="../img/32.png" alt="Шестой слайд">
+                                                </div>
+
+
+                                            </div>
+                                            <a class="carousel-control-prev" href="#myCarousel" role="button"
+                                                data-bs-target="#myCarousel" data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Предыдущий</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#myCarousel" role="button"
+                                                data-bs-target="#myCarousel" data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Следующий</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Размеры карусели</h2>
+
+                                <p>Обратите внимание, что в этих примерах я добавил несколько дополнительных классов
+                                    Bootstrap для изменения размера
+                                    изображений и выравнивания карусели по центру.</p>
+                                <p>В частности, я добавил <span class="class">w-50 ms-auto me-auto</span> к карусели и
+                                    <span class="class">w-100</span>
+                                    к изображениям. Это дает карусели ширину 50%, а <a
+                                        href="/css/margin-left">margin-left</a> и <a
+                                        href="/css/margin-right">margin-right</a> равный <span
+                                        class="value">auto</span>. Изображения получают ширину
+                                    100% (иными словами 100 процентов от ширины карусели).
+                                </p>
+                                <p>Если я этого не делаю, элементы управления могут выходить за пределы изображения и
+                                    становиться невидимыми из-за того,
+                                    что ширина изображения меньше ширины самой карусели, а элементы управления и фон оба
+                                    белые (получается белое на
+                                    белом).</p>
+                                <p>Поэтому, если вы обнаружили, что элементы управления на карусели не видны, проверьте,
+                                    не выходят ли они за пределы
+                                    изображения. Нужно ли вам изменять размер изображения и/или карусели, зависит от
+                                    ваших изображений и контекста, в
+                                    котором они отображаются.</p>
+                                <hr>
+
+                                <h2>Добавление индикаторов</h2>
+
+                                <p>Чтобы добавить «индикаторы» (маленькие кликабельные области внизу по центру),
+                                    добавьте список с <span class="class">.carousel-indicators</span>, а также
+                                    соответствующие атрибуты <span class="class">.data-bs-target</span> и <span
+                                        class="class">.data-bs-slide-to</span>.</p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div id="myCarousel" class="carousel slide bg-inverse w-50 ms-auto me-auto" data-bs-ride="carousel"&gt;
+    &lt;ol <span>class="carousel-indicators"</span>&gt;
+        &lt;li <span>data-bs-target="#myCarousel"</span> <vv1>data-bs-slide-to="0"</vv1> class="active">&lt;/li&gt;
+        &lt;li<span> data-bs-target="#myCarousel"</span> <vv1>data-bs-slide-to="1"</vv1>>&lt;/li&gt;
+        &lt;li<span> data-bs-target="#myCarousel"</span> <vv1>data-bs-slide-to="3"</vv1>>&lt;/li&gt;
+        &lt;li<span> data-bs-target="#myCarousel"</span> <vv1>data-bs-slide-to="4"</vv1>>&lt;/li&gt;
+        &lt;li<span> data-bs-target="#myCarousel"</span> <vv1>data-bs-slide-to="5"</vv1>>&lt;/li&gt;
+        &lt;li<span> data-bs-target="#myCarousel"</span> <vv1>data-bs-slide-to="6"</vv1>>&lt;/li&gt;
+
+    &lt;/ol&gt;
+
+    &lt;div class="carousel-inner" role="listbox"&gt;
+        &lt;div class="carousel-item active"&gt;
+            &lt;img class="d-block w-100" src="image/1.jpg" alt="1 слайд"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="carousel-item"&gt;
+            &lt;img class="d-block w-100" src="image/2m.jpg" alt="2 слайд"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="carousel-item"&gt;
+            &lt;img class="d-block w-100" src="image/3m.jpg" alt="3 слайд"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="carousel-item"&gt;
+            &lt;img class="d-block w-100" src="image/4m.jpg" alt="4 слайд"&gt;
+        &lt;/div&gt;
+
+        &lt;div class="carousel-item"&gt;
+            &lt;img class="d-block w-100" src="image/5m.jpg" alt="5 слайд"&gt;
+        &lt;/div>
+
+        &lt;div class="carousel-item"&gt;
+            &lt;img class="d-block w-100" src="image/6m.jpg" alt="6 слайд"&gt;
+        &lt;/div&gt;
+
+    &lt;/div&gt;
+
+        &lt;a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+            &lt;span class="carousel-control-prev-icon" aria-hidden="true">&lt;/span&gt;
+            &lt&gt;span class="visually-hidden">Предыдущий&lt;/span&gt;
+        &lt;/a&gt;
+
+        &lt;a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next"&gt;
+            &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+            &lt;span class="visually-hidden"&gt;Следующий&lt;/span&gt;
+        &lt;/a&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                        <div id="myCarousel" class="carousel slide bg-inverse w-50 ms-auto me-auto"
+                                            data-bs-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active">
+                                                </li>
+                                                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                                                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                                                <li data-bs-target="#myCarousel" data-bs-slide-to="3"></li>
+                                                <li data-bs-target="#myCarousel" data-bs-slide-to="4"></li>
+                                                <li data-bs-target="#myCarousel" data-bs-slide-to="5"></li>
+
+                                            </ol>
+
+                                            <div class="carousel-inner" role="listbox">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="../img/33.png" alt="1 слайд">
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="../img/34.png" alt="2 слайд">
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="../img/35.png" alt="3 слайд">
+                                                </div>
+
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="../img/36.png" alt="4 слайд">
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="../img/37.png" alt="5 слайд">
+                                                </div>
+
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="../img/38.png" alt="6 слайд">
+                                                </div>
+
+                                            </div>
+
+                                            <a class="carousel-control-prev" href="#myCarousel" role="button"
+                                                data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Предыдущий</span>
+                                            </a>
+
+                                            <a class="carousel-control-next" href="#myCarousel" role="button"
+                                                data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Следующий</span>
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
+
+                                <h2>Подписи</h2>
+
+                                <p>Вы можете указать подписи к своему слайд-шоу, добавив <a
+                                        href="/html/div">&lt;div&gt;</a> с классом <span
+                                        class="class">.carousel-caption</span>. Это делается внутри каждого элемента
+                                    <span class="class">.carousel</span>.
+                                </p>
+
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div id="myCarousel" class="carousel slide bg-inverse w-50 ms-auto me-auto" data-bs-ride="carousel"&gt;
+    &lt;ol class="carousel-indicators"&gt;
+        &lt;li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"&gt;&lt;/li&gt;
+        &lt;li data-bs-target="#myCarousel" data-bs-slide-to="1"&gt;&lt;/li&gt;
+        &lt;li data-bs-target="#myCarousel" data-bs-slide-to="2"&gt;&lt;/li&gt;
+    &lt;/ol&gt;
+    &lt;div class="carousel-inner" role="listbox"&gt;
+        &lt;div class="carousel-item active"&gt;
+            &lt;img class="d-block w-100" src="image/23m.jpg" alt="Первый слайд"&gt;
+            &lt;<span>div class="carousel-caption"</span>&gt;
+                &lt;h3&gt;Первый слайд&lt;/h3&gt;
+                &lt;p&gt;Это первый слайд.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="carousel-item"&gt;
+            &lt;img class="d-block w-100" src="image/22m.jpg" alt="Второй слайд"&gt;
+            &lt;<span>div class="carousel-caption</span>"&gt;
+                &lt;h3>Второй слайд&lt;/h3&gt;
+                &lt;p>Это второй слайд.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="carousel-item"&gt;
+            &lt;img class="d-block w-100" src="image/32m.jpg" alt="Третий слайд"&gt;
+            &lt;<span>div class="carousel-caption"</span>&gt;
+                &lt;h3&gt;Третий слайд&lt;/h3&gt;
+                &lt;p&gt;Это третий слайд.&lt;/p&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev"&gt;
+        &lt;span class="carousel-control-prev-icon" aria-hidden="true"&gt;&lt;/span&gt;
+        &lt;span class="visually-hidden"&gt;Предыдущий&lt;/span&gt;
+    &lt;/a&gt;
+    &lt;a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next"&gt;
+        &lt;span class="carousel-control-next-icon" aria-hidden="true"&gt;&lt;/span&gt;
+        &gt;&lt;pan class="visually-hidden">Следующий&lt;/span&gt;
+    &lt;/a&gt;
+&lt;/div>
+                                    </pre>
+                                        <div id="myCarousel" class="carousel slide bg-inverse w-50 ms-auto me-auto"
+                                            data-bs-ride="carousel">
+                                            <ol class="carousel-indicators">
+                                                <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active">
+                                                </li>
+                                                <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+                                                <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+                                            </ol>
+                                            <div class="carousel-inner" role="listbox">
+                                                <div class="carousel-item active">
+                                                    <img class="d-block w-100" src="../img/40.jpg" alt="Первый слайд">
+                                                    <div class="carousel-caption">
+                                                        <h3>Первый слайд</h3>
+                                                        <p>Это первый слайд.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="../img/41.jpg" alt="Второй слайд">
+                                                    <div class="carousel-caption">
+                                                        <h3>Второй слайд</h3>
+                                                        <p>Это второй слайд.</p>
+                                                    </div>
+                                                </div>
+                                                <div class="carousel-item">
+                                                    <img class="d-block w-100" src="../img/42.jpg" alt="Третий слайд">
+                                                    <div class="carousel-caption">
+                                                        <h3>Третий слайд</h3>
+                                                        <p>Это третий слайд.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a class="carousel-control-prev" href="#myCarousel" role="button"
+                                                data-bs-slide="prev">
+                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Предыдущий</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#myCarousel" role="button"
+                                                data-bs-slide="next">
+                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                <span class="visually-hidden">Следующий</span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <p>Bootstrap 5 включает в себя гораздо больше функций, чем здесь описано.
+                                    Дополнительную информацию
+                                    смотрите в <a
+                                        href="https://getbootstrap.com/docs/5.3/getting-started/introduction/">документации
+                                        Bootstrap</a>.</p>
+
+
+
+
+
+
+
+
+
+
 
 
                             </section>

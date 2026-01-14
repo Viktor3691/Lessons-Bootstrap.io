@@ -29,7 +29,8 @@
         "aria-required-children": "off",
         "empty-table-header": "off",
         "aria-roles": "off",
-        "aria-progressbar-name": "off"
+        "aria-progressbar-name": "off",
+        "aria-input-field-name": "off"
       }
     ],
     "compat-api/css": [
