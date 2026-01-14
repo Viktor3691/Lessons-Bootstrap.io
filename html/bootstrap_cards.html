@@ -234,7 +234,7 @@
     &lt;<vv1>div</vv1><span> class="card-header"</span> &gt;
         От спонсора
     &lt;<vv1>/div</vv1>&gt;
-    &lt;div class="card-body"&gt;
+    &lt;<vv1>div class="card-body"</vv1>&gt;
         &lt;h4 class="card-title"&gt;Угги&lt;/h4&gt;
         &lt;p class="card-text"&gt;Лучшие угги на свете. Бесплатная доставка, круглосуточная поддержка клиентов.&lt;/p&gt;
     &lt;/div&gt;
@@ -260,159 +260,772 @@
                                     <i><span style="color:#e7e9eb;">end.</span></i>
                                 </div>
 
+                                <p>Надо переместить <span class="class">.card-body</span> в новый <span
+                                        class="tag">&lt;div&gt;</span> внутри
+                                    карточки, чтобы заголовок карточки располагался вровень с рамкой (у
+                                    <span class="class">.card-body</span> есть отступы, которые не нужны). Подробнее
+                                    об этом ниже.
+                                </p>
+                                <hr>
 
+                                <h2>HTML-заголовки</h2>
 
+                                <p>Вы также можете применить класс <span class="class">.card-header</span> к любому
+                                    элементу заголовка (например, тегам
+                                    <span class="tag">&lt;h1&gt;</span> — <span class="tag">&lt;h6&gt;</span>).
+                                </p>
 
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="card" style="max-width: 20rem;"&gt;
+    &lt;<span>h3 class="card-header"</span>&gt;Замёрзли ноги?&lt;/h3&gt;
+    &lt;div class="card-body"&gt;
+        &lt;4 class="card-title"&gt;Угги&lt;/h4&gt;
+        &lt;p class="card-text"&gt;Лучшие угги на свете. Бесплатная доставка, круглосуточная поддержка клиентов.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="card-footer"&gt;
+        от uuuuggghhh.com
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="card" style="max-width: 20rem;">
+                                            <h3 class="card-header">Замёрзли ноги?</h3>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Угги</h4>
+                                                <p class="card-text">Лучшие угги на свете. Бесплатная доставка,
+                                                    круглосуточная поддержка клиентов.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                от uuuuggghhh.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
 
+                                <h2>Навигация в заголовке</h2>
 
+                                <p>Вы также можете добавить к карточке навигацию Bootstrap в виде вкладок или таблеток.
+                                </p>
 
+                                <h3>Вкладки</h3>
 
+                                <p>Добавьте класс <span class="class">.card-header-tabs</span> к элементу <a
+                                        href="/html/ul">&lt;ul&gt;</a>.</p>
 
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="card" style="max-width: 20rem;"&gt;
+    &lt;div class="card-header"&gt;
+        &lt;<vv1>ul</vv1> class="nav nav-tabs <span>card-header-tabs"</span>&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link active" href="#">Угги&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#">Мокасины&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link disabled" href="#">Go Go&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;<vv1>/ul</vv1>&gt;
+    &lt;/div&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h4 class="card-title">Угги &lt;/h4&gt;
+        &lt;p class="card-text">Лучшие угги на свете. Бесплатная доставка, круглосуточная поддержка клиентов.&lt;/p&gt;
+    &lt;/div>
+    &lt;div class="card-footer"&gt;
+        от uuuuggghhh.com
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="card" style="max-width: 20rem;">
+                                            <div class="card-header">
+                                                <ul class="nav nav-tabs card-header-tabs">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">Угги</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Мокасины</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link disabled" href="#">Go Go</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Угги </h4>
+                                                <p class="card-text">Лучшие угги на свете. Бесплатная доставка,
+                                                    круглосуточная поддержка клиентов.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                от uuuuggghhh.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
 
+                                <h3>Таблетки</h3>
 
+                                <p>Добавьте класс <span class="class">.card-header-pills</span> к элементу <span
+                                        class="tag">&lt;ul&gt;</span>.</p>
 
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="card" style="max-width: 20rem;"&gt;
+    &lt;div class="card-header"&gt;
+        &lt;<vv1>ul</vv1> class="nav nav-pills <span>card-header-pills"</span>&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link active" href="#">Угги&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link" href="#">Мокасины&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="nav-item"&gt;
+                &lt;a class="nav-link disabled" href="#">Go Go&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;<vv1>/ul</vv1>&gt;
+    &lt;/div&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h4 class="card-title">Угги &lt;/h4&gt;
+        &lt;p class="card-text">Лучшие угги на свете. Бесплатная доставка, круглосуточная поддержка клиентов.&lt;/p&gt;
+    &lt;/div>
+    &lt;div class="card-footer"&gt;
+        от uuuuggghhh.com
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                        <div class="card" style="max-width: 20rem;">
+                                            <div class="card-header">
+                                                <ul class="nav nav-pills card-header-pills">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#">Угги</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#">Мокасины</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link disabled" href="#">Go Go</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="card-body">
+                                                <h4 class="card-title">Угги </h4>
+                                                <p class="card-text">Лучшие угги на свете. Бесплатная доставка,
+                                                    круглосуточная поддержка клиентов.</p>
+                                            </div>
+                                            <div class="card-footer">
+                                                от uuuuggghhh.com
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i><span style="color:#e7e9eb;">end.</span></i>
+                                </div>
+                                <hr>
 
+                                <h2>Удаление padding</h2>
 
+                                <p>По умолчанию класс <span class="class">.card-body</span> содержит отступы. Это
+                                    обеспечивает красивое эстетически
+                                    приятное пространство между содержимым и рамкой карточки.</p>
 
+                                <p>Иногда может потребоваться удалить отступы и расположить содержимое вровень с краями
+                                    карточки.</p>
 
-
-                            </section>
+                                <div class="w3-example">
+                                    <h3> Пример</h3>
+                                    <div class="w3-code notranslate htmlHigh">
+                                        <pre>
+&lt;div class="card" style="max-width: 202px;"&gt;
+    &lt;!-- Заголовок --&gt;
+    <vv1>&lt;div</vv1> <span>class="card-body"</span><vv1>&gt;</vv1>
+        &lt;h4 class="card-title"&gt;Солнце зашло.&lt;/h4&gt;
+        &lt;h6 class="card-subtitle text-muted"&gt;Парусник!&lt;/h6&gt;
+    <vv1>&lt;/div&gt;</vv1>
+    &lt;!-- Изображение --&gt;
+    &lt;img src="../img/21.jpg" alt="Фото заката" class="pictures1"&gt;
+    &lt;!-- Текст --&gt;
+   <vv1> &lt;div</vv1> <span>class="card-body"</span><vv1>&gt;</vv1>
+        &lt;p class="card-text">Солнце скрылось за горизонтом. &lt;/p&gt;
+    <vv1>&lt;/div&gt;</vv1>
+&lt;/div&gt;
+</pre>>
+                                        <div class="card" style="max-width: 202px;">
+                                            <!-- Заголовок -->
+                                            <div class="card-body">
+                                                <h4 class="card-title">Солнце зашло.</h4>
+                                                <h6 class="card-subtitle text-muted">Парусник!</h6>
+                                            </div>
+                                            <!-- Изображение -->
+                                            <img src="../img/21.jpg" alt="Фото заката" ">
+                                            <!-- Текст -->
+                                            <div class=" card-body">
+                                            <p class="card-text">Солнце скрылось за горизонтом. </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <i><span style="color:#e7e9eb;">end.</span></i>
                         </div>
-                    </div>
 
+                        <p>Чтобы удалить <a href="/css/padding">padding</a>, не помещайте содержимое внутрь
+                            <span class="class">.card-body</span> (поскольку у него есть отступы). Вместо этого
+                            удалите <span class="class">.card-body</span> из внешнего <span
+                                class="tag">&lt;div&gt;</span> и вставьте его внутрь в
+                            отдельный <span class="tag">&lt;div&gt;</span>.
+                        </p>
+                        <p>Теперь вы можете разместить содержимое за пределами <span class="class">.card-body</span> (но
+                            все ещё внутри <span class="class">.card</span>). Это эффективно удаляет отступы, позволяя
+                            содержимому выровняться вровень с краями
+                            карточки. При необходимости у вас может быть несколько элементов <span
+                                class="class">.card-body</span>.</p>
+                        <p>Обратите внимание, что при использовании содержимого фиксированной ширины (например,
+                            изображений) вам может
+                            потребоваться указать ширину карточки, соответствующую ширине содержимого.</p>
+                        <hr>
 
-                    <aside class=" column is-3-desktop is-12-tablet is-12-mobile w-sidebar" id="w-sidebar">
+                        <h3>Верх и низ</h3>
 
-                        <section class="w-region w-region-sidebar-toc">
-                            <div class="w-block" id="block-book-toc">
-                                <h2 class="w-block-title">Содержание</h2>
-                                <div class="w-block-content">
+                        <p>Вы можете расположить содержимое, такое как изображения, на одном уровне с верхней
+                            частью карточки (так, чтобы
+                            верхние углы изображения соответствовали закруглённым углам карточки).</p>
+                        <p>Для этого примените класс <span class="class">.card-img-top</span> или <span
+                                class="class">.card-img-bottom</span> к
+                            тегу <a href="/html/img">&lt;img&gt;</a>.</p>
 
-                                    <ul class="w-block-menu list-unstyled">
-                                        <li>
-                                            <a href="../index.html">Начало
-                                                работы с Bootstrap</a>
+                        <div class="w3-example">
+                            <h3> Пример</h3>
+                            <div class="w3-code notranslate htmlHigh">
+                                <pre>
+&lt;div class="card" style="max-width: 202px;"&gt;
+    &lt;!-- Изображение --&gt;
+    &lt;img class="card-img-top" src="/example/image/12s.jpg" alt="Фото заката"&gt;
+    &lt;!-- Текст --&gt;
+    &lt;div class="card-body"&gt;
+        &lt;p class="card-text">Было хорошо, пока это продолжалось…&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                <div class="card" style="max-width: 202px;">
+                                    <!-- Изображение -->
+                                    <img class="card-img-top" src="../img/21.jpg" alt="Фото заката">
+                                    <!-- Текст -->
+                                    <div class="card-body">
+                                        <p class="card-text">Было хорошо, пока это продолжалось…</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <i><span style="color:#e7e9eb;">end.</span></i>
+                        </div>
+                        <hr>
 
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_containers.html" hreflang="ru">Контейнеры
-                                                Bootstrap 5</a>
+                        <h2>Группа списков</h2>
 
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_grid_system.html" hreflang="ru">Система
-                                                сеток Bootstrap 5</a>
+                        <p>В карточки можно добавить группу списка. Используйте класс <span
+                                class="class">.list-group-flush</span>, чтобы
+                            разместить его вровень с рамкой карточки.</p>
 
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_typography.html" hreflang="ru">Типографика
-                                                в
-                                                Bootstrap 5</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_tables.html" hreflang="ru">Таблицы в
-                                                Bootstrap
-                                                5</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_forms.html" hreflang="ru">Формы в Bootstrap 5</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_buttons.html" hreflang="ru">Кнопки в Bootstrap
-                                                5</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_images.html" hreflang="ru">Изображения
-                                                в Bootstrap 5</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_dropdowns.html" hreflang="ru">Выпадающие меню</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_button_groups.html" hreflang="ru">Группа
-                                                кнопок</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_input_groups.html" hreflang="ru">Группа
-                                                полей ввода</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_collapse.html" hreflang="ru">Сворачиваемое
-                                                содержимое</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_navs.html" hreflang="ru">Навигация в
-                                                Bootstrap</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_navbars.html" hreflang="ru">Панель
-                                                навигации</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_breadcrumbs.html" hreflang="ru">Хлебные
-                                                крошки в Bootstrap 5</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_pagination.html" hreflang="ru">Пагинация в
-                                                Bootstrap 5</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_badge.html" hreflang="ru">Значки в
-                                                Bootstrap 5</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_alerts.html" hreflang="ru">Уведомления
-                                                в Bootstrap 5</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_modal.html" hreflang="ru">Модальные
-                                                окна</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_progress_bars.html" hreflang="ru">Прогресс в
-                                                Bootstrap 5</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_list_groups.html" hreflang="ru">Группы
-                                                списков</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="bootstrap_cards.html" hreflang="ru" class="is-active">Карточки в
-                                                Bootstrap 5</a>
-
-                                        </li>
-                                        <li>
-                                            <a href="../html/bootstrap_carousel.html" hreflang="ru">Карусель в
-                                                Bootstrap 5</a>
-
-                                        </li>
+                        <div class="w3-example">
+                            <h3> Пример</h3>
+                            <div class="w3-code notranslate htmlHigh">
+                                <pre>
+&lt;div class="card" style="max-width: 20rem;"&gt;
+    &lt;!-- Заголовок --&gt;
+    &lt;div class="card-header">Солнце ушло&lt;/div&gt;
+    &lt;!-- Карточка --&gt;
+    &lt;div class="card-body"&gt;
+        &lt;p class="card-text"&gt;Мнения экспертов разделились. Вот что, по их словам, будет дальше.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;!-- Группа списка --&gt;
+    &lt;ul class="list-group <span>list-group-flush"</span>&gt;
+        &lt;li class="list-group-item">Солнце вернётся&lt;/li&gt;
+        &lt;li class="list-group-item">Солнце не вернётся&lt;/li&gt;
+        &lt;li class="list-group-item">Оно породит ещё тысячи солнц&lt;/li&gt;
+        &lt;li class="list-group-item">Спокойной ночи!&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+                            </pre>
+                                <div class="card" style="max-width: 20rem;">
+                                    <!-- Заголовок -->
+                                    <div class="card-header">Солнце ушло</div>
+                                    <!-- Карточка -->
+                                    <div class="card-body">
+                                        <p class="card-text">Мнения экспертов разделились. Вот что, по их словам, будет
+                                            дальше.</p>
+                                    </div>
+                                    <!-- Группа списка -->
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">Солнце вернётся</li>
+                                        <li class="list-group-item">Солнце не вернётся</li>
+                                        <li class="list-group-item">Оно породит ещё тысячи солнц</li>
+                                        <li class="list-group-item">Спокойной ночи!</li>
                                     </ul>
                                 </div>
                             </div>
+                            <i><span style="color:#e7e9eb;">end.</span></i>
+                        </div>
+                        <hr>
+
+                        <h2>Ссылки</h2>
+
+                        <p>Добавьте класс <span class="class">.card-link</span> к элементу <a
+                                href="/html/a">&lt;a&gt;</a>, чтобы отображать
+                            ссылки внутри карточек.</p>
+
+                        <div class="w3-example">
+                            <h3> Пример</h3>
+                            <div class="w3-code notranslate htmlHigh">
+                                <pre>
+&lt;div class="card" style="max-width: 20rem;"&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h4 class="card-title"&gt;Солнце ушло&lt;/h4&gt;
+        &lt;p class="card-text">Здесь собраны лучшие ресурсы по всем вопросам, связанным с Солнцем.&lt;/p&gt;
+        &lt;!-- Ссылки --&gt;
+        <vv1>&lt;a</vv1> href="#" <span>class="card-link"</span>&gt;Солнце ушло<vv1>&lt;/a&gt;</vv1>
+        <vv1>&lt;a</vv1> href="#" <span>class="card-link"</span>&gt;Ещё нет<vv1>&lt;/a&gt;</vv1>
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                <div class="card" style="max-width: 20rem;">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Солнце ушло</h4>
+                                        <p class="card-text">Здесь собраны лучшие ресурсы по всем вопросам, связанным с
+                                            Солнцем.</p>
+                                        <!-- Ссылки -->
+                                        <a href="#" class="card-link">Солнце ушло</a>
+                                        <a href="#" class="card-link">Ещё нет</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <i><span style="color:#e7e9eb;">end.</span></i>
+                        </div>
+                        <hr>
+
+                        <h2>Выравнивание текста</h2>
+
+                        <p>Вы можете использовать любой из классов Bootstrap для выравнивания текста внутри карточки.
+                        </p>
+                        <p>К ним относятся <span class="class">.text-start</span>, <span class="class">.text-end</span>,
+                            <span class="class">.text-center</span>, <span class="class">.text-nowrap</span>, а также
+                            различные классы <span class="class">.text-*-*</span>, например, <span
+                                class="class">.text-sm-start</span>, <span class="class">.text-md-start</span>, <span
+                                class="class">.text-lg-start</span>, <span class="class">.text-xl-start</span> и др.
+                        </p>
+
+                        <div class="w3-example">
+                            <h3> Пример</h3>
+                            <div class="w3-code notranslate htmlHigh">
+                                <pre>
+&lt;div class="card <span>text-center"</span> style="max-width: 202px;"&gt;
+    &lt;!-- Заголовок --&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h4 class="card-title"&gt;Солнце ушло&lt;/h4&gt;
+        &lt;h6 class="card-subtitle text-muted"&gt;Солнце исчезает!&lt;/h6&gt;
+    &lt;/div&gt;
+    &lt;!-- Изображение --&gt;
+    &lt;img src="../img/21.jpg" alt="Фото заката"&gt;
+    &lt;!-- Текст --&gt;
+    &lt;div class="card-body"&gt;
+        &lt;p class="card-text"&gt;Солнце сегодня скрылось за горизонтом.&lt;/p&gt;
+        &lt;a href="#" class="btn btn-primary"&gt;Полный отчёт&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                                </pre>
+                                <div class="card text-center" style="max-width: 202px;">
+                                    <!-- Заголовок -->
+                                    <div class="card-body">
+                                        <h4 class="card-title">Солнце ушло</h4>
+                                        <h6 class="card-subtitle text-muted">Солнце исчезает!</h6>
+                                    </div>
+                                    <!-- Изображение -->
+                                    <img src="../img/21.jpg" alt="Фото заката">
+                                    <!-- Текст -->
+                                    <div class="card-body">
+                                        <p class="card-text">Солнце сегодня скрылось за горизонтом. </p>
+                                        <a href="#" class="btn btn-primary">Полный отчёт</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <i><span style="color:#e7e9eb;">end.</span></i>
+                        </div>
+                        <hr>
+
+                        <h2>Контекстный цвет</h2>
+
+                        <p>Вы можете использовать текстовые и фоновые утилиты Bootstrap, чтобы изменить цвет карточки.
+                        </p>
+
+                        <div class="w3-example">
+                            <h3> Пример</h3>
+                            <div class="w3-code notranslate htmlHigh">
+                                <pre>
+&lt; <span>div class="card text-white bg-primary"</span> style="max-width: 20rem;"&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h4 class="card-title"&gt;Солнце ушло&lt;/h4&gt;
+        &lt;p class="card-text"&gt;Здесь собраны лучшие ресурсы по всем вопросам, связанным с Солнцем.&lt;/p&gt;
+        &lt;!-- Ссылки --&gt;
+        &lt;a href="#" class="card-link">Солнце ушло&lt;/a&gt;
+        &lt;a href="#" class="card-link">Ещё нет&lt;/a&gt;
+    &lt;div&gt;
+&lt;/div&gt;
+                        </pre>
+                                <div class="card text-white bg-primary" style="max-width: 20rem;">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Солнце ушло</h4>
+                                        <p class="card-text">Здесь собраны лучшие ресурсы по всем вопросам, связанным с
+                                            Солнцем.</p>
+                                        <!-- Ссылки -->
+                                        <a href="#" class="card-link">Солнце ушло</a>
+                                        <a href="#" class="card-link">Ещё нет</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <i><span style="color:#e7e9eb;">end.</span></i>
+                        </div>
+                        <hr>
+
+                        <h3>Цвет рамки</h3>
+
+                        <p>Вы также можете использовать утилиты Bootstrap.</p>
+
+                        <div class="w3-example">
+                            <h3> Пример</h3>
+                            <div class="w3-code notranslate htmlHigh">
+                                <pre>
+&lt;div class="<span>card  border-primary"</span> style="max-width: 20rem;"&gt;
+    &lt;div class="card-body"&gt;
+        &lt;h4 class="card-title"&gt;Солнце ушло&lt;/h4&gt;
+        &lt;p class="card-text"&gt;Здесь собраны лучшие ресурсы по всем вопросам, связанным с Солнцем.&lt;/p&gt;
+        &lt;!-- Ссылки --&gt;
+        &lt;a href="#" class="card-link"&gt;Солнце ушло&lt;/a&gt;
+        &lt;a href="#" class="card-link"&gt;Ещё нет&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                <div class="card  border-primary" style="max-width: 20rem;">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Солнце ушло</h4>
+                                        <p class="card-text">Здесь собраны лучшие ресурсы по всем вопросам, связанным с
+                                            Солнцем.</p>
+                                        <!-- Ссылки -->
+                                        <a href="#" class="card-link">Солнце ушло</a>
+                                        <a href="#" class="card-link">Ещё нет</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <i><span style="color:#e7e9eb;">end.</span></i>
+                        </div>
+                        <hr>
+
+                        <h2>Наложение текста на изображение</h2>
+
+                        <p>Вы можете применить к карточке фоновое изображение, после чего текст появится поверх неё.</p>
+                        <p>Для этого примените к текстовому содержимому класс <span>card-img-overlay</span>.</p>
+
+                        <div class="w3-example">
+                            <h3> Пример</h3>
+                            <div class="w3-code notranslate htmlHigh">
+                                <pre>
+&lt;div class="card card-inverse text-center" style="max-width: 202px;"&gt;
+    &lt;!-- Изображение --&gt;
+    &lt;img class="card-img-top" src="../img/21.jpg" alt="Фото заката"&gt;
+    &lt;!-- Текст --&gt;
+    &lt;<span>div class="card-img-overlay"</span>&gt;
+        &lt;h4 class="card-title <vv1>text-white"</vv1>&gt;Что дальше?&lt;/h4&gt;
+        &lt;p class="card-text <vv1>text-white"</vv1>&gt;Это конец?&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="card-body"&gt;Смотрите на следующей неделе, чтобы узнать об этом!&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                <div class="card card-inverse text-center" style="max-width: 202px;">
+                                    <!-- Изображение -->
+                                    <img class="card-img-top" src="../img/21.jpg" alt="Фото заката">
+                                    <!-- Текст -->
+                                    <div class="card-img-overlay">
+                                        <h4 class="card-title text-white">Что дальше?</h4>
+                                        <p class="card-text text-white">Это Начало</p>
+                                    </div>
+                                    <div class="card-body">Смотрите на следующей неделе, чтобы узнать об этом!</div>
+                                </div>
+                            </div>
+                            <i><span style="color:#e7e9eb;">end.</span></i>
+                        </div>
+                        <hr>
+
+                        <h2>Ширина карточки</h2>
+
+                        <p>Карточки по умолчанию заполняют всё горизонтальное пространство. Вы можете изменить их ширину
+                            несколькими способами.
+                        </p>
+
+                        <h3>CSS</h3>
+
+                        <p>Можно явно указать ширину с помощью CSS. Например, использовать такие свойства, как width или
+                            max-width. В некоторых
+                            из приведённых выше примеров CSS применяется для ограничения ширины карточек.</p>
+
+                        <h3>Сетка</h3>
+
+                        <p>Как и в случае с любым другим содержимым, вы можете размещать свои карточки внутри сетки
+                            Bootstrap.</p>
+
+                        <div class="w3-example">
+                            <h3> Пример</h3>
+                            <div class="w3-code notranslate htmlHigh">
+                                <pre>
+&lt;div class="container-fluid"&gt;
+    &lt;div class="row"&gt;
+        &lt;<vv1>div class="col-sm-6"</vv1>&gt;
+            <vv3>&lt;div class="card"&gt;</vv3>
+                &lt;div class="card-body"&gt;
+                    &lt;h4 class="card-title"&gt;Солнце ушло&lt;/h4&gt;
+                    &lt;p class="card-text">Здесь собраны лучшие ресурсы по всем вопросам, связанным с Солнцем.&lt;/p&gt;
+                    &lt;a href="#" class="card-link"&gt;Солнце ушло&lt;/a&gt;
+                    &lt;a href="#" class="card-link"&gt;Ещё нет&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;<vv1>div class="col-sm-6"</vv1>&gt;
+            <vv3>&lt;div class="card"&gt;</vv3>
+                &lt;div class="card-body"&gt;
+                    &lt;h4 class="card-title">Солнце взошло&lt;/h4&gt;
+                    &lt;p class="card-text">Похоже, Солнце вернулось. Вот почему.&lt;/p&gt;
+                    &lt;a href="#" class="btn btn-primary">Скачать отчёт&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+                                <div class="container-fluid">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Солнце ушло</h4>
+                                                    <p class="card-text">Здесь собраны лучшие ресурсы по всем вопросам,
+                                                        связанным с Солнцем.</p>
+                                                    <a href="#" class="card-link">Солнце ушло</a>
+                                                    <a href="#" class="card-link">Ещё нет</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <h4 class="card-title">Солнце взошло</h4>
+                                                    <p class="card-text">Похоже, Солнце вернулось. Вот почему.</p>
+                                                    <a href="#" class="btn btn-primary">Скачать отчёт</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <i><span style="color:#e7e9eb;">end.</span></i>
+                        </div>
+                        <hr>
+
+                        <h2>Группа карточек</h2>
+
+                        <p>Группа карточек позволяет представить несколько карточек как один связанный элемент с
+                            одинаковой шириной и высотой.
+                        </p>
+                        <p>Для этого поместите все карточки в элемент <span class="class">.card-group</span>.</p>
+                        <p>Если пример отображается неправильно, возможно, это связано с небольшим размером области
+                            просмотра.</p>
+
+                        <div class="w3-example">
+                            <h3> Пример</h3>
+                            <div class="w3-code notranslate htmlHigh">
+                                <pre>
+<span>&lt;div class="card-group"&gt;</span>
+    &lt;!-- Карточка 1 --&gt;
+    &lt;div class=<vv1>"card"</vv1>&gt;
+        &lt;div class="card-header">Солнце ушло&lt;/div&gt;
+        &lt;div class="card-body"&gt;
+            &lt;p class="card-text"&gt;Здесь собраны лучшие ресурсы по всем вопросам, связанным с Солнцем.&lt;/&gt;
+            &lt;a href="#" class="card-link">Солнце ушло&lt;/a&gt;
+            &lt;a href="#" class="card-link">Ещё нет&lt;/a&gt;
+        &lt;/div&gt;
+    &lt;div&gt;
+    &lt;!-- Карточка 2 --&gt;
+    &lt;div class=<vv1>"card"</vv1>&gt;
+        &lt;div class="card-header"&gt;Солнце взошло&lt;/div&gt;
+        &lt;div class="card-body"&gt;
+            &lt;p class="card-text"&gt;Похоже, Солнце вернулось. Вот &lt;a href="#" class="card-link"&gt;почему&lt;/a&gt;.&lt;/p&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+                            </pre>
+                                <div class="card-group">
+                                    <!-- Карточка 1 -->
+                                    <div class="card">
+                                        <div class="card-header">Солнце ушло</div>
+                                        <div class="card-body">
+                                            <p class="card-text">Здесь собраны лучшие ресурсы по всем вопросам,
+                                                связанным с Солнцем.</p>
+                                            <a href="#" class="card-link">Солнце ушло</a>
+                                            <a href="#" class="card-link">Ещё нет</a>
+                                        </div>
+                                    </div>
+                                    <!-- Карточка 2 -->
+                                    <div class="card">
+                                        <div class="card-header">Солнце взошло</div>
+                                        <div class="card-body">
+                                            <p class="card-text">Похоже, Солнце вернулось. Вот <a href="#"
+                                                    class="card-link">почему</a>.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <i><span style="color:#e7e9eb;">end.</span></i>
+                        </div>
+
+
                         </section>
-                    </aside>
-
-
-
+                    </div>
                 </div>
+
+
+                <aside class=" column is-3-desktop is-12-tablet is-12-mobile w-sidebar" id="w-sidebar">
+
+                    <section class="w-region w-region-sidebar-toc">
+                        <div class="w-block" id="block-book-toc">
+                            <h2 class="w-block-title">Содержание</h2>
+                            <div class="w-block-content">
+
+                                <ul class="w-block-menu list-unstyled">
+                                    <li>
+                                        <a href="../index.html">Начало
+                                            работы с Bootstrap</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_containers.html" hreflang="ru">Контейнеры
+                                            Bootstrap 5</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_grid_system.html" hreflang="ru">Система
+                                            сеток Bootstrap 5</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_typography.html" hreflang="ru">Типографика
+                                            в
+                                            Bootstrap 5</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_tables.html" hreflang="ru">Таблицы в
+                                            Bootstrap
+                                            5</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_forms.html" hreflang="ru">Формы в Bootstrap 5</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_buttons.html" hreflang="ru">Кнопки в Bootstrap
+                                            5</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_images.html" hreflang="ru">Изображения
+                                            в Bootstrap 5</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_dropdowns.html" hreflang="ru">Выпадающие меню</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_button_groups.html" hreflang="ru">Группа
+                                            кнопок</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_input_groups.html" hreflang="ru">Группа
+                                            полей ввода</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_collapse.html" hreflang="ru">Сворачиваемое
+                                            содержимое</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_navs.html" hreflang="ru">Навигация в
+                                            Bootstrap</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_navbars.html" hreflang="ru">Панель
+                                            навигации</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_breadcrumbs.html" hreflang="ru">Хлебные
+                                            крошки в Bootstrap 5</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_pagination.html" hreflang="ru">Пагинация в
+                                            Bootstrap 5</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_badge.html" hreflang="ru">Значки в
+                                            Bootstrap 5</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_alerts.html" hreflang="ru">Уведомления
+                                            в Bootstrap 5</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_modal.html" hreflang="ru">Модальные
+                                            окна</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_progress_bars.html" hreflang="ru">Прогресс в
+                                            Bootstrap 5</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_list_groups.html" hreflang="ru">Группы
+                                            списков</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="bootstrap_cards.html" hreflang="ru" class="is-active">Карточки в
+                                            Bootstrap 5</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="../html/bootstrap_carousel.html" hreflang="ru">Карусель в
+                                            Bootstrap 5</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </section>
+                </aside>
+
+
+
+            </div>
 
         </main>
 
